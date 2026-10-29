@@ -2,7 +2,7 @@
 
 > **Purpose:** This document provides a production-grade folder structure for **RKSkillTube** designed through both **High-Level Design (HLD)** and **Low-Level Design (LLD)** lenses. It maps the system specifications directly to the **Next.js 14+** (App Router with TypeScript) frontend, **FastAPI** backend, **Celery** workers, and **PostgreSQL/Redis** persistence.
 >
-> 🛠️ *For the complete sequential step-by-step setup (Docker, FastAPI, Next.js TS, FFmpeg, and package lifecycle), see [`Docs/INSTALLATION_GUIDE.md`](./INSTALLATION_GUIDE.md).*  
+> 🛠️ *For the complete sequential step-by-step setup (Docker, FastAPI, Next.js TS, FFmpeg, and package lifecycle), see [`Docs/INSTALLATION_GUIDE.md`](./INSTALLATION_GUIDE.md).*
 > 🌐 *For official documentation, interactive courses, and curated blogs across all technologies, see [`Docs/resource.md`](./resource.md).*
 
 ---
@@ -313,6 +313,7 @@ infrastructure/
 ## 🔄 6. Tracing Key Workflows: High-Level to Low-Level
 
 ### Workflow 1: Direct Video Upload & HLS Transcoding
+
 * **High-Level Flow:**
   `Browser ──(1) Get Upload URL──► FastAPI ──(2) Presigned URL──► Browser ──(3) Upload Raw Video──► Cloudflare R2 ──(4) Task──► Celery Worker (FFmpeg) ──(5) HLS .m3u8──► CDN`
 * **Low-Level Code Path:**
@@ -326,6 +327,7 @@ infrastructure/
 ---
 
 ### Workflow 2: Seamless Video Viewing, Adaptive Streaming & Progress Syncing
+
 * **High-Level Flow:**
   `Next.js Watch Page ──(1) Fetch Manifest──► Cloudflare R2/CDN (master.m3u8) ──(2) Dynamic Bitrate Chunks──► HlsPlayer.tsx ──(3) Progress Heartbeat──► FastAPI ──► PostgreSQL WatchHistory`
 * **Low-Level Code Path:**
@@ -339,6 +341,7 @@ infrastructure/
 ---
 
 ### Workflow 3: Secure Course Enrollment & Payment
+
 * **High-Level Flow:**
   `Student ──(1) Checkout──► Stripe/Razorpay ──(2) Webhook──► FastAPI ──(3) ACID Transaction──► PostgreSQL ──(4) Cache Invalidate──► Redis`
 * **Low-Level Code Path:**
@@ -351,6 +354,7 @@ infrastructure/
 ---
 
 ### Workflow 4: AI Chatbot & Semantic Search
+
 * **High-Level Flow:**
   `Student Query ──► Next.js ──► FastAPI AI Router ──► pgvector (Embedding Match) ──► LLM (Gemini/OpenAI) ──► Course Roadmap Answer`
 * **Low-Level Code Path:**
@@ -364,12 +368,12 @@ infrastructure/
 
 ## 🎓 7. Educational Guide: How to Learn Both HLD & LLD
 
-| To Learn... | Study This Folder | What to Focus On |
-| :--- | :--- | :--- |
-| **Video Player & Streaming (LLD)** | `frontend/src/components/video/` & `hooks/` | Adaptive Bitrate streaming (ABR), VTT storyboard sprite scrubbing, subtitle tracks, and resume-playback state management. |
-| **Microservices vs. Modular Monolith (HLD)** | `backend/app/api/v1/endpoints/` | Notice how each domain (auth, videos, courses, payments) is isolated. Any endpoint folder can be detached into its own microservice as traffic scales. |
-| **Separation of Concerns (LLD)** | `backend/app/api/` vs `services/` vs `repositories/` | Endpoints only handle HTTP; Services handle business rules; Repositories handle database queries. |
-| **Design Patterns (LLD)** | `backend/app/services/storage_service.py` | Observe the **Strategy Pattern**: The interface allows swapping between AWS S3, Cloudflare R2, or local storage without altering API controllers. |
-| **Asynchronous Distributed Processing (HLD)** | `backend/app/tasks/` | Understand why heavy workloads (video encoding, storyboard sprites, bulk email) are pushed to Celery queues rather than blocking synchronous HTTP threads. |
-| **Data Consistency & ACID (HLD/LLD)** | `backend/app/models/` and `repositories/payment_repository.py` | Study foreign key constraints, indexes, and atomic transaction commits. |
-| **Modern Full-Stack Rendering (HLD/LLD)** | `frontend/src/app/` | Understand the distinction between Next.js **Server Components** (instant server rendering, zero bundle size) and **Client Components** (interactive UI states). |
+| To Learn...                                         | Study This Folder                                                  | What to Focus On                                                                                                                                                             |
+| :-------------------------------------------------- | :----------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Video Player & Streaming (LLD)**            | `frontend/src/components/video/` & `hooks/`                    | Adaptive Bitrate streaming (ABR), VTT storyboard sprite scrubbing, subtitle tracks, and resume-playback state management.                                                    |
+| **Microservices vs. Modular Monolith (HLD)**  | `backend/app/api/v1/endpoints/`                                  | Notice how each domain (auth, videos, courses, payments) is isolated. Any endpoint folder can be detached into its own microservice as traffic scales.                       |
+| **Separation of Concerns (LLD)**              | `backend/app/api/` vs `services/` vs `repositories/`         | Endpoints only handle HTTP; Services handle business rules; Repositories handle database queries.                                                                            |
+| **Design Patterns (LLD)**                     | `backend/app/services/storage_service.py`                        | Observe the **Strategy Pattern**: The interface allows swapping between AWS S3, Cloudflare R2, or local storage without altering API controllers.                      |
+| **Asynchronous Distributed Processing (HLD)** | `backend/app/tasks/`                                             | Understand why heavy workloads (video encoding, storyboard sprites, bulk email) are pushed to Celery queues rather than blocking synchronous HTTP threads.                   |
+| **Data Consistency & ACID (HLD/LLD)**         | `backend/app/models/` and `repositories/payment_repository.py` | Study foreign key constraints, indexes, and atomic transaction commits.                                                                                                      |
+| **Modern Full-Stack Rendering (HLD/LLD)**     | `frontend/src/app/`                                              | Understand the distinction between Next.js **Server Components** (instant server rendering, zero bundle size) and **Client Components** (interactive UI states). |
