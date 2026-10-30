@@ -44,7 +44,7 @@
             ▼                                     ▼
 ┌──────────────────────────────┐    ┌──────────────────────────────┐
 │  FRONTEND: Next.js 14+ (TS)  │    │      GLOBAL EDGE CDN         │
-│  • App Router (SSR & SEO)    │    │  • CloudFront / Cloudflare   │
+│  • App Router (SSR & SEO)    │    │  • Cloud CDN / Cloudflare    │
 │  • HLS.js Custom Video Player│    │  • Cached .m3u8 & .ts chunks │
 │  • Zustand Client State      │    │  • Sub-30ms global latency   │
 └──────────────┬───────────────┘    └──────────────▲───────────────┘
@@ -60,10 +60,10 @@
          ┌─────┴─────┐           ┌─────┴─────┐     │
          ▼           ▼           ▼           ▼     │
 ┌─────────────────┐ ┌─────────┐ ┌─────────┐ ┌──────┴──────┐
-│  PostgreSQL 16  │ │ Redis 7 │ │ Celery  │ │Cloudflare R2│
-│  • Relational DB│ │ • Cache │ │ Worker  │ │ / AWS S3    │
-│  • pgvector     │ │ • Broker│ │ • FFmpeg│ │ (Zero-Egress│
-│  • JSONB Tree   │ │ • Limits│ │ • Emails│ │  Media)     │
+│  PostgreSQL 16  │ │ Redis 7 │ │ Celery  │ │Google Cloud │
+│  • Relational DB│ │ • Cache │ │ Worker  │ │Storage (GCS)│
+│  • pgvector     │ │ • Broker│ │ • FFmpeg│ │ / R2 / S3   │
+│  • Cloud SQL    │ │ • Limits│ │ • Emails│ │ (Media Store│
 └─────────────────┘ └─────────┘ └─────────┘ └─────────────┘
 ```
 
@@ -82,7 +82,7 @@
 | **Database** | **PostgreSQL 16 + pgvector** | Strict ACID financial guarantees and native AI vector similarity search. |
 | **Cache & Task Queue**| **Redis 7 + Celery** | Sub-millisecond write buffering and decoupled FFmpeg video transcoding. |
 | **Media Processing** | **FFmpeg** | Transcodes raw creator uploads into multi-bitrate HLS streams & sprites. |
-| **Object Storage** | **Cloudflare R2 / AWS S3** | S3-compatible cloud storage with $0 egress bandwidth fees. |
+| **Object Storage** | **Google Cloud Storage / R2** | Scalable cloud storage with presigned URLs for media & HLS streams. |
 
 *👉 For an in-depth explanation of every tool, read [`Docs/tech_tool.md`](./Docs/tech_tool.md).*
 

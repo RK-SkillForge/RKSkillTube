@@ -245,7 +245,7 @@ backend/
 │   │   ├── payment_service.py      # Idempotent Stripe webhook handling, entitlement grants
 │   │   ├── ai_service.py           # LangChain/Gemini prompt templates, pgvector search
 │   │   ├── notification_service.py # In-app notification creation & worker queuing
-│   │   └── storage_service.py      # S3/Cloudflare R2 client wrapper (presigned URLs)
+│   │   └── storage_service.py      # Google Cloud Storage (GCS) / R2 wrapper (presigned URLs)
 │   │
 │   ├── repositories/               # DATA ACCESS LAYER (Repository Pattern)
 │   │   ├── base_repository.py      # Generic CRUD repository (get, create, update, delete)
@@ -285,22 +285,23 @@ backend/
 
 ## 🏗️ 5. Infrastructure & Operations — `infrastructure/`
 
-The `infrastructure/` directory contains all deployment, containerization, and cloud automation configurations:
+The `infrastructure/` directory contains all deployment, containerization, and cloud automation configurations (targeted for **Google Cloud Platform (GCP)**):
 
 ```
 infrastructure/
+├── explain.md                      # Comprehensive guide explaining every folder, file, and GCP mapping
 ├── docker/
 │   ├── backend.Dockerfile          # Optimized multi-stage build for FastAPI
 │   ├── worker.Dockerfile           # Celery worker container with FFmpeg pre-installed
 │   └── frontend.Dockerfile         # Next.js standalone output production container
 │
-├── terraform/                      # Infrastructure as Code (IaC)
-│   ├── main.tf                     # Cloud provider definitions (AWS / GCP / Cloudflare)
-│   ├── s3_r2.tf                    # Media storage buckets & CORS policies
-│   ├── cloudfront.tf               # CDN edge distribution & signed URL key groups
-│   └── rds.tf                      # Managed PostgreSQL database cluster
+├── terraform/                      # Infrastructure as Code (IaC) for Google Cloud (GCP)
+│   ├── main.tf                     # GCP provider configuration (project, region, backend)
+│   ├── gcs.tf                      # Google Cloud Storage buckets (raw uploads & HLS media) + CORS
+│   ├── cloud_sql.tf                # Managed Cloud SQL PostgreSQL 16 instance with pgvector
+│   └── cloud_cdn.tf                # Google Cloud CDN & HTTPS Load Balancer setup
 │
-├── nginx/                          # Reverse Proxy (if self-hosting)
+├── nginx/                          # Reverse Proxy (if self-hosting or edge routing)
 │   └── nginx.conf                  # SSL termination, rate limit buffer, gzip compression
 │
 └── scripts/                        # Automation & Deployment Scripts

@@ -234,8 +234,13 @@ REDIS_URL=redis://localhost:6379/0
 CELERY_BROKER_URL=redis://localhost:6379/1
 CELERY_RESULT_BACKEND=redis://localhost:6379/2
 
-# Cloud Storage (R2 / S3)
-STORAGE_PROVIDER=cloudflare_r2
+# Cloud Storage (Google Cloud Storage / Cloudflare R2 / S3)
+STORAGE_PROVIDER=gcs  # Options: 'gcs' (Google Cloud Storage), 'cloudflare_r2', 'aws_s3'
+GCP_PROJECT_ID=your-gcp-project-id
+GCS_BUCKET_NAME=rkskilltube-media
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+
+# (Optional Multi-Cloud S3 / R2 Keys)
 AWS_ACCESS_KEY_ID=your_key_id
 AWS_SECRET_ACCESS_KEY=your_secret_key
 AWS_REGION=auto

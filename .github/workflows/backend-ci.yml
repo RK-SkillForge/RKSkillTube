@@ -1,0 +1,50 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend-ci.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend-ci.yml'
+
+jobs:
+  build:
+    name: Verify Backend Integrity
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Syntax & Structure Verification
+        run: |
+          python -m compileall backend -q
+          echo "All Python modules and packages verified successfully."
+
+      - name: Install Dependencies (if available)
+        run: |
+          if [ -s backend/requirements.txt ]; then
+            python -m pip install --upgrade pip
+            pip install -r backend/requirements.txt
+          else
+            echo "requirements.txt is currently empty (placeholder phase). Skipping package install."
+          fi
+
+      - name: Run Tests (if available)
+        run: |
+          if [ -d "backend/tests" ] && [ $(find backend/tests -name "test_*.py" | wc -l) -gt 0 ]; then
+            pip install pytest
+            pytest backend/tests
+          else
+            echo "No test files created yet. Skipping test execution."
+          fi

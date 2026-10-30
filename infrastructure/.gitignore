@@ -1,0 +1,54 @@
+# ========================================================
+# RKSkillTube — Infrastructure .gitignore
+# ========================================================
+
+# --- Terraform Working Files & State ---
+# Compiled Terraform state files (contain raw database credentials, secrets, IP addresses)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform local plugin cache and module dependencies
+**/.terraform/
+.terraform.lock.hcl.backup
+
+# Terraform plan output files
+*.tfplan
+
+# Terraform variable definition files (frequently contain secret passwords / API keys)
+*.tfvars
+*.tfvars.json
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# --- Cloud & Secret Credentials ---
+# Google Cloud Platform (GCP) service account keys
+*service-account*.json
+*credentials*.json
+gcp-key*.json
+*.pem
+*.key
+*.crt
+*.pfx
+
+# --- Environment Configuration ---
+.env
+.env.*
+!.env.example
+
+# --- Local Scripts, Dumps & Logs ---
+*.log
+*.sql
+*.dump
+temp/
+tmp/

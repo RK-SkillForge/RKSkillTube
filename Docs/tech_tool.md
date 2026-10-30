@@ -43,8 +43,9 @@ To achieve this scale while keeping local development smooth and beginner-friend
 | **Task Queue** | Celery | Distributed background processing for video and media jobs |
 | **Task Monitoring** | Flower | Real-time visual monitoring dashboard for Celery workers |
 | **Media Processing** | FFmpeg | Multi-bitrate HLS transcoding, thumbnail and sprite extraction |
-| **Object Storage** | Cloudflare R2 / AWS S3 | S3-compatible media bucket with zero egress bandwidth fees |
-| **Content Delivery** | AWS CloudFront / CDN | Low-latency edge caching for video segments and static assets |
+| **Object Storage** | Google Cloud Storage (GCS) / Cloudflare R2 | Scalable media bucket for raw uploads, HLS playlists, and sprites |
+| **Content Delivery** | Google Cloud CDN / Cloudflare | Global low-latency edge caching with HTTP/3 and DDoS protection |
+| **Cloud Infrastructure (IaC)** | Google Cloud Platform (GCP) & Terraform | Cloud SQL (PostgreSQL 16), Cloud Storage, and automated IaC |
 | **Authentication** | NextAuth / JWT / Bcrypt | Secure Google OAuth 2.0 and salted password hashing |
 | **API Rate Limiting** | SlowAPI | Sliding-window DDoS and brute-force protection |
 | **AI & LLM** | Google Gemini API & LangChain | AI course roadmap generation, chatbot, and semantic search |
@@ -207,18 +208,29 @@ To achieve this scale while keeping local development smooth and beginner-friend
 
 ---
 
-## 7. Cloud Storage & CDN Delivery
+## 7. Cloud Infrastructure, Storage & CDN Delivery
 
-### 7.1 Cloudflare R2 (or AWS S3)
-* **What it is:** S3-compatible cloud object storage.
+### 7.1 Google Cloud Platform (GCP) — Primary Cloud Provider
+* **What it is:** Enterprise cloud suite hosting RKSkillTube's production database, storage, and edge caching.
 * **Why we use it:**
-  * **Zero Egress Fees:** Traditional cloud providers (like AWS S3) charge heavy bandwidth fees ($0.09 per GB) when users stream video. Cloudflare R2 has **$0 egress fees**, saving thousands of dollars as video streaming traffic scales.
-  * **Presigned URLs:** Allows the browser to upload raw video files directly to the storage bucket using secure, temporary, signed PUT URLs, bypassing the backend server entirely to save server bandwidth.
+  * **Unified Ecosystem:** Provides seamless IAM authentication, Cloud SQL for managed PostgreSQL with `pgvector`, and tight integration with Google Gemini AI APIs.
+  * **Automated Infrastructure:** Managed with Terraform using the official Google provider (`hashicorp/google`).
 
-### 7.2 Content Delivery Network (CDN)
-* **What it is:** A geographically distributed network of proxy servers that cache content close to end users.
+### 7.2 Google Cloud Storage (GCS)
+* **What it is:** Scalable, highly durable object storage on Google Cloud.
 * **Why we use it:**
-  * **Sub-30ms Video Chunk Delivery:** Video segments (`.ts`) are immutable; once requested, edge CDN nodes cache them globally, ensuring zero buffering for viewers regardless of geography.
+  * **V4 Signed URLs:** Generates secure, short-lived signed PUT URLs from FastAPI using the `google-cloud-storage` Python SDK so client browsers upload directly to GCS without passing video files through backend servers.
+  * **Origin for CDN:** Seamlessly integrates as an origin backend bucket for Google Cloud CDN.
+
+### 7.3 Google Cloud CDN & Global Load Balancing
+* **What it is:** Anycast-routed edge caching network connected directly to Google's private global fiber backbone.
+* **Why we use it:**
+  * **Sub-30ms Video Delivery:** Immutable HLS `.m3u8` playlists, `.ts` chunks, and WebVTT storyboard images are cached at Google Edge Points of Presence (PoPs) worldwide.
+  * **Cloud Armor Protection:** Built-in DDoS mitigation and web application firewall (WAF) policies.
+
+### 7.4 Multi-Cloud Alternatives (Cloudflare R2 / AWS S3)
+* **What it is:** S3-compatible cloud object storage alternative.
+* **Why we support it:** Provides optional zero-egress fee storage configuration for flexible multi-cloud deployments.
 
 ---
 
@@ -288,7 +300,8 @@ To achieve this scale while keeping local development smooth and beginner-friend
 │ Vector Embeddings     │ pgvector             │ Native AI Search in DB  │
 │ Background Processing │ Celery + FFmpeg      │ Non-blocking Transcoding│
 │ Caching & Broker      │ Redis 7              │ Sub-ms Counters & Queues│
-│ Cloud Storage         │ Cloudflare R2 / S3   │ Zero Egress Fees        │
+│ Cloud Platform & IaC  │ Google Cloud (Terra) │ Cloud SQL, GCS, CloudCDN│
+│ Cloud Storage         │ GCS / Cloudflare R2  │ Signed URLs, Scalability│
 │ AI Intelligence       │ Google Gemini API    │ Roadmaps, Chatbot, RAG  │
 │ Orchestration         │ Docker Compose       │ One-Command Dev Boot    │
 └───────────────────────┴──────────────────────┴─────────────────────────┘

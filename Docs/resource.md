@@ -16,7 +16,7 @@
 6. [Databases & Persistence (PostgreSQL, pgvector, SQLAlchemy, Alembic)](#6-databases--persistence)
 7. [Caching & Task Queues (Redis, Celery, Flower)](#7-caching--task-queues)
 8. [Media Processing Pipeline (FFmpeg)](#8-media-processing-pipeline)
-9. [Object Storage & CDN (Cloudflare R2, AWS S3, CloudFront)](#9-object-storage--cdn)
+9. [Cloud Infrastructure, Object Storage & CDN (Google Cloud, Cloudflare R2, AWS S3)](#9-cloud-infrastructure-object-storage--cdn)
 10. [Authentication & Security (NextAuth, JWT, OAuth 2.0)](#10-authentication--security)
 11. [DevOps & Containers (Docker, Docker Compose, CI/CD)](#11-devops--containers)
 12. [AI & Semantic Search (Gemini API, LangChain, Vector Embeddings)](#12-ai--semantic-search)
@@ -134,9 +134,17 @@
 
 ---
 
-## 9. Object Storage & CDN
+## 9. Cloud Infrastructure, Object Storage & CDN
 
-### ☁️ Cloudflare R2 & AWS S3
+### 🌐 Google Cloud Platform (GCP)
+* 📖 **[Google Cloud Storage (GCS) Documentation](https://cloud.google.com/storage/docs)** — Scalable object storage for raw uploads, HLS video chunks, and thumbnail sprites.
+* 📖 **[Google Cloud Storage Python Client Library](https://cloud.google.com/python/docs/reference/storage/latest)** — Official SDK (`google-cloud-storage`) for generating signed upload URLs and managing buckets.
+* ✍️ **[GCS V4 Signed URLs Guide](https://cloud.google.com/storage/docs/access-control/signed-urls)** — Direct browser-to-bucket upload pattern using secure, short-lived signed PUT URLs.
+* 📖 **[Google Cloud SQL for PostgreSQL Guide](https://cloud.google.com/sql/docs/postgres)** — Fully managed PostgreSQL 16 with high availability, automatic backups, and `pgvector` support.
+* 📖 **[Google Cloud CDN Documentation](https://cloud.google.com/cdn/docs)** — Global Anycast edge caching with HTTP/3 and Cloud Armor DDoS mitigation for video streaming.
+* 📖 **[Terraform Google Cloud Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs)** — Infrastructure as Code documentation for provisioning GCP resources.
+
+### ☁️ Multi-Cloud Alternatives (Cloudflare R2 & AWS S3)
 * 📖 **[Cloudflare R2 Documentation](https://developers.cloudflare.com/r2/)** — S3-compatible zero-egress fee object storage.
 * 📖 **[AWS Boto3 (Python SDK) S3 Presigned URLs Guide](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-presigned-urls.html)** — How to safely generate presigned PUT and GET URLs for direct client uploads.
 * 📖 **[CloudFront CDN Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)** — Global Edge CDN caching for low-latency video streaming.
