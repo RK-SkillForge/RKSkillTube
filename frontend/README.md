@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 RKSkillTube — Frontend Web Client
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-14%2B%20App%20Router-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18%2F19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**The user-facing web application and creator studio for RKSkillTube, built with Next.js App Router, TypeScript, and HLS.js streaming.**
+
+</div>
+
+---
+
+## 📖 Overview
+
+The **RKSkillTube Frontend** delivers a responsive, zero-buffering educational experience. It integrates custom adaptive bitrate (ABR) video playback with YouTube-style scrubber previews, modular course curriculums, creator analytics dashboards, and an AI chat assistant.
+
+### 🌟 Key Features
+* **Adaptive Video Streaming:** HLS.js video player supporting dynamic resolution switching (`360p` to `1080p`), speed control, and WebVTT storyboard hover scrubbers.
+* **Route Groups & Architecture:** Modular Next.js App Router architecture separating public browsing, student learning, creator studio, and administrative portals.
+* **Global State Management:** Lightweight reactive stores using Zustand for authentication session state and playback tracking.
+* **Type Safety:** Full compile-time safety with TypeScript interfaces mirroring backend Pydantic models.
+
+---
+
+## 📁 Directory Architecture
+
+```
+frontend/src/
+├── app/                           # Next.js App Router routes & layouts
+│   ├── (auth)/                    # Authentication routes (/login, /register)
+│   ├── (creator)/                 # Creator Studio portal (/studio, /studio/upload)
+│   ├── (admin)/                   # Admin moderation & platform analytics
+│   ├── (main)/                    # Public routes (feed, watch, courses, channel)
+│   │   ├── watch/[videoId]/       # Video player page with comments & sidebar
+│   │   ├── courses/               # Course catalog & syllabus viewer
+│   │   ├── channel/[handle]/      # Creator channel pages
+│   │   └── search/                # Semantic AI video & course search
+│   ├── layout.tsx                 # Root application shell
+│   └── globals.css                # Global Tailwind CSS definitions
+├── components/                    # Reusable React UI components
+│   ├── HlsPlayer.tsx              # Adaptive HLS video player engine
+│   ├── VideoCard.tsx              # Video thumbnail card with preview
+│   ├── ScrubberPreview.tsx        # Timeline thumbnail hover scrub previews
+│   ├── ChatWindow.tsx             # Floating AI Chatbot Assistant widget
+│   └── Navbar.tsx                 # Global responsive navigation header
+├── hooks/                         # Custom React hooks
+│   ├── useHlsPlayer.ts            # HLS streaming lifecycle and quality levels
+│   ├── useWatchProgress.ts        # Syncs user video watch time to backend
+│   └── useDebounce.ts             # Input debouncing for search
+├── services/                      # API service clients (Axios / Fetch)
+│   ├── api.ts                     # Central HTTP client with JWT interceptors
+│   ├── videoService.ts            # Video endpoints & presigned upload calls
+│   └── courseService.ts           # Course catalog & lesson progress API
+├── store/                         # Zustand global state stores
+│   ├── useAuthStore.ts            # User identity, JWT tokens, and login state
+│   └── usePlayerStore.ts          # Playback position, volume, and playback speed
+└── types/                         # TypeScript interfaces and DTO definitions
+    ├── video.ts                   # Video metadata and HLS manifest contracts
+    ├── course.ts                  # Course, chapter, and lesson models
+    └── user.ts                    # User profile and role permissions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Getting Started Locally
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Prerequisites
+- **Node.js (v20+ LTS recommended)**
+- **npm** (or **pnpm** / **yarn**)
 
-## Learn More
+### 2. Configure Environment Variables
+Create a `.env.local` file in `frontend/`:
+```bash
+cp .env.example .env.local
+```
 
-To learn more about Next.js, take a look at the following resources:
+Populate the variables:
+```env
+# Backend API Base URL
+NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# CDN / Object Storage URL for HLS streams and thumbnails
+NEXT_PUBLIC_CDN_URL=http://localhost:9000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Optional: Google OAuth Client ID for social sign-in
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id
+```
 
-## Deploy on Vercel
+### 3. Install Dependencies
+```bash
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4. Run Development Server
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🛠️ Available Scripts
+
+| Command | Purpose |
+| :--- | :--- |
+| `npm run dev` | Starts local Next.js development server with hot module reload on port `3000`. |
+| `npm run build` | Compiles and builds production-optimized standalone bundle. |
+| `npm run start` | Starts the production server using the compiled `.next` build. |
+| `npm run lint` | Runs ESLint to check for code quality and style errors. |
+
+---
+
+## 🤝 Contributing Guidelines for Frontend
+
+1. **Server vs. Client Components:** Prefer React Server Components (`RSC`) for SEO and instant initial page load. Only mark components with `'use client'` when using React hooks (`useState`, `useEffect`), event handlers, or browser APIs.
+2. **Type Safety:** Always import or define types from `src/types/`. Avoid `any`.
+3. **Styling:** Follow Tailwind CSS utility patterns. Keep components responsive across mobile, tablet, and desktop viewports.
+4. **Video Playback:** When modifying `HlsPlayer.tsx`, verify buffer handling and memory teardown (`hls.destroy()`) on unmount.

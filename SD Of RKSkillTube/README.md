@@ -8,8 +8,8 @@
 
 | Section | Location | Key Contents |
 | :--- | :--- | :--- |
-| **00 - High-Level Design (HLD)** | [`./00-High-Level-Design/`](./00-High-Level-Design/README.md) | System capacity estimations, latency and availability SLOs, cloud infrastructure topology, database trade-offs, and DrawIO architecture diagrams. |
-| **01 - Low-Level Design (LLD)** | [`./01-Low-Level-Design/`](./01-Low-Level-Design/README.md) | Object-oriented design patterns, database schema entities, clean architecture layers (Controller-Service-Repository), and API request/response DTO contracts. |
+| **00 - High-Level Design (HLD)** | [`./00-RKSkillTube-High-Level-Design/`](./00-RKSkillTube-High-Level-Design/README.md) | System capacity estimations, latency and availability SLOs, cloud infrastructure topology, database trade-offs, and DrawIO architecture diagrams. |
+| **01 - Low-Level Design (LLD)** | [`./01-RKSkillTube-Low-Level-Design/`](./01-RKSkillTube-Low-Level-Design/README.md) | Object-oriented design patterns, database schema entities, clean architecture layers (Controller-Service-Repository), and API request/response DTO contracts. |
 
 ---
 

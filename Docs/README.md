@@ -74,3 +74,4 @@ If you add new features, endpoints, or discover helpful blogs and tutorials, upd
 * Add technical justification to [`tech_tool.md`](./tech_tool.md).
 * Add learning links to [`resource.md`](./resource.md).
 * Add folder structure changes to [`folder.md`](./folder.md).
+* For overall code and open-source contribution guidelines, refer to [**`CONTRIBUTING.md`**](../CONTRIBUTING.md).

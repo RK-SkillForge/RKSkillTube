@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a Question or Discuss
+    url: https://github.com/orgs/RKSkillTube/discussions
+    about: Ask architectural questions, discuss ideas, or seek onboarding help with fellow contributors.
+  - name: 🛡️ Report a Security Vulnerability
+    url: mailto:rkskillforge@gmail.com
+    about: Please report security vulnerabilities privately via email or GitHub Security Advisory.
+  - name: 📖 Read Project Documentation
+    url: https://github.com/orgs/RKSkillTube/tree/main/Docs
+    about: Browse through our installation guide, tech stack breakdown, and system architecture.

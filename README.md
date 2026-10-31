@@ -13,7 +13,7 @@
 
 **A high-performance, hybrid video streaming and EdTech platform built for engineering students, creators, and educators.**
 
-[Explore Documentation](./Docs/README.md) • [Installation Guide](./Docs/INSTALLATION_GUIDE.md) • [Tech Rationale](./Docs/tech_tool.md) • [Resource Hub](./Docs/resource.md)
+[Explore Documentation](./Docs/README.md) • [Installation Guide](./Docs/INSTALLATION_GUIDE.md) • [Contributing](./CONTRIBUTING.md) • [Support Us](#️-support-rk-skillforge) • [Tech Rationale](./Docs/tech_tool.md) • [Resource Hub](./Docs/resource.md)
 
 </div>
 
@@ -145,10 +145,10 @@ All in-depth guides are organized in the [`Docs/`](./Docs/README.md) directory:
 
 ```
 RKSkillTube/
-├── .github/                        # CI/CD Workflows (GitHub Actions)
+├── .github/                        # Issue & PR templates, CI/CD workflows
 ├── frontend/                       # Next.js 14+ (App Router with TypeScript)
-├── backend/                        # Python FastAPI (ASGI) Core Application
-├── infrastructure/                 # Dockerfiles, Nginx configs, and cloud scripts
+├── backend/                        # Python FastAPI (ASGI) Core Application & Celery
+├── infrastructure/                 # Dockerfiles, Nginx configs, GCP Terraform & scripts
 ├── Docs/                           # Central Project Documentation Hub
 ├── SD Of RKSkillTube/              # High-Level & Low-Level System Design Specs
 ├── Feature Based Guide/            # Step-by-step modular feature specifications
@@ -157,12 +157,50 @@ RKSkillTube/
 └── LICENSE                         # MIT License
 ```
 
+* 🎨 [**`frontend/README.md`**](./frontend/README.md) — Next.js 14 client, HLS video player, and Zustand store guide.
+* ⚙️ [**`backend/README.md`**](./backend/README.md) — FastAPI ASGI backend, Alembic migrations, Celery worker setup, and pytest.
+* 🏗️ [**`infrastructure/README.md`**](./infrastructure/README.md) — Docker Compose, Nginx gateway, GCP Terraform, and DB seeding.
+* 📐 [**`SD Of RKSkillTube/README.md`**](./SD%20Of%20RKSkillTube/README.md) — High-Level Design (HLD) & Low-Level Design (LLD) specifications.
+* 🧩 [**`Feature Based Guide/README.md`**](./Feature%20Based%20Guide/README.md) — 8 core modular bounded feature contexts and implementation tiers.
+
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from engineers, educators, and open-source enthusiasts!  
-Please review [`CONTRIBUTING.md`](./CONTRIBUTING.md) and [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) before submitting pull requests.
+We welcome contributions from engineers, educators, and open-source enthusiasts!
+
+* 📖 **Contribution Guide:** Please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) for local setup, branching, and pull request procedures.
+* 🛡️ **Code of Conduct:** Review [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) to understand our community standards.
+* 🔒 **Security Policy:** Read [`SECURITY.md`](./SECURITY.md) for instructions on reporting vulnerabilities responsibly.
+* 🐛 **Issue Templates:** Use our structured [Issue Templates](.github/ISSUE_TEMPLATE/) for bug reports, features, performance bottlenecks, and docs.
+* 🚀 **Pull Request Templates:** Use our [Pull Request Templates](.github/PULL_REQUEST_TEMPLATE/) when submitting changes.
+
+---
+
+## ❤️ Support R.K. SkillForge
+
+**Help us make education accessible to everyone!**
+
+R.K. SkillForge is dedicated to bridging the gap between learning and real-world success. Your support helps us maintain our platform, cover infrastructure costs, develop learning resources, and provide free educational opportunities to learners.
+
+### 💖 How to Support Us
+1. Visit our website: [**R.K. SkillForge**](https://rkskillforge.com/)
+2. Click the **"Support Us"** button in the navigation bar.
+3. Choose your contribution amount — **₹49, ₹99, ₹199, ₹499, ₹999, ₹1,999**, or enter a custom amount.
+4. Complete your payment using the available Razorpay payment options.
+
+Every contribution, big or small, helps us continue our mission of making learning more accessible.
+
+### 🚀 Your Support Makes a Difference
+* 📚 **Helps us create free learning resources and courses.**
+* 💻 **Supports website hosting, infrastructure, and development.**
+* 🎯 **Helps learners develop practical skills and prepare for career opportunities.**
+* 🌱 **Supports the growth of an open, learning-focused community.**
+
+### ❤️ Ready to support our mission?
+👉 [**Support R.K. SkillForge**](https://rkskillforge.com/)
+
+*Thank you for being part of our journey!*
 
 ---
 

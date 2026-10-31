@@ -54,8 +54,8 @@ RKSkillTube/
 │   └── folder.md                   # Architectural folder walkthrough (this document)
 │
 ├── SD Of RKSkillTube/              # System Design Documentation
-│   ├── 00-High-Level-Design/       # HLD Specs, DrawIO diagrams, Word documents
-│   └── 01-Low-Level-Design/        # LLD Class diagrams, Sequence flows, DB schemas
+│   ├── 00-RKSkillTube-High-Level-Design/  # HLD Specs, DrawIO diagrams, Word documents
+│   └── 01-RKSkillTube-Low-Level-Design/   # LLD Class diagrams, Sequence flows, DB schemas
 │
 ├── Feature Based Guide/            # Step-by-step feature breakdown guides
 ├── docker-compose.yml              # Local orchestration (PostgreSQL, Redis, Flower)

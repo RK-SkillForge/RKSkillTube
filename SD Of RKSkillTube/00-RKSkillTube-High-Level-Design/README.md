@@ -85,5 +85,5 @@ PostgreSQL 16           Redis 7.x              Celery + Redis Broker
 ---
 
 ## 4. Documentation Artifacts
-* Detailed Word Document: [`RKSkillTube - Recommended Tech Stack Analysis.docx`](./RKSkillTube%20-%20Recommended%20Tech%20Stack%20Analysis.docx)
+* Detailed Word Document: [`RKSkillTube-High-Level-Design.docx`](./RKSkillTube-High-Level-Design.docx)
 * System Architecture Diagram: [`RKSkillTube - High Level Design.drawio`](./RKSkillTube%20-%20High%20Level%20Design.drawio)

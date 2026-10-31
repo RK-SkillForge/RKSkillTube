@@ -89,7 +89,12 @@ To ensure complete type safety:
 
 ---
 
+## 📄 5. Documentation Artifacts
+* Detailed Word Document: [`RKSkillTube-Low-Level-System-Design.docx`](./RKSkillTube-Low-Level-System-Design.docx)
+
+---
+
 ### 📖 Related References
-* High-level architectural specifications: [`../00-High-Level-Design/README.md`](../00-High-Level-Design/README.md)
+* High-level architectural specifications: [`../00-RKSkillTube-High-Level-Design/README.md`](../00-RKSkillTube-High-Level-Design/README.md)
 * Codebase directory layout: [`../../Docs/folder.md`](../../Docs/folder.md)
 * Local environment setup: [`../../Docs/INSTALLATION_GUIDE.md`](../../Docs/INSTALLATION_GUIDE.md)
