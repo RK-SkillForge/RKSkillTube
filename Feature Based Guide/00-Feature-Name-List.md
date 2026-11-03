@@ -27,7 +27,7 @@
   * Channel external social links management: GitHub, LinkedIn, YouTube, Instagram (`/channels/{id}/social-links`).
   * Public channel page retrieval by handle or slug.
 
-### 3. Playlists & "Watch Later" Queue 
+### 3. Playlists & "Watch Later" Queue
 
 * **Complexity:** Easy
 * **Scope & Capabilities:**
@@ -35,7 +35,7 @@
   * Playlist items management: add video, remove video, and reorder video positions (`/playlists/{id}/videos`).
   * Built-in dedicated system playlist: "Watch Later" queue with quick toggle (`POST/DELETE /users/me/watch-later/{video_id}`).
 
-### 4. Social Interactions & Engagement 
+### 4. Social Interactions & Engagement
 
 * **Complexity:** Easy
 * **Scope & Capabilities:**
@@ -139,7 +139,7 @@
   * Admin approval/rejection moderation pipeline (`POST /admin/promotions/{id}/approve|reject`).
   * Featured course slot scheduler and sponsored card injection into search results and feeds (`GET /promotions/featured`).
 
-### 14. Feed & Algorithmic Recommendation Engine 
+### 14. Feed & Algorithmic Recommendation Engine
 
 * **Complexity:** High / Complex
 * **Scope & Capabilities:**
@@ -182,7 +182,7 @@
   * Automated strike and penalty engine: warning, video takedown, and automated channel suspension on reaching strike threshold.
   * Admin violation audit log with policy override and restoration capabilities.
 
-### 19. Creator Studio Analytics Engine & Telemetry 
+### 19. Creator Studio Analytics Engine & Telemetry
 
 * **Complexity:** High / Complex
 * **Scope & Capabilities:**

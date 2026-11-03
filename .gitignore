@@ -124,3 +124,7 @@ temp_media/
 *.ts
 *.mp4
 !frontend/public/
+
+# --- Prompt Templates / Internal Prompts ---
+Prompt-Template/
+
