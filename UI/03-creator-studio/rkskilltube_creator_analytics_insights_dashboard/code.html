@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><meta content="web_dashboard" name="shell-type"/></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#d0bcff", "on-secondary-container": "#e6ecff", "inverse-primary": "#4d44e3", "primary-fixed": "#e2dfff", "surface-container": "#1c2028", "secondary-fixed-dim": "#adc6ff", "surface-variant": "#31353e", "on-error-container": "#ffdad6", "on-surface-variant": "#c7c4d8", "outline": "#918fa1", "on-surface": "#dfe2ee", "surface-dim": "#0f131c", "surface-bright": "#353942", "on-tertiary-container": "#e3d5ff", "on-primary-fixed-variant": "#3323cc", "on-tertiary-fixed": "#23005c", "on-secondary": "#002e6a", "on-primary-container": "#dad7ff", "surface-container-low": "#181c24", "on-tertiary": "#3c0091", "error-container": "#93000a", "on-secondary-fixed": "#001a42", "error": "#ffb4ab", "surface": "#0f131c", "primary": "#c3c0ff", "surface-container-high": "#262a33", "tertiary-fixed-dim": "#d0bcff", "secondary-fixed": "#d8e2ff", "primary-container": "#4f46e5", "outline-variant": "#464555", "on-background": "#dfe2ee", "on-error": "#690005", "secondary-container": "#0566d9", "inverse-surface": "#dfe2ee", "tertiary-fixed": "#e9ddff", "primary-fixed-dim": "#c3c0ff", "on-secondary-fixed-variant": "#004395", "surface-container-lowest": "#0a0e16", "tertiary-container": "#6f3dd9", "background": "#0f131c", "on-primary-fixed": "#0f0069", "inverse-on-surface": "#2c3039", "on-primary": "#1d00a5", "surface-container-highest": "#31353e", "secondary": "#adc6ff", "on-tertiary-fixed-variant": "#5516be", "surface-tint": "#c3c0ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-lg-mobile": ["Geist"], "display-xl-mobile": ["Geist"], "display-xl": ["Geist"], "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-md": ["Inter"], "headline-sm": ["Geist"], "body-sm": ["Inter"], "code-inline": ["JetBrains Mono"], "headline-lg": ["Geist"], "headline-md": ["Geist"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "code-inline": ["13px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 z-50"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(79,70,229,0.45)]"><span class="material-symbols-outlined text-white text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">RKSkillTube <span class="text-primary font-semibold tracking-wider text-body-sm px-1.5 py-0.5 rounded bg-primary-container/20 border border-primary/30 uppercase ml-0.5">PRO</span></span></div><span class="hidden md:inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high border border-outline-variant/40 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Creator Studio</span></div><div class="flex-1 max-w-2xl mx-space-md flex items-center gap-space-xs"><div class="relative flex items-center flex-1"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-16 bg-surface-container-low border border-outline-variant/30 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/40 transition-all" placeholder="Search catalog, videos, modules, or tags..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant/30 pointer-events-none">/</span></div><button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest border border-tertiary/30 text-tertiary font-body-sm text-body-sm flex items-center gap-space-xs transition-colors shrink-0 shadow-[0_0_12px_rgba(208,188,255,0.15)]"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-medium">AI Search</span></button></div><div class="flex items-center gap-space-sm shrink-0"><div class="relative group"><button class="h-9 px-space-sm rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-medium flex items-center gap-space-xs shadow-[0_0_16px_rgba(79,70,229,0.35)] transition-all"><span class="material-symbols-outlined text-[18px]">add</span><span>Create</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="hidden group-hover:flex absolute right-0 top-full pt-1 flex-col z-50"><div class="w-52 py-1 bg-surface-container-high border border-outline-variant/40 rounded-xl shadow-2xl flex flex-col"><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-primary">upload</span>Upload Video</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-tertiary">library_books</span>New Course Curriculum</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-error">podcasts</span>Create Live Stream</a></div></div></div><div class="relative"><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-outline-variant/60 cursor-pointer transition-all"><div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-white ring-1 ring-white/20"><span class="material-symbols-outlined text-[16px]">terminal</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-1"><span class="font-body-sm text-body-sm font-medium text-on-surface leading-none">CodeWithRK</span><span class="material-symbols-outlined text-[14px] text-secondary">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">PRO Creator</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="w-8 h-8 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/20 z-40 flex flex-col justify-between p-space-sm"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-1"><span class="font-label-sm text-label-sm font-medium text-on-surface-variant uppercase tracking-wider">Studio Management</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-white font-medium shadow-[0_0_16px_rgba(79,70,229,0.3)] border-l-2 border-primary"><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio-content-and-videos" href="#">Content &amp; Videos</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio-dashboard" href="#">Studio Overview</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="watch-later-queue-management" href="#">Watch Later Queue</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="course-builder" href="#">Course Builder</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="analytics-insights" href="#">Analytics &amp; Insights</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="monetization-payouts" href="#">Monetization &amp; Payouts</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="comments-q-and-a" href="#">Comments &amp; Q&amp;A</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="customization" href="#">Customization</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm rounded-xl bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">cloud</span><span class="font-label-md text-label-md text-on-surface font-semibold">CDN Storage</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold">64.2%</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mb-2"><div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 64.2%"></div></div><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-2"><span>321 GB of 500 GB</span><span class="text-primary font-medium">PRO Tier</span></div><a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-primary hover:text-tertiary font-medium transition-colors" href="#"><span>Manage Storage</span><span class="material-symbols-outlined text-[14px]">north_east</span></a></div></aside><div class="pl-64"><main class="relative w-full pt-16 px-gutter-desktop py-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full gap-space-lg text-on-surface">
+<!-- 1. TOP HEADER & METRIC CONTROLS BAR -->
+<div class="flex flex-col gap-space-md">
+<!-- Breadcrumb & Primary Actions Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Creator Studio</span>
+<span class="material-symbols-outlined text-[13px]">chevron_right</span>
+<span class="text-primary font-medium">Analytics &amp; Insights</span>
+<span class="material-symbols-outlined text-[13px]">chevron_right</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface font-label-sm">@CodeWithRK</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">Channel Telemetry</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span>Live Stream Engine: Active • Synced 2m ago</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-9 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-space-xs transition-all shadow-sm" id="compareBtn">
+<span class="material-symbols-outlined text-[16px] text-secondary">compare_arrows</span>
+<span>Compare Periods</span>
+</button>
+<div class="relative group">
+<button class="h-9 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-space-xs transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">download</span>
+<span>Export Report</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="hidden group-hover:flex absolute right-0 top-full pt-1 flex-col z-30 min-w-[140px]">
+<div class="py-1 bg-surface-container-high rounded-xl shadow-xl flex flex-col font-body-sm text-body-sm">
+<a class="px-space-md py-1.5 hover:bg-surface-container-highest text-on-surface" href="#">CSV Telemetry (.csv)</a>
+<a class="px-space-md py-1.5 hover:bg-surface-container-highest text-on-surface" href="#">Audit Summary (.pdf)</a>
+<a class="px-space-md py-1.5 hover:bg-surface-container-highest text-on-surface" href="#">Curriculum JSON API</a>
+</div>
+</div>
+</div>
+<button class="h-9 px-space-md rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-medium flex items-center gap-space-xs shadow-md transition-all">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>Last 28 Days (Oct 12 – Nov 09)</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Navigation Sub-tabs Strip -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 bg-surface-container-lowest p-1 rounded-xl">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-body-sm text-body-sm font-medium flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">insights</span>
+<span>Overview</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">hub</span>
+<span>Reach &amp; Traffic</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">group</span>
+<span>Audience Engagement</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">monetization_on</span>
+<span>Course Completion &amp; Revenue</span>
+</button>
+<div class="ml-auto pr-space-sm hidden xl:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">bolt</span>
+<span>Dynamic Sharding Active</span>
+</div>
+</div>
+</div>
+<!-- 2. INTERACTIVE MAIN PERFORMANCE GRAPH HERO -->
+<div class="flex flex-col bg-surface-container-low rounded-xl shadow-lg overflow-hidden">
+<!-- Metric Toggles Grid (Clickable KPIs) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-surface-container-lowest gap-[1px]">
+<!-- Card 1: Active -->
+<div class="group cursor-pointer p-space-md bg-surface-container-low transition-colors hover:bg-surface-container relative" id="metric-views">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-primary-container"></div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+            Total Views
+          </span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded font-medium">+18.4%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">540.2K</span>
+<svg class="w-16 h-7 text-primary shrink-0 opacity-80" fill="none" viewbox="0 0 60 24">
+<path d="M0 20 L10 17 L20 19 L30 11 L40 14 L50 4 L60 2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">vs 456.1K prev period</span>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer p-space-md bg-surface-container-low transition-colors hover:bg-surface-container" id="metric-watchtime">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">timelapse</span>
+            Watch Time
+          </span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded font-medium">+12.1%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">42.1K <span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">hrs</span></span>
+<svg class="w-16 h-7 text-secondary shrink-0 opacity-80" fill="none" viewbox="0 0 60 24">
+<path d="M0 18 L12 16 L25 18 L36 10 L48 9 L60 5" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">vs 37.5K hrs benchmark</span>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer p-space-md bg-surface-container-low transition-colors hover:bg-surface-container" id="metric-subscribers">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-tertiary">person_add</span>
+            Subscribers
+          </span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded font-medium">+24.8%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">+3,840</span>
+<svg class="w-16 h-7 text-tertiary shrink-0 opacity-80" fill="none" viewbox="0 0 60 24">
+<path d="M0 22 L14 18 L28 14 L42 12 L50 8 L60 3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">39.2K total community</span>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer p-space-md bg-surface-container-low transition-colors hover:bg-surface-container" id="metric-revenue">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">payments</span>
+            Estimated Revenue
+          </span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded font-medium">+15.3%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">$4,120.50</span>
+<svg class="w-16 h-7 text-primary-fixed shrink-0 opacity-80" fill="none" viewbox="0 0 60 24">
+<path d="M0 19 L15 15 L26 17 L38 8 L49 10 L60 2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">$7.62 RPM platform average</span>
+</div>
+</div>
+<!-- Chart Canvas Container -->
+<div class="relative p-space-md lg:p-space-lg flex flex-col">
+<!-- Chart Meta Subheader -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-md text-label-md text-on-surface font-medium">Daily Stream Velocity</span>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-primary-container rounded"></span>
+<span>Current (Oct 12 - Nov 09)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-outline rounded border border-dashed"></span>
+<span>Previous 28 Days</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[14px] text-secondary">push_pin</span>
+<span class="text-on-surface-variant">3 Content Milestones Released</span>
+</div>
+</div>
+<!-- High-Fidelity Responsive SVG Area Chart -->
+<div class="relative w-full h-80 overflow-hidden select-none">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 1000 320">
+<defs>
+<!-- Primary Glow & Gradient -->
+<lineargradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4f46e5" stop-opacity="0.45"></stop>
+<stop offset="60%" stop-color="#0566d9" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#0f131c" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="lineStrokeGradient" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0%" stop-color="#c3c0ff"></stop>
+<stop offset="50%" stop-color="#4f46e5"></stop>
+<stop offset="100%" stop-color="#adc6ff"></stop>
+</lineargradient>
+<filter height="140%" id="neonGlow" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#4f46e5" flood-opacity="0.6" stddeviation="4"></fedropshadow>
+</filter>
+</defs>
+<!-- Horizontal Grid Lines & Y-Labels -->
+<g class="text-surface-variant opacity-40">
+<line stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="980" y1="40" y2="40"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="980" y1="100" y2="100"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="980" y1="160" y2="160"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="980" y1="220" y2="220"></line>
+<line stroke="currentColor" x1="40" x2="980" y1="280" y2="280"></line>
+</g>
+<!-- Y-Axis Labels -->
+<g class="text-on-surface-variant font-label-sm" style="font-size: 11px;">
+<text fill="currentColor" text-anchor="end" x="32" y="44">40K</text>
+<text fill="currentColor" text-anchor="end" x="32" y="104">30K</text>
+<text fill="currentColor" text-anchor="end" x="32" y="164">20K</text>
+<text fill="currentColor" text-anchor="end" x="32" y="224">10K</text>
+<text fill="currentColor" text-anchor="end" x="32" y="284">0</text>
+</g>
+<!-- Baseline dashed benchmark (Previous period) -->
+<path d="M 50 240 Q 120 230 180 220 T 320 190 T 450 170 T 560 140 T 680 180 T 800 130 T 960 120" fill="none" stroke="#464555" stroke-dasharray="5 5" stroke-width="1.8"></path>
+<!-- Shaded Area Fill -->
+<path d="M 50 280 
+                   L 50 220
+                   C 110 210, 160 180, 210 190
+                   C 260 200, 310 140, 370 120
+                   C 430 100, 480 130, 530 95
+                   C 570 65, 600 45, 640 45
+                   C 690 45, 730 150, 780 110
+                   C 830 70, 880 105, 920 80
+                   L 960 70
+                   L 960 280 Z" fill="url(#areaGradient)"></path>
+<!-- Primary Radiant Curve -->
+<path d="M 50 220
+                   C 110 210, 160 180, 210 190
+                   C 260 200, 310 140, 370 120
+                   C 430 100, 480 130, 530 95
+                   C 570 65, 600 45, 640 45
+                   C 690 45, 730 150, 780 110
+                   C 830 70, 880 105, 920 80
+                   L 960 70" fill="none" filter="url(#neonGlow)" stroke="url(#lineStrokeGradient)" stroke-width="3.5"></path>
+<!-- Milestone Pin 1: Video Released (Oct 18) -->
+<g transform="translate(210, 190)">
+<circle cx="0" cy="0" fill="#4f46e5" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<line stroke="#464555" stroke-dasharray="2 2" x1="0" x2="0" y1="0" y2="85"></line>
+</g>
+<!-- Milestone Pin 2: Video Released Rust (Oct 24) -->
+<g transform="translate(530, 95)">
+<circle cx="0" cy="0" fill="#0566d9" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<line stroke="#464555" stroke-dasharray="2 2" x1="0" x2="0" y1="0" y2="180"></line>
+</g>
+<!-- Peak Focal Indicator: Oct 28 (x=640, y=45) -->
+<g transform="translate(640, 45)">
+<circle class="animate-pulse" cx="0" cy="0" fill="#4f46e5" fill-opacity="0.25" r="14"></circle>
+<circle cx="0" cy="0" fill="#c3c0ff" r="6" stroke="#4f46e5" stroke-width="2.5"></circle>
+<line opacity="0.6" stroke="#c3c0ff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="0" y1="0" y2="235"></line>
+</g>
+<!-- Milestone Pin 3: Live Stream (Nov 04) -->
+<g transform="translate(780, 110)">
+<circle cx="0" cy="0" fill="#6f3dd9" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<line stroke="#464555" stroke-dasharray="2 2" x1="0" x2="0" y1="0" y2="165"></line>
+</g>
+<!-- X-Axis Date Labels -->
+<g class="text-on-surface-variant font-label-sm" style="font-size: 11px;">
+<text fill="currentColor" text-anchor="middle" x="50" y="305">Oct 12</text>
+<text fill="currentColor" text-anchor="middle" x="180" y="305">Oct 16</text>
+<text fill="currentColor" text-anchor="middle" x="310" y="305">Oct 20</text>
+<text fill="currentColor" text-anchor="middle" x="440" y="305">Oct 24</text>
+<text fill="#c3c0ff" font-weight="600" text-anchor="middle" x="640" y="305">Oct 28 (Peak)</text>
+<text fill="currentColor" text-anchor="middle" x="750" y="305">Nov 01</text>
+<text fill="currentColor" text-anchor="middle" x="860" y="305">Nov 05</text>
+<text fill="currentColor" text-anchor="middle" x="960" y="305">Nov 09</text>
+</g>
+</svg>
+<!-- Floating Glassmorphic Tooltip Card at the Oct 28 Peak -->
+<div class="absolute left-[54%] sm:left-[60%] lg:left-[59%] top-3 -translate-x-1/2 bg-surface-container-high/95 backdrop-blur-md p-space-sm rounded-xl shadow-2xl flex flex-col gap-1 w-64 pointer-events-auto transition-transform hover:scale-105">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Tuesday, Oct 28</span>
+<span class="font-label-sm text-label-sm bg-primary-container/30 text-primary px-1.5 py-0.5 rounded font-bold">+42% Spike</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">38,420</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">views / day</span>
+</div>
+<div class="flex items-center gap-1.5 py-1 px-1.5 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[14px]">videocam</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-medium">Kafka Event Streaming</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>Watch Time: <strong class="text-on-surface">3,120 hrs</strong></span>
+<span>RPM: <strong class="text-secondary">$8.40</strong></span>
+</div>
+</div>
+</div>
+<!-- Published Markers Footnote -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between flex-wrap gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span>Oct 18: Released "Distributed LSM Trees in Rust"</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>Oct 24: Released "Kafka Outbox Pattern in Prod"</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span>Nov 04: Live QA: eBPF Network Tracing</span>
+</div>
+</div>
+<a class="text-primary hover:text-tertiary flex items-center gap-1 transition-colors" href="#">
+<span>Manage video timeline flags</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 3. LOWER ANALYTICS CARDS (3-COLUMN DENSE GRID) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Column 1: Audience Retention & Drop-off Curve -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-xl shadow-md gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">motion_photos_paused</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Audience Retention</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Avg Video Length: 28m 40s</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-secondary px-2 py-0.5 rounded font-medium">+12% Above Benchmark</span>
+</div>
+<!-- Scrub Retention Line SVG -->
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-xl p-2 flex flex-col justify-end overflow-hidden">
+<svg class="w-full h-24" fill="none" preserveaspectratio="none" viewbox="0 0 300 90">
+<defs>
+<lineargradient id="retentionGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4f46e5" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#4f46e5" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Plateau Benchmark line -->
+<line stroke="#31353e" stroke-dasharray="2 2" x1="0" x2="300" y1="45" y2="45"></line>
+<text class="font-label-sm" fill="#918fa1" font-size="9" x="4" y="42">Standard (56%)</text>
+<!-- Retention Area -->
+<path d="M 0 5 
+                   C 25 15, 45 28, 80 29
+                   C 120 30, 150 25, 175 22
+                   C 190 20, 220 32, 260 48
+                   L 300 62
+                   L 300 90 L 0 90 Z" fill="url(#retentionGrad)"></path>
+<!-- Retention Curve -->
+<path d="M 0 5 
+                   C 25 15, 45 28, 80 29
+                   C 120 30, 150 25, 175 22
+                   C 190 20, 220 32, 260 48
+                   L 300 62" stroke="#c3c0ff" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Spike Marker at 12:45 -->
+<circle cx="175" cy="22" fill="#adc6ff" r="3.5" stroke="#1c2028" stroke-width="1.5"></circle>
+</svg>
+<!-- Timeline ticks -->
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1 px-1">
+<span>0:00 (100%)</span>
+<span class="text-secondary font-medium">12:45 (Rewatch spike 74%)</span>
+<span>28:40 (32%)</span>
+</div>
+</div>
+<!-- Highlights list -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Avg View Duration</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">14m 20s <span class="text-on-surface-variant font-normal">(50.1%)</span></span>
+</div>
+<div class="flex items-start justify-between p-2 rounded-lg bg-surface-container text-body-sm font-body-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Intro Hook Retention</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">0:00 - 1:30 Architecture diagram</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold">88.4%</span>
+</div>
+<div class="flex items-start justify-between p-2 rounded-lg bg-surface-container text-body-sm font-body-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Code Deep Dive Peak</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Timestamp 12:45 replay concentration</span>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold">+18% repeat</span>
+</div>
+</div>
+</div>
+<!-- Column 2: Traffic Sources & Discovery Breakdown -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-xl shadow-md gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">traffic</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Traffic Breakdown</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Total Impressions: 2.4M (CTR: 7.8%)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-medium">All Curricula</span>
+</div>
+<!-- Donut Chart & Legend -->
+<div class="flex items-center justify-around gap-space-sm py-1">
+<!-- SVG Donut Chart -->
+<div class="relative w-36 h-36 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Background base circle -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#262a33" stroke-width="12"></circle>
+<!-- Slice 1: External & Search 45% (dasharray ~107.4) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#4f46e5" stroke-dasharray="107.4 238.7" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Slice 2: Feed & Recommend 30% (dasharray ~71.6) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#38bdf8" stroke-dasharray="71.6 238.7" stroke-dashoffset="-107.4" stroke-width="12"></circle>
+<!-- Slice 3: Course Syllabus 15% (dasharray ~35.8) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#10b981" stroke-dasharray="35.8 238.7" stroke-dashoffset="-179" stroke-width="12"></circle>
+<!-- Slice 4: Direct / Discord 10% (dasharray ~23.8) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#f59e0b" stroke-dasharray="23.8 238.7" stroke-dashoffset="-214.8" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center pointer-events-none text-center">
+<span class="font-label-md text-label-md font-bold text-on-surface">2.4M</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant scale-90">Impressions</span>
+</div>
+</div>
+<!-- Legend Items -->
+<div class="flex flex-col gap-1.5 flex-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+              External Search
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">45%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              Platform Feed
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">30%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+              Course Links
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">15%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+              Community / Direct
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">10%</span>
+</div>
+</div>
+</div>
+<!-- Top Keywords Capsule -->
+<div class="flex flex-col p-space-sm bg-surface-container rounded-xl gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium uppercase tracking-wider">Top Indexed Query Drivers</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-code-inline text-code-inline bg-surface-container-high px-2 py-0.5 rounded text-primary">kafka outbox pattern</span>
+<span class="font-code-inline text-code-inline bg-surface-container-high px-2 py-0.5 rounded text-secondary">rust distributed database</span>
+<span class="font-code-inline text-code-inline bg-surface-container-high px-2 py-0.5 rounded text-on-surface">ebpf cilium tutorial</span>
+</div>
+</div>
+</div>
+<!-- Column 3: Top Performing Videos & Curricula -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-xl shadow-md gap-space-md md:col-span-2 xl:col-span-1">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">leaderboard</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Top Curricula</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ranked by overall ecosystem impact</span>
+</div>
+<!-- Metric Sort Pills -->
+<div class="flex items-center bg-surface-container p-0.5 rounded-lg text-label-sm font-label-sm">
+<button class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-medium">Views</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface">Watch Time</button>
+</div>
+</div>
+<!-- Video Items List -->
+<div class="flex flex-col gap-2.5">
+<!-- Item 1 -->
+<div class="flex items-center gap-space-sm p-1.5 rounded-lg hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-primary font-bold w-4 text-center">01</span>
+<div class="w-16 h-10 rounded-md bg-surface-container-highest shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Dark aesthetic coding IDE screenshot showing Rust systems programming database code with glowing syntax highlighting in an obsidian workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyO7lWU7FsskMiCG383uRKGa5tWl5_tBEw0vtT2i6upIsNedC73y5yws7PivhwTFCEg4ZPKCddDQBoXCBltq_1spIZgQQoN8vvGokAotHAz7IDqPLbCS7ZYSr1kIdnGV44ojC4XmTK5lc9V_VZxCKTaTO8gAHZr262Qjr0TFFkaNYM3vzcn88ltU7b-yL7ClogIiWc-LBBKe48ZgJ_7k-QG7J0JGVryESeCouVVLc"/>
+<span class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/80 text-on-surface font-label-sm text-[9px] px-1 rounded">42:10</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate group-hover:text-primary transition-colors">Distributed Database in Rust</span>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>140.2K views</span>
+<span>•</span>
+<span class="text-secondary font-medium">+$1,280</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-1.5 py-0.5 rounded shrink-0">+32.4%</span>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-space-sm p-1.5 rounded-lg hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-secondary font-bold w-4 text-center">02</span>
+<div class="w-16 h-10 rounded-md bg-surface-container-highest shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High-density microservices Kafka stream architectural diagram with event driven topology on dark background with cyan glowing nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbAIIoW7Ulw-la7jRPy7C7R79suvWNc8XEvXZtkVXZNdm6EO7wnATUi6WA2isL1ww1aTMJzVWeMlfLv-ZsfRPKNosTZcCH2-2HxAFwjxWuphOz3DGkJOq4qtQO98GfTLL4QOcAVBA3SarNYlxw3Xx_pUXJI2_Q-Y-174p7r9Pj36Oj8iJOa7DFhG7LFG52eOT9CdCY7stGjNWQmQ-8sxleOKN_BaeOP3Qw14BekHk"/>
+<span class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/80 text-on-surface font-label-sm text-[9px] px-1 rounded">35:40</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate group-hover:text-primary transition-colors">Kafka Outbox Architecture</span>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>98.4K views</span>
+<span>•</span>
+<span class="text-secondary font-medium">+$890</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-1.5 py-0.5 rounded shrink-0">+18.0%</span>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-space-sm p-1.5 rounded-lg hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold w-4 text-center">03</span>
+<div class="w-16 h-10 rounded-md bg-surface-container-highest shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Kubernetes cluster terminal with eBPF network telemetry metrics graphs and Linux kernel debug output in neon indigo glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWKAy_tiYu2swAk_HWeKEP4nY5SrfCMlejtxaqNYtCJ-9iF6wQcbniYjrwEBwudVwgY0pV0xkHsQp9ytOQs9-CCj7gyLVhnvXQ8AyO7o-ry5J0GW5QZN0KQ6N5TRiQjcNMp0O5iR4eX02nY_SPNIp48oRAPlAWAPoPFncqcGG7VjXIF0VqK8kHPw7l3POIYJKpypgEnlOIOQSTg4OeSWEEdO2PhmFG_Ex_c5IXwGI"/>
+<span class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/80 text-on-surface font-label-sm text-[9px] px-1 rounded">28:15</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate group-hover:text-primary transition-colors">K8s Observability with eBPF</span>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>74.1K views</span>
+<span>•</span>
+<span class="text-secondary font-medium">+$640</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-1.5 py-0.5 rounded shrink-0">+22.1%</span>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center gap-space-sm p-1.5 rounded-lg hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold w-4 text-center">04</span>
+<div class="w-16 h-10 rounded-md bg-surface-container-highest shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Event-driven systems architecture course blueprint with microservices flowchart on deep obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlnziTqS_hfkYWxBVFA1Bs2i5AGkpDhdvmd8tLi-u0kYVgGbQUnWWK3uWG3-GILZTnNISaxc9cdLA4ikQtOiGA-8VDZDzbxl4dD1NXrLsifPJwRpavOjo17-u0jI4AWBXu3g8lCC8KVfdQ_lG9HHEDP3k0K6ac407l3O-7V2di7-FBoIZ2m5K1AgbkIlMasSh7T_mNd8zoaQTb6ZtMmiaQgBnNajNbn2vKefiH38M"/>
+<span class="absolute bottom-0.5 right-0.5 bg-surface-container-lowest/80 text-on-surface font-label-sm text-[9px] px-1 rounded">2h 15m</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate group-hover:text-primary transition-colors">Event-Driven Microservices Course</span>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>52.8K views</span>
+<span>•</span>
+<span class="text-secondary font-medium">+$1,110</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-1.5 py-0.5 rounded shrink-0">+14.5%</span>
+</div>
+</div>
+<div class="pt-1 mt-auto">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-primary hover:text-tertiary transition-colors" href="#">
+<span>View Detailed Video Breakdown</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4. BOTTOM SECONDARY TELEMETRY STRIP (2-COLUMN) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Left Box: Learner Demographics & Tech Stack Affinity -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-xl shadow-md gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Audience Roles &amp; Geography</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Learners: 89.4K</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Developer Role Distribution -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Engineering Specialization</span>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface">
+<span>Backend Engineers</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">44%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 44%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface">
+<span>DevOps &amp; SRE</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">28%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 28%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface">
+<span>Systems &amp; Kernel</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">18%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 18%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface">
+<span>CS Students &amp; Junior Devs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">10%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 10%"></div>
+</div>
+</div>
+</div>
+<!-- Top Geographic Concentrations -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Top Territories</span>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">US</span>
+<span class="font-body-sm text-body-sm text-on-surface">United States</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">38.2%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">IN</span>
+<span class="font-body-sm text-body-sm text-on-surface">India</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">18.5%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">DE</span>
+<span class="font-body-sm text-body-sm text-on-surface">Germany</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">14.1%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">GB</span>
+<span class="font-body-sm text-body-sm text-on-surface">United Kingdom</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">9.2%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Box: Subscriber Growth & Membership Conversion -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-xl shadow-md gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">workspace_premium</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Membership &amp; Community Growth</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded font-medium">+24.8% MoM</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">New Free Learners</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface mt-1">+3,840</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Top organic conversion</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">PRO Tier Upgrades ($19/mo)</span>
+<span class="font-headline-md text-headline-md font-bold text-primary mt-1">412</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">+$7,828 ARR Value</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Retention &amp; Renewal</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface mt-1">94.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Churn: &lt;5.8%</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">AI Flashcards Created</span>
+<span class="font-headline-md text-headline-md font-bold text-tertiary mt-1">14,280</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">High learner stickiness</span>
+</div>
+</div>
+<!-- Quick Action Alert Box -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high border-l-2 border-primary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Curriculum Optimization Tip</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Add an interactive quiz at min 15 of 'Distributed Databases' to boost completion.</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary-container text-white font-body-sm text-body-sm hover:bg-inverse-primary shrink-0 transition-colors">
+          Apply
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction for KPI Card Click Selection
+  const cards = ['metric-views', 'metric-watchtime', 'metric-subscribers', 'metric-revenue'];
+  cards.forEach(cardId => {
+    const el = document.getElementById(cardId);
+    if (!el) return;
+    el.addEventListener('click', () => {
+      cards.forEach(id => {
+        const item = document.getElementById(id);
+        const topBar = item.querySelector('.absolute.top-0');
+        if (topBar) topBar.remove();
+      });
+      const indicator = document.createElement('div');
+      indicator.className = 'absolute top-0 left-0 right-0 h-0.5 bg-primary-container';
+      el.appendChild(indicator);
+    });
+  });
+
+  // Toggle button state demonstration
+  const compareBtn = document.getElementById('compareBtn');
+  if (compareBtn) {
+    compareBtn.addEventListener('click', () => {
+      compareBtn.classList.toggle('bg-primary-container');
+      compareBtn.classList.toggle('text-white');
+    });
+  }
+</script></main></div></body></html>

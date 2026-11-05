@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-container":"#0566d9","outline-variant":"#464555","surface-container-lowest":"#0a0e16","surface-container":"#1c2028","on-secondary-fixed":"#001a42","surface-tint":"#c3c0ff","on-surface":"#dfe2ee","error-container":"#93000a","on-secondary":"#002e6a","tertiary-container":"#6f3dd9","on-tertiary":"#3c0091","on-background":"#dfe2ee","error":"#ffb4ab","on-primary-fixed-variant":"#3323cc","on-error-container":"#ffdad6","on-error":"#690005","on-surface-variant":"#c7c4d8","tertiary-fixed":"#e9ddff","on-tertiary-fixed":"#23005c","primary":"#c3c0ff","on-secondary-container":"#e6ecff","surface-container-high":"#262a33","inverse-surface":"#dfe2ee","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#004395","primary-container":"#4f46e5","tertiary":"#d0bcff","on-tertiary-fixed-variant":"#5516be","surface-dim":"#0f131c","primary-fixed-dim":"#c3c0ff","inverse-on-surface":"#2c3039","background":"#0f131c","secondary-fixed":"#d8e2ff","on-primary-container":"#dad7ff","outline":"#918fa1","primary-fixed":"#e2dfff","surface-bright":"#353942","inverse-primary":"#4d44e3","surface-variant":"#31353e","on-primary":"#1d00a5","surface":"#0f131c","surface-container-low":"#181c24","on-tertiary-container":"#e3d5ff","secondary-fixed-dim":"#adc6ff","surface-container-highest":"#31353e","secondary":"#adc6ff","on-primary-fixed":"#0f0069"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-tablet":"1.5rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem","margin":"1rem"},"fontFamily":{"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Geist"],"headline-lg-mobile":["Geist"],"display-xl":["Geist"],"body-lg":["Inter"],"headline-sm":["Geist"],"code-inline":["JetBrains Mono"],"body-sm":["Inter"],"display-xl-mobile":["Geist"],"headline-md":["Geist"]},"fontSize":{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-inline":["13px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"display-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-space-md lg:px-space-lg"><div class="flex items-center gap-space-md"><button class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">menu</span></button><div class="flex items-center gap-space-sm"><img alt="RKSkillTube Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAvLXp8zwh6rPC2aZUFxhGK0rYQB-fCtj1uIcfjx_m8QbUk2_NVdMRSwQ6JbWUw3HQ3SCD8uQZawRZfDo0MxeEzH1UomuQcOtfP1EGDSNS98TVTtf8E-xRxX-s_ZzfMaNbHVgmRNtgWMHImE_Y23kEM3DY7YpbIbM7Ya3Z3WXEX7W6H-RRvjjF3p2ly7YrX_VAOpF2YczDmrJUd2pDwNzv4ayAyjuNkpCd-uM9sTg"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">RKSkillTube</span><span class="px-space-xs py-0.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-semibold">PRO</span></div></div></div><div class="hidden md:flex items-center gap-space-sm flex-1 max-w-2xl mx-space-lg"><div class="flex items-center flex-1 h-10 px-space-sm rounded-lg bg-surface-container-low border border-outline-variant/40 focus-within:border-primary-container transition-all"><span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">search</span><input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none" placeholder="Search lessons, architectures, algorithms..." type="text"/><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Ctrl+K</span><button class="ml-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">mic</span></button></div><button class="flex items-center gap-space-xs h-10 px-space-sm rounded-lg bg-tertiary-container/30 border border-tertiary/30 text-tertiary hover:bg-tertiary-container/50 hover:text-on-tertiary-container transition-all" type="button"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-label-md text-label-md">AI Search</span></button></div><div class="flex items-center gap-space-md"><div class="relative"><button class="flex items-center gap-space-xs h-9 px-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Create</span></button></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9FQ4pJVAlxRNdq8ajydBwRA-d5SQatDNKMibAnpt4InMXtlsTMNpFUD3JdUIErljX-R4caRsNJDQBPsTwPM2xbryksyBoVTiF4YWtiNQ6Wh39PvbynRvRJtJhLk_Hu1gder1SF_WYKf0JerBz0cAcInYJ2XFxJUAU3lrUTyprXKeHPkRrXuTubukQ_81yLJcvV781c-9mtvnOMkqREuXmWu4p49tTg8fnC8ydsaM"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden xl:flex flex-col text-left"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Alex Rivers</span><span class="font-label-sm text-label-sm text-secondary">Creator / Pro</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest/90 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between py-space-md px-space-sm overflow-y-auto z-40"><div class="flex flex-col gap-space-md"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="explore-feed" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-body-sm text-body-sm">Home</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="subscriptions" href="#"><span class="material-symbols-outlined text-[20px]">subscriptions</span><span class="font-body-sm text-body-sm">Subscriptions</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="trending" href="#"><span class="material-symbols-outlined text-[20px]">local_fire_department</span><span class="font-body-sm text-body-sm">Trending</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="enrolled-courses" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-body-sm text-body-sm">Enrolled Courses</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="saved-playlists" href="#"><span class="material-symbols-outlined text-[20px]">playlist_play</span><span class="font-body-sm text-body-sm">Saved Playlists</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="watch-later" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span class="font-body-sm text-body-sm">Watch Later</span></a></nav><div class="pt-space-sm border-t border-outline-variant/30 flex flex-col gap-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider">Learning Tracks</div><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-system-design" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">hub</span><span class="font-body-sm text-body-sm">System Design</span></div><span class="w-2 h-2 rounded-full bg-secondary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-full-stack" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">layers</span><span class="font-body-sm text-body-sm">Full-Stack</span></div><span class="w-2 h-2 rounded-full bg-primary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-dsa-algorithms" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">data_object</span><span class="font-body-sm text-body-sm">DSA &amp; Algorithms</span></div><span class="w-2 h-2 rounded-full bg-secondary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-ai-machine-learning" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-body-sm text-body-sm">AI &amp; Machine Learning</span></div><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-cloud-devops" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">cloud_done</span><span class="font-body-sm text-body-sm">Cloud DevOps</span></div><span class="w-2 h-2 rounded-full bg-primary-container"></span></a></div></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="creator-studio" href="#"><span class="material-symbols-outlined text-[20px]">video_settings</span><span class="font-body-sm text-body-sm font-medium">Creator Studio</span></a><a class="block p-space-sm rounded-lg bg-surface-container-low border border-tertiary/40 hover:border-tertiary transition-all" data-path="gemini-ai-tutor" href="#"><div class="flex items-center gap-space-xs text-tertiary mb-1"><span class="material-symbols-outlined text-[18px]">psychology</span><span class="font-label-md text-label-md font-semibold">AI Study Tutor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Interactive code analysis, system review &amp; mock interviews.</p></a></div></aside><div class="pl-64"><main class="w-full min-h-screen pt-16 px-space-md lg:px-space-lg bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Navigation & Breadcrumbs Bar -->
+<div class="flex flex-col gap-space-sm pt-space-xs pb-space-md">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>Enrolled Courses</span>
+</a>
+<span class="text-outline-variant/60 font-mono">/</span>
+<a class="hover:text-primary transition-colors" href="#">Microservices in Go</a>
+<span class="text-outline-variant/60 font-mono">/</span>
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+        Verified Credential
+      </span>
+</nav>
+<!-- Header Action Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mt-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Engineering Credential Verification</h1>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high shadow-inner">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Status: Cryptographically Verified &amp; Immutable</span>
+</div>
+</div>
+<!-- Action Buttons Bar -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium transition-all shadow-sm" id="btn-copy-link" onclick="copyVerificationUrl()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share</span>
+</button>
+<button class="flex items-center gap-1.5 h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface font-body-sm text-body-sm font-medium transition-all shadow-sm" onclick="window.open('https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=High-Performance+Microservices+in+Go&amp;organizationName=RKSkillTube&amp;issueYear=2026&amp;issueMonth=3&amp;certUrl=https://rkskilltube.pro/verify/RKSKILL-2026-X89B-77F2&amp;certId=RKSKILL-2026-X89B-77F2', '_blank')">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Add to LinkedIn</span>
+</button>
+<button class="flex items-center gap-1.5 h-9 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all shadow-md" onclick="triggerPdfExport()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download High-Res PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Split Architecture: The Parchment Centerpiece & The Telemetry Sidebar -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mt-space-sm">
+<!-- LEFT / MAIN: Ultra-Prestigious Certificate Parchment (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- The Certificate Canvas Card with Luxury Guilloche Layering -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-2xl p-space-md md:p-space-xl" id="certificate-canvas">
+<!-- Ambient Radial Glow Highlights -->
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-high/20 via-transparent to-surface-container-high/30 pointer-events-none"></div>
+<!-- Outer Ornamental Inset Frame (Built with high-contrast concentric backings) -->
+<div class="relative rounded-lg bg-surface-container-low/70 p-4 sm:p-8 backdrop-blur-sm">
+<!-- Fine Geometric Guilloche Patterned Corner Accents via SVG -->
+<div class="absolute top-2 left-2 w-12 h-12 text-primary/40 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48">
+<path d="M2 46V14C2 7.373 7.373 2 14 2H46" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M6 46V16C6 10.477 10.477 6 16 6H46" stroke="currentColor" stroke-dasharray="2 2" stroke-width="0.75"></path>
+<circle cx="14" cy="14" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="absolute top-2 right-2 w-12 h-12 text-primary/40 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48">
+<path d="M46 46V14C46 7.373 40.627 2 34 2H2" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M42 46V16C42 10.477 37.523 6 32 6H2" stroke="currentColor" stroke-dasharray="2 2" stroke-width="0.75"></path>
+<circle cx="34" cy="14" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="absolute bottom-2 left-2 w-12 h-12 text-primary/40 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48">
+<path d="M2 2V34C2 40.627 7.373 46 14 46H46" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M6 2V32C6 37.523 10.477 42 16 42H46" stroke="currentColor" stroke-dasharray="2 2" stroke-width="0.75"></path>
+<circle cx="14" cy="34" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="absolute bottom-2 right-2 w-12 h-12 text-primary/40 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48">
+<path d="M46 2V34C46 40.627 40.627 46 34 46H2" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M42 2V32C42 37.523 37.523 42 32 42H2" stroke="currentColor" stroke-dasharray="2 2" stroke-width="0.75"></path>
+<circle cx="34" cy="34" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<!-- Inside Certificate Core Layout -->
+<div class="flex flex-col items-center text-center px-2 py-4 sm:py-6">
+<!-- Prestigious Crest & Insignia Header -->
+<div class="flex items-center justify-center gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-full bg-gradient-to-tr from-primary-container to-secondary-container p-0.5 shadow-lg flex items-center justify-center">
+<div class="w-full h-full rounded-full bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+</div>
+</div>
+</div>
+<!-- Overline Seal Typography -->
+<span class="font-label-sm text-label-sm text-primary tracking-[0.25em] uppercase font-bold">RKSkillTube Engineering Standards Institute</span>
+<div class="h-0.5 w-24 bg-gradient-to-r from-transparent via-primary/50 to-transparent my-2"></div>
+<h2 class="font-headline-sm sm:font-headline-md text-headline-sm sm:text-headline-md text-on-surface tracking-wider font-extrabold uppercase mt-1">
+              Certificate of Completion &amp; Professional Mastery
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 italic mt-space-sm">
+              This is to officially and unconditionally certify that
+            </p>
+<!-- Recipient Name Focus (Ultra high contrast) -->
+<div class="my-space-md relative">
+<span class="font-display-xl text-display-xl text-on-surface font-extrabold tracking-tight drop-shadow-sm select-all">
+                Alex Rivers
+              </span>
+<div class="h-1 w-full bg-gradient-to-r from-transparent via-secondary-container to-transparent mt-1"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+              has successfully demonstrated advanced competency, passed all graded containerized distributed systems sandbox labs, and completed the comprehensive 36-hour rigorous engineering syllabus for:
+            </p>
+<!-- Course Title Hero Box -->
+<div class="mt-space-md mb-space-lg w-full max-w-2xl px-space-md py-space-sm rounded-lg bg-surface-container-high/60 backdrop-blur-md shadow-md">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block">
+                High-Performance Microservices in Go: Concurrency, gRPC &amp; Distributed State
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">
+                CURRICULUM SPEC: GOLANG-DISTRIBUTED-V4 • SPECIALIZATION TIER 1
+              </span>
+</div>
+<!-- Academic & Cohort Metrics Matrix -->
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-space-sm max-w-2xl mb-space-xl text-left">
+<div class="p-space-sm rounded bg-surface-container/70 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase block">Date Issued</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface mt-0.5 block">March 28, 2026</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container/70 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase block">Total Rigor</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface mt-0.5 block">36.5 Contact Hrs</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container/70 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase block">Graded Mastery</span>
+<span class="font-body-sm text-body-sm font-semibold text-secondary mt-0.5 block">98.4% (Top 2%)</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container/70 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase block">Lab Sandboxes</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary mt-0.5 block">24 / 24 Cleared</span>
+</div>
+</div>
+<!-- Signatures, Dean Seal & Holographic Security Stamp Row -->
+<div class="w-full max-w-2xl flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-md mt-auto">
+<!-- Signature 1: Course Author -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left min-w-[160px]">
+<div class="h-10 flex items-center justify-center mb-1">
+<!-- SVG Realistic Signature Simulation -->
+<svg class="h-9 w-auto text-primary" fill="none" viewbox="0 0 160 40">
+<path d="M10 28 C 30 5, 45 40, 65 15 C 80 -2, 95 35, 115 22 C 128 15, 140 25, 155 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M40 32 C 60 30, 110 26, 145 28" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path>
+</svg>
+</div>
+<div class="w-36 h-0.5 bg-outline-variant/40 mb-1"></div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Alex Chen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Staff Infrastructure Eng &amp; Author</span>
+</div>
+<!-- Center Hologram / Cryptographic Security Stamp -->
+<div class="relative flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-high/90 shadow-xl group">
+<div class="w-16 h-16 rounded-lg bg-gradient-to-tr from-primary-container via-surface-bright to-secondary-container p-1 shadow-inner flex items-center justify-center relative overflow-hidden">
+<!-- Subtle Foil Pattern Mockup -->
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[pulse_3s_ease-in-out_infinite]"></div>
+<!-- Simulated High-Density Verification QR Code -->
+<svg class="w-12 h-12 text-surface-container-lowest bg-white p-1 rounded" fill="currentColor" viewbox="0 0 24 24">
+<path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm-2 10h8v8H2v-8zm2 2v4h4v-4H4zm10-14h8v8h-8V2zm2 2v4h4V4h-4zm3 8h2v2h-2v-2zm-3 2h2v2h-2v-2zm2 2h2v2h-2v-2zm3-2h2v4h-2v-4zm-5 4h2v2h-2v-2zm5 2h2v2h-2v-2zm-2-6h2v2h-2v-2zm-6-2h3v2h-3v-2zm0 4h3v2h-3v-2zm3 2h2v2h-2v-2z"></path>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono mt-1 text-[9px] uppercase tracking-wider">Holo-Audit Seal</span>
+</div>
+<!-- Signature 2: Chief Academic Officer -->
+<div class="flex flex-col items-center md:items-end text-center md:text-right min-w-[160px]">
+<div class="h-10 flex items-center justify-center mb-1">
+<!-- SVG Realistic Signature 2 -->
+<svg class="h-9 w-auto text-secondary" fill="none" viewbox="0 0 160 40">
+<path d="M15 15 C 20 35, 35 -5, 55 25 C 70 45, 80 10, 105 20 C 120 26, 135 12, 150 25" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+<circle cx="120" cy="12" fill="currentColor" r="1.5"></circle>
+</svg>
+</div>
+<div class="w-36 h-0.5 bg-outline-variant/40 mb-1"></div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Dr. Marcus Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">VP of Curriculum &amp; Systems</span>
+</div>
+</div>
+<!-- Certificate Hash Footer Identification Bar -->
+<div class="mt-space-lg pt-space-sm w-full flex flex-col sm:flex-row items-center justify-between text-on-surface-variant/70 font-label-sm text-label-sm gap-2">
+<span class="font-mono">CERT SERIAL: <strong class="text-on-surface font-semibold">RKSKILL-2026-X89B-77F2</strong></span>
+<span class="font-mono">PUBLIC FINGERPRINT: 79f4-e82c-19b0-44a1</span>
+<span>VERIFIED: rkskilltube.pro/v/89B77F2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Bar directly below the Certificate Canvas -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<button class="flex items-center justify-center gap-2 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all text-on-surface shadow-sm" onclick="copyCertificateId()">
+<span class="material-symbols-outlined text-primary text-[18px]">content_copy</span>
+<span class="font-body-sm text-body-sm">Copy Serial (RKSKILL-2026...)</span>
+</button>
+<button class="flex items-center justify-center gap-2 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all text-on-surface shadow-sm" onclick="window.print()">
+<span class="material-symbols-outlined text-secondary text-[18px]">print</span>
+<span class="font-body-sm text-body-sm">Print High-Resolution</span>
+</button>
+<button class="flex items-center justify-center gap-2 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all text-on-surface shadow-sm" onclick="openBadgeEmbedModal()">
+<span class="material-symbols-outlined text-tertiary text-[18px]">code</span>
+<span class="font-body-sm text-body-sm">Embed Live HTML Badge</span>
+</button>
+</div>
+<!-- Syllabus & Sandboxes Breakdown Panel -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Curriculum Fulfillment</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rigorous Module Mastery &amp; Sandbox Clearance</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">100% COMPLETE</span>
+</div>
+<!-- 4 Modules Accordion List -->
+<div class="space-y-space-xs">
+<!-- Module 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs hover:bg-surface-container transition-all">
+<div class="flex items-start sm:items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 sm:mt-0">check_circle</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Module 1: Go Memory Model &amp; Low-Latency Goroutine Pools</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scheduler semantics, atomic pointers, race detection &amp; channel orchestration</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto font-mono text-xs">
+<span class="text-on-surface font-medium">6/6 Labs Cleared</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary text-[11px] font-bold">100%</span>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs hover:bg-surface-container transition-all">
+<div class="flex items-start sm:items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 sm:mt-0">check_circle</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Module 2: gRPC Protobuf Streaming &amp; Custom Interceptors</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bidirectional gRPC streaming, zero-alloc buffer pooling &amp; mTLS cert pinning</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto font-mono text-xs">
+<span class="text-on-surface font-medium">8/8 Labs Cleared</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary text-[11px] font-bold">100%</span>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs hover:bg-surface-container transition-all">
+<div class="flex items-start sm:items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 sm:mt-0">check_circle</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Module 3: Distributed Transactions, Saga Pattern &amp; Outbox</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PostgreSQL WAL tails, Debezium CDC ingestion, dual-write mitigation</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto font-mono text-xs">
+<span class="text-on-surface font-medium">5/5 Labs Cleared</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary text-[11px] font-bold">100%</span>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs hover:bg-surface-container transition-all">
+<div class="flex items-start sm:items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 sm:mt-0">check_circle</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Module 4: High-Throughput Raft Consensus Engine &amp; Benchmarks</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Leader election log replication, p99 latency stress tests under 15k RPS</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto font-mono text-xs">
+<span class="text-on-surface font-medium">5/5 Labs Cleared</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary text-[11px] font-bold">100%</span>
+</div>
+</div>
+</div>
+<!-- Assessed Competency Chips Matrix -->
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant/80 uppercase font-semibold block mb-2">Assessed &amp; Benchmarked Engineering Skills</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Go 1.24 Runtime</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">gRPC / Protobuf v3</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Distributed Consensus (Raft)</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Saga Pattern Orchestration</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Transactional Outbox CDC</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">OpenTelemetry Tracing</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Zero-Allocation Buffers</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Docker Compose Testcontainers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT / SIDEBAR: Cryptographic Ledger Audit & Authority Verification (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Primary Audit Card: Cryptographic Ledger Proof -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">fingerprint</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ledger Audit Proof</h3>
+</div>
+<span class="flex items-center gap-1 text-[11px] font-mono text-primary bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            LIVE CONFIRMED
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          This credential was signed by the RKSkillTube Key Authority (Root PKI) upon successful validation of all 24 remote testcontainer test runners.
+        </p>
+<!-- Cryptographic Details Matrix -->
+<div class="space-y-space-xs bg-surface-container-low rounded-lg p-space-sm font-mono text-xs">
+<div>
+<span class="text-on-surface-variant/70 text-[11px] block">Cryptographic Hash (SHA-256):</span>
+<span class="text-primary font-semibold break-all text-[11px] select-all">0x9f4ae82c19b044a17d52c4e16bf33d98782a1b9e</span>
+</div>
+<div class="pt-1">
+<span class="text-on-surface-variant/70 text-[11px] block">Merkle Proof Root:</span>
+<span class="text-on-surface text-[11px] break-all select-all">0x77b8c281df6e138a09bc5d6a89c372f82167d4aa</span>
+</div>
+<div class="pt-1 flex justify-between items-center text-[11px]">
+<span class="text-on-surface-variant/70">Ledger Block Height:</span>
+<span class="text-secondary font-bold">#4,819,204</span>
+</div>
+<div class="pt-1 flex justify-between items-center text-[11px]">
+<span class="text-on-surface-variant/70">Timestamp:</span>
+<span class="text-on-surface">2026-03-28T14:22:09 UTC</span>
+</div>
+<div class="pt-1 flex justify-between items-center text-[11px]">
+<span class="text-on-surface-variant/70">Revocation Status:</span>
+<span class="text-primary font-bold">CLEAN / ACTIVE</span>
+</div>
+</div>
+<!-- Issuer Authorities -->
+<div class="pt-space-xs flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant/80 uppercase font-semibold">Issuing Consortium</span>
+<div class="flex items-center gap-space-sm p-space-xs rounded bg-surface-container">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center text-on-primary-container font-bold text-xs">
+              RK
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">RKSkillTube Academic Consortium</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Accredited Cloud &amp; Systems Curriculum</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs rounded bg-surface-container">
+<div class="w-8 h-8 rounded bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold text-xs">
+              CN
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Cloud Native Computing Guild</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Industry Alignment Partner</span>
+</div>
+</div>
+</div>
+<!-- Live Integrity Check Status Pill -->
+<div class="p-space-sm rounded bg-surface-container mt-space-xs flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Fingerprint Integrity Passed</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">
+              The public certificate checksum matches the server signed payload with 0 bit discrepancies.
+            </p>
+</div>
+</div>
+</div>
+<!-- Recipient Profile Snapshot Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Verified Engineer</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-bold">Pro Member</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="relative">
+<img alt="Recipient Alex Rivers" class="w-12 h-12 rounded-full object-cover shadow" data-alt="Close up professional portrait of Alex Rivers, a modern software engineer wearing a dark knit collar against a dimly lit high-tech workspace background with subtle blue and indigo illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ-ss8vnvj6UG7SjjRBgDkwl4shQxvTWyX4KsIh323oVj2tHMQQZi8wccpfX01BkqfdrdeAH_VVpobe443m15AesM9ZsK_g44IzEla49bUp-lXd9jC7keny20GfC_YLYt--6cY3zwsWOUST1l5SGLXWw-tq8TEBqCt0JiowCRf75CBmrCeSrFEHJkNqHBZQf20u__J3tLRtiBE6PPHC62vmKuH-4r92XMSJsiSb0E"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface">Alex Rivers</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senior Backend Architect</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">Member ID: RKU-8820-ALX</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2 pt-2">
+<div class="p-2 rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 block">Total Badges</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">14</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 block">Skill Rank</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Top 2%</span>
+</div>
+</div>
+</div>
+<!-- Recruiter Verification Search Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">manage_search</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Verify Another Candidate</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Enter any RKSkillTube serial hash or candidate ID to instantly audit credential authenticity against our ledger.
+        </p>
+<div class="flex items-center gap-2 mt-1">
+<div class="relative flex-1">
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="verify-input" placeholder="e.g. RKSKILL-2026-X89B..." type="text"/>
+</div>
+<button class="h-10 px-space-md rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-body-sm text-body-sm font-semibold transition-all" onclick="handleAuditQuery()">
+            Query
+          </button>
+</div>
+<span class="font-label-sm text-label-sm text-secondary hidden" id="audit-feedback">
+          Ledger query ready. Initiating verification lookup...
+        </span>
+</div>
+</div>
+</div>
+<!-- Notification Toast Modal Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container-highest text-on-surface shadow-2xl" id="toast">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-message">Action completed</span>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toast');
+    const msgEl = document.getElementById('toast-message');
+    if (!toast || !msgEl) return;
+    msgEl.innerText = message;
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  function copyCertificateId() {
+    const serial = 'RKSKILL-2026-X89B-77F2';
+    navigator.clipboard.writeText(serial).then(() => {
+      showToast('Certificate Serial ' + serial + ' copied to clipboard!');
+    }).catch(() => {
+      showToast('Serial: ' + serial);
+    });
+  }
+
+  function copyVerificationUrl() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+      showToast('Public immutable verification link copied!');
+    }).catch(() => {
+      showToast('Link copied!');
+    });
+  }
+
+  function triggerPdfExport() {
+    showToast('Compiling print-ready vector PDF with cryptographic watermark...');
+    setTimeout(() => {
+      window.print();
+    }, 600);
+  }
+
+  function openBadgeEmbedModal() {
+    const badgeSnippet = '<a href="https://rkskilltube.pro/v/89B77F2"><img src="https://rkskilltube.pro/badge/RKSKILL-2026-X89B-77F2.svg" alt="RKSkillTube Verified"/></a>';
+    navigator.clipboard.writeText(badgeSnippet).then(() => {
+      showToast('HTML Embed snippet copied to clipboard!');
+    });
+  }
+
+  function handleAuditQuery() {
+    const input = document.getElementById('verify-input');
+    const feedback = document.getElementById('audit-feedback');
+    if (!input || !feedback) return;
+    if (input.value.trim().length > 3) {
+      feedback.classList.remove('hidden');
+      feedback.innerText = 'Querying Merkle tree for ' + input.value.trim() + '...';
+      setTimeout(() => {
+        feedback.innerText = 'Ledger status: 1 Valid Signature Record Found on Block #4,819,204';
+      }, 700);
+    } else {
+      input.focus();
+    }
+  }
+</script></main></div></body></html>

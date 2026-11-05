@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-container":"#0566d9","outline-variant":"#464555","surface-container-lowest":"#0a0e16","surface-container":"#1c2028","on-secondary-fixed":"#001a42","surface-tint":"#c3c0ff","on-surface":"#dfe2ee","error-container":"#93000a","on-secondary":"#002e6a","tertiary-container":"#6f3dd9","on-tertiary":"#3c0091","on-background":"#dfe2ee","error":"#ffb4ab","on-primary-fixed-variant":"#3323cc","on-error-container":"#ffdad6","on-error":"#690005","on-surface-variant":"#c7c4d8","tertiary-fixed":"#e9ddff","on-tertiary-fixed":"#23005c","primary":"#c3c0ff","on-secondary-container":"#e6ecff","surface-container-high":"#262a33","inverse-surface":"#dfe2ee","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#004395","primary-container":"#4f46e5","tertiary":"#d0bcff","on-tertiary-fixed-variant":"#5516be","surface-dim":"#0f131c","primary-fixed-dim":"#c3c0ff","inverse-on-surface":"#2c3039","background":"#0f131c","secondary-fixed":"#d8e2ff","on-primary-container":"#dad7ff","outline":"#918fa1","primary-fixed":"#e2dfff","surface-bright":"#353942","inverse-primary":"#4d44e3","surface-variant":"#31353e","on-primary":"#1d00a5","surface":"#0f131c","surface-container-low":"#181c24","on-tertiary-container":"#e3d5ff","secondary-fixed-dim":"#adc6ff","surface-container-highest":"#31353e","secondary":"#adc6ff","on-primary-fixed":"#0f0069"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-tablet":"1.5rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem","margin":"1rem"},"fontFamily":{"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Geist"],"headline-lg-mobile":["Geist"],"display-xl":["Geist"],"body-lg":["Inter"],"headline-sm":["Geist"],"code-inline":["JetBrains Mono"],"body-sm":["Inter"],"display-xl-mobile":["Geist"],"headline-md":["Geist"]},"fontSize":{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-inline":["13px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"display-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-space-md lg:px-space-lg"><div class="flex items-center gap-space-md"><button class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">menu</span></button><div class="flex items-center gap-space-sm"><img alt="RKSkillTube Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAvLXp8zwh6rPC2aZUFxhGK0rYQB-fCtj1uIcfjx_m8QbUk2_NVdMRSwQ6JbWUw3HQ3SCD8uQZawRZfDo0MxeEzH1UomuQcOtfP1EGDSNS98TVTtf8E-xRxX-s_ZzfMaNbHVgmRNtgWMHImE_Y23kEM3DY7YpbIbM7Ya3Z3WXEX7W6H-RRvjjF3p2ly7YrX_VAOpF2YczDmrJUd2pDwNzv4ayAyjuNkpCd-uM9sTg"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">RKSkillTube</span><span class="px-space-xs py-0.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-semibold">PRO</span></div></div></div><div class="hidden md:flex items-center gap-space-sm flex-1 max-w-2xl mx-space-lg"><div class="flex items-center flex-1 h-10 px-space-sm rounded-lg bg-surface-container-low border border-outline-variant/40 focus-within:border-primary-container transition-all"><span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">search</span><input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none" placeholder="Search lessons, architectures, algorithms..." type="text"/><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Ctrl+K</span><button class="ml-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">mic</span></button></div><button class="flex items-center gap-space-xs h-10 px-space-sm rounded-lg bg-tertiary-container/30 border border-tertiary/30 text-tertiary hover:bg-tertiary-container/50 hover:text-on-tertiary-container transition-all" type="button"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-label-md text-label-md">AI Search</span></button></div><div class="flex items-center gap-space-md"><div class="relative"><button class="flex items-center gap-space-xs h-9 px-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Create</span></button></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9FQ4pJVAlxRNdq8ajydBwRA-d5SQatDNKMibAnpt4InMXtlsTMNpFUD3JdUIErljX-R4caRsNJDQBPsTwPM2xbryksyBoVTiF4YWtiNQ6Wh39PvbynRvRJtJhLk_Hu1gder1SF_WYKf0JerBz0cAcInYJ2XFxJUAU3lrUTyprXKeHPkRrXuTubukQ_81yLJcvV781c-9mtvnOMkqREuXmWu4p49tTg8fnC8ydsaM"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden xl:flex flex-col text-left"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Alex Rivers</span><span class="font-label-sm text-label-sm text-secondary">Creator / Pro</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest/90 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between py-space-md px-space-sm overflow-y-auto z-40"><div class="flex flex-col gap-space-md"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="explore-feed" href="#">Explore</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="subscriptions" href="#">Subscriptions</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="watch" href="#">Watch</a><a aria-current="page" class="flex items-center px-space-sm py-2 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="playlists-library" href="#">Playlists / Library</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio" href="#">Creator Studio</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="course-builder" href="#">Course Builder</a></nav><div class="pt-space-sm border-t border-outline-variant/30 flex flex-col gap-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider">Learning Tracks</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-system-design" href="#">System Design</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-full-stack" href="#">Full-Stack</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-dsa-algorithms" href="#">DSA &amp; Algorithms</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-ai-machine-learning" href="#">AI &amp; Machine Learning</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-cloud-devops" href="#">Cloud DevOps</a></nav></div></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30"><a class="block p-space-sm rounded-lg bg-surface-container-low border border-tertiary/40 hover:border-tertiary transition-all" data-path="gemini-ai-tutor" href="#"><div class="flex items-center gap-space-xs text-tertiary mb-1"><span class="material-symbols-outlined text-[18px]">psychology</span><span class="font-label-md text-label-md font-semibold">AI Study Tutor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Interactive code analysis, system review &amp; mock interviews.</p></a></div></aside><div class="pl-64"><main class="w-full min-h-screen pt-16 px-space-md lg:px-space-lg bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- SECTION 1: HEADER & STATS HERO STRIP -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Dev Library Index</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Obsidian Workspace v4.2</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Your Library &amp; Custom Playlists</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">8 Custom Playlists <span class="text-outline mx-1">•</span> 74 Saved Videos <span class="text-outline mx-1">•</span> 52h Total Runtime</p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs h-10 px-space-md rounded-lg bg-primary-container text-on-primary-container hover:bg-inverse-primary hover:shadow-[0_0_24px_rgba(79,70,229,0.45)] transition-all font-body-md text-body-md font-semibold cursor-pointer shadow-sm" id="openModalBtn">
+<span class="material-symbols-outlined text-[20px]">playlist_add</span>
+<span>+ New Playlist</span>
+</button>
+<button class="flex items-center gap-space-xs h-10 px-space-sm rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[18px]">sync_saved_locally</span>
+<span class="hidden sm:inline">Sync Cloud</span>
+</button>
+</div>
+</div>
+<!-- METRICS SPARKLINE TILES -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Completed Tracks</span>
+<span class="material-symbols-outlined text-[16px] text-primary">task_alt</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 8 finished</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Watch Retention</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">insights</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">63.5%</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">+8% wk</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Total Stored</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">video_library</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">74</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">tech modules</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Study Queue</span>
+<span class="material-symbols-outlined text-[16px] text-error">pending_actions</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">18</span>
+<span class="font-label-sm text-label-sm text-error">unwatched</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: FILTER TABS & CONTROL TOOLBAR -->
+<div class="p-space-sm rounded-xl bg-surface-container mb-space-lg flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm">
+<!-- Filter Radio Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 lg:pb-0" id="filterTabs">
+<button class="filter-tab active px-space-sm py-1.5 rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold whitespace-nowrap transition-colors" data-filter="all">
+        All <span class="ml-1 opacity-80 font-label-sm text-label-sm">(8)</span>
+</button>
+<button class="filter-tab px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm font-medium whitespace-nowrap transition-colors" data-filter="public">
+        Public 🌐 <span class="ml-1 opacity-70 font-label-sm text-label-sm">(4)</span>
+</button>
+<button class="filter-tab px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm font-medium whitespace-nowrap transition-colors" data-filter="private">
+        Private 🔒 <span class="ml-1 opacity-70 font-label-sm text-label-sm">(3)</span>
+</button>
+<button class="filter-tab px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm font-medium whitespace-nowrap transition-colors" data-filter="unlisted">
+        Unlisted 🔗 <span class="ml-1 opacity-70 font-label-sm text-label-sm">(1)</span>
+</button>
+</div>
+<!-- Search + Sort Dropdown -->
+<div class="flex items-center gap-space-xs flex-1 lg:max-w-md justify-end">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full h-9 pl-9 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" id="playlistSearch" placeholder="Filter playlists by name or tags... [Ctrl+F]" type="text"/>
+</div>
+<div class="relative">
+<select class="h-9 px-space-sm pr-7 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer" id="sortSelect">
+<option value="recent">Recently Updated</option>
+<option value="videos">Most Videos</option>
+<option value="alpha">Alphabetical</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: 3-COLUMN PLAYLIST CARDS GRID WITH 3D STACK EFFECT -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="playlistGrid">
+<!-- CARD 1: System Design Interview Prep -->
+<div class="playlist-card group flex flex-col rounded-xl bg-surface-container-low overflow-hidden hover:shadow-xl transition-all duration-300" data-count="24" data-name="System Design Interview Prep" data-visibility="public">
+<!-- 3D Thumbnail Stack Module -->
+<div class="relative w-full pt-[58%] px-space-md pt-space-lg pb-space-sm bg-surface-container-lowest flex items-center justify-center overflow-visible">
+<!-- Deck Layer 3 (Deepest / Back) -->
+<div class="absolute inset-x-8 top-2 h-36 rounded-lg bg-surface-container-highest/40 transform -rotate-3 scale-90 translate-y-1 transition-transform group-hover:-translate-y-1 group-hover:-rotate-4 duration-300"></div>
+<!-- Deck Layer 2 (Middle) -->
+<div class="absolute inset-x-6 top-3 h-36 rounded-lg bg-surface-container-high transform rotate-2 scale-95 translate-y-2 transition-transform group-hover:-translate-y-0.5 group-hover:rotate-3 duration-300"></div>
+<!-- Deck Layer 1 (Front Active Card) -->
+<div class="relative z-10 w-full h-44 rounded-lg overflow-hidden bg-surface-container shadow-md group-hover:shadow-primary-container/20 transition-all duration-300">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sleek dark mode software architecture blueprint showing distributed microservices with luminous violet nodes, data queues, and load balancing pipelines against deep charcoal matrix background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKw_Zq3JhOgaCi0EQVVBbCyKB_-sViDtwhdT0apmGDs0C-BGazzxo8hDB192_fj9lVH0bGGHr68flUxCzic2vBH1VwJZbNCmuMRz_Ga9IbHr5jsFHIkQMfLwT9I-R2ZQnEnsF7DV-wgGUiHl-h1nVSMaZzXhxkgHR1Lj4OoVMuXK0HBIeTLXmMeVQTM_GZhkePp71RsYVoev1X76BdN_l6y6lfrsg4OTRXzs7embg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<!-- Privacy Pill Top Left -->
+<div class="absolute top-2 left-2 z-20">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">public</span> Public
+            </span>
+</div>
+<!-- Video Counter & Time Badge Bottom Right -->
+<div class="absolute bottom-2 right-2 z-20 flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">video_library</span> 24 videos
+            </span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface-variant font-label-sm text-label-sm">18h 30m</span>
+</div>
+<!-- Floating Play All Overlay on Hover -->
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-surface-container-lowest/40 backdrop-blur-xs transition-opacity duration-200">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card Body Content -->
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight hover:text-primary transition-colors cursor-pointer">System Design Interview Prep</h3>
+<div class="relative">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Updated 2 days ago • Raft, Sharding &amp; Caches</p>
+<!-- Watch Progress Bar -->
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-primary font-medium">14 / 24 watched (58%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 58%;"></div>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1 mt-space-md">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#system-design</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#faang</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#scalability</span>
+</div>
+</div>
+<!-- Card Action Footer -->
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span> Play All
+          </button>
+<button class="px-space-sm h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" title="Manage Queue Order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Go Backend Performance & Internals -->
+<div class="playlist-card group flex flex-col rounded-xl bg-surface-container-low overflow-hidden hover:shadow-xl transition-all duration-300" data-count="12" data-name="Go Backend Performance &amp; Internals" data-visibility="private">
+<!-- 3D Thumbnail Stack Module -->
+<div class="relative w-full pt-[58%] px-space-md pt-space-lg pb-space-sm bg-surface-container-lowest flex items-center justify-center overflow-visible">
+<div class="absolute inset-x-8 top-2 h-36 rounded-lg bg-surface-container-highest/40 transform -rotate-3 scale-90 translate-y-1 transition-transform group-hover:-translate-y-1 group-hover:-rotate-4 duration-300"></div>
+<div class="absolute inset-x-6 top-3 h-36 rounded-lg bg-surface-container-high transform rotate-2 scale-95 translate-y-2 transition-transform group-hover:-translate-y-0.5 group-hover:rotate-3 duration-300"></div>
+<div class="relative z-10 w-full h-44 rounded-lg overflow-hidden bg-surface-container shadow-md group-hover:shadow-primary-container/20 transition-all duration-300">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Technical code analytics dashboard showing Go pprof flamegraph visualization, CPU profile spikes, and heap allocation graphs in cyan and dark obsidian tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLoNyD9EIMuytcW7jjPG3P-EyiK5cVZ2bTErt7tyq55cxHqK2WYXN1LnosJlWXMoEOTxnZxhZxDGcYfXI0dAlm6xQl02QmMhI7dGVUEkUu_pJNRiiaTwcPvlV4yO0IR2atfejm0a-AqUtfWkVwfDNLfDqoaG2CKtZK6NOJurA5QUcz0aPjqL6TuTy0t_rJoVV5fCETCF62hQN3p-jibjPjTCNt4e5NP3DY7DgTO_A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<!-- Privacy Pill Top Left -->
+<div class="absolute top-2 left-2 z-20">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-error">lock</span> Private
+            </span>
+</div>
+<!-- Video Counter & Time Badge Bottom Right -->
+<div class="absolute bottom-2 right-2 z-20 flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">video_library</span> 12 videos
+            </span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface-variant font-label-sm text-label-sm">6h 15m</span>
+</div>
+<!-- Floating Play All Overlay -->
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-surface-container-lowest/40 backdrop-blur-xs transition-opacity duration-200">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card Body Content -->
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight hover:text-primary transition-colors cursor-pointer">Go Backend Performance &amp; Internals</h3>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Updated yesterday • Goroutine scheduler &amp; GC tunings</p>
+<!-- Progress -->
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-primary font-medium">8 / 12 watched (66%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 66%;"></div>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1 mt-space-md">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#golang</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#concurrency</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#lowlatency</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span> Play All
+          </button>
+<button class="px-space-sm h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" title="Manage Queue Order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: LeetCode Hard Patterns & DP -->
+<div class="playlist-card group flex flex-col rounded-xl bg-surface-container-low overflow-hidden hover:shadow-xl transition-all duration-300" data-count="38" data-name="LeetCode Hard Patterns &amp; DP" data-visibility="unlisted">
+<!-- 3D Thumbnail Stack Module -->
+<div class="relative w-full pt-[58%] px-space-md pt-space-lg pb-space-sm bg-surface-container-lowest flex items-center justify-center overflow-visible">
+<div class="absolute inset-x-8 top-2 h-36 rounded-lg bg-surface-container-highest/40 transform -rotate-3 scale-90 translate-y-1 transition-transform group-hover:-translate-y-1 group-hover:-rotate-4 duration-300"></div>
+<div class="absolute inset-x-6 top-3 h-36 rounded-lg bg-surface-container-high transform rotate-2 scale-95 translate-y-2 transition-transform group-hover:-translate-y-0.5 group-hover:rotate-3 duration-300"></div>
+<div class="relative z-10 w-full h-44 rounded-lg overflow-hidden bg-surface-container shadow-md group-hover:shadow-primary-container/20 transition-all duration-300">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Algorithmic diagram visualization representing dynamic programming matrix grid computations and glowing binary search tree traversals on deep dark backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs2kpjt0mCoyS9SKIpAx99f1WxzQKY4NmknXGS9Wut6KKIY1sjk4kj8O5QN_dg1q6Edlg2xP5w_EprOjLBR63Hgqn13RzjiAWimBCB9n9hDkXbZPzQKRExFgumNSnddidftlIxhcimdTi3jflq6hiIQFUqclvoLQpoY0m7_ZdQP_PxDBOtMduB1aBQmKVq3a73BqY6wNdhtHcxG30RpZeklaW7n99P5OmI4vGyZig"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<!-- Privacy Pill Top Left -->
+<div class="absolute top-2 left-2 z-20">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-tertiary">link</span> Unlisted
+            </span>
+</div>
+<!-- Video Counter & Time Badge Bottom Right -->
+<div class="absolute bottom-2 right-2 z-20 flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">video_library</span> 38 videos
+            </span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface-variant font-label-sm text-label-sm">26h 00m</span>
+</div>
+<!-- Floating Play All Overlay -->
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-surface-container-lowest/40 backdrop-blur-xs transition-opacity duration-200">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card Body Content -->
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight hover:text-primary transition-colors cursor-pointer">LeetCode Hard Patterns &amp; DP</h3>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Updated 4 days ago • Monotonic stacks &amp; 2D memoization</p>
+<!-- Progress -->
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-primary font-medium">30 / 38 watched (78%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1 mt-space-md">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#algorithms</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#leetcode</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#dp</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span> Play All
+          </button>
+<button class="px-space-sm h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" title="Manage Queue Order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Kubernetes & eBPF Deep Dive -->
+<div class="playlist-card group flex flex-col rounded-xl bg-surface-container-low overflow-hidden hover:shadow-xl transition-all duration-300" data-count="16" data-name="Kubernetes &amp; eBPF Deep Dive" data-visibility="public">
+<div class="relative w-full pt-[58%] px-space-md pt-space-lg pb-space-sm bg-surface-container-lowest flex items-center justify-center overflow-visible">
+<div class="absolute inset-x-8 top-2 h-36 rounded-lg bg-surface-container-highest/40 transform -rotate-3 scale-90 translate-y-1 transition-transform group-hover:-translate-y-1 group-hover:-rotate-4 duration-300"></div>
+<div class="absolute inset-x-6 top-3 h-36 rounded-lg bg-surface-container-high transform rotate-2 scale-95 translate-y-2 transition-transform group-hover:-translate-y-0.5 group-hover:rotate-3 duration-300"></div>
+<div class="relative z-10 w-full h-44 rounded-lg overflow-hidden bg-surface-container shadow-md group-hover:shadow-primary-container/20 transition-all duration-300">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Futuristic Linux kernel network packet tracing visual diagram with eBPF hooks, Cilium mesh interconnects, and telemetry monitors rendered in deep obsidian." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANgJfTnugyLO1_JeROXW7uLgEWyruPXxAmcQnIM1eE5GOWr6LXHLS3KCsFnF4Ua0hv0rjzeZu_3hBcmnvvthnYdKb7U1G2dr9o6ZE6gEftn5x3KpW7ntHmyJCnIVi8-BiGAK0wYmihf82CTeJSkFarSvr8ar81pMK82vQwhE0ewnkZ24i3S5dUSTEpWpW8uVRbI87ApSidKRQV6ZXp7-qqiNoj6Pm4Tj9KbAOC8XM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-2 left-2 z-20">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">public</span> Public
+            </span>
+</div>
+<div class="absolute bottom-2 right-2 z-20 flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">video_library</span> 16 videos
+            </span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface-variant font-label-sm text-label-sm">11h 20m</span>
+</div>
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-surface-container-lowest/40 backdrop-blur-xs transition-opacity duration-200">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight hover:text-primary transition-colors cursor-pointer">Kubernetes &amp; eBPF Deep Dive</h3>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Updated 1 week ago • Cilium XDP, tc probes &amp; Envoy gateways</p>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-primary font-medium">4 / 16 watched (25%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-space-md">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#k8s</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#ebpf</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#networking</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span> Play All
+          </button>
+<button class="px-space-sm h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" title="Manage Queue Order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Rust for Systems Engineers -->
+<div class="playlist-card group flex flex-col rounded-xl bg-surface-container-low overflow-hidden hover:shadow-xl transition-all duration-300" data-count="19" data-name="Rust for Systems Engineers" data-visibility="public">
+<div class="relative w-full pt-[58%] px-space-md pt-space-lg pb-space-sm bg-surface-container-lowest flex items-center justify-center overflow-visible">
+<div class="absolute inset-x-8 top-2 h-36 rounded-lg bg-surface-container-highest/40 transform -rotate-3 scale-90 translate-y-1 transition-transform group-hover:-translate-y-1 group-hover:-rotate-4 duration-300"></div>
+<div class="absolute inset-x-6 top-3 h-36 rounded-lg bg-surface-container-high transform rotate-2 scale-95 translate-y-2 transition-transform group-hover:-translate-y-0.5 group-hover:rotate-3 duration-300"></div>
+<div class="relative z-10 w-full h-44 rounded-lg overflow-hidden bg-surface-container shadow-md group-hover:shadow-primary-container/20 transition-all duration-300">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up technical terminal of Rust compiler borrow checker, memory safety ownership lifetimes, and asynchronous Tokio runtime benchmarks in neon indigo and obsidian." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4WULFULkvsCfFKMSxwyxJWPRMvljCheYtN1Xm4HrfNMXzApnRXf7QbW8foEcId4g-ckKC2PEVsTIi5cfX3EEzEr0BV-eV_-tsQNxCvjKhWxF5D9TB6rHsW4YlYM7gtZnERKfdtH_9swBOi3K_gOu91rISA16OrXSLlXwqD-0pbpQPhZwJEXODMCFrjZWpZiMTGqncjN3pqPwSlEofT8IAOfVPF8bEkNCM0G7fGS4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-2 left-2 z-20">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">public</span> Public
+            </span>
+</div>
+<div class="absolute bottom-2 right-2 z-20 flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">video_library</span> 19 videos
+            </span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface-variant font-label-sm text-label-sm">14h 45m</span>
+</div>
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-surface-container-lowest/40 backdrop-blur-xs transition-opacity duration-200">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight hover:text-primary transition-colors cursor-pointer">Rust for Systems Engineers</h3>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Completed 3 days ago • Mastered async IO &amp; FFI</p>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 19 / 19 (100% Completed)
+              </span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-space-md">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#rust</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#systems</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#tokio</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">replay</span> Review All
+          </button>
+<button class="px-space-sm h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" title="Manage Queue Order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 6: AI & LLM Fine-Tuning Sandbox -->
+<div class="playlist-card group flex flex-col rounded-xl bg-surface-container-low overflow-hidden hover:shadow-xl transition-all duration-300" data-count="9" data-name="AI &amp; LLM Fine-Tuning Sandbox" data-visibility="private">
+<div class="relative w-full pt-[58%] px-space-md pt-space-lg pb-space-sm bg-surface-container-lowest flex items-center justify-center overflow-visible">
+<div class="absolute inset-x-8 top-2 h-36 rounded-lg bg-surface-container-highest/40 transform -rotate-3 scale-90 translate-y-1 transition-transform group-hover:-translate-y-1 group-hover:-rotate-4 duration-300"></div>
+<div class="absolute inset-x-6 top-3 h-36 rounded-lg bg-surface-container-high transform rotate-2 scale-95 translate-y-2 transition-transform group-hover:-translate-y-0.5 group-hover:rotate-3 duration-300"></div>
+<div class="relative z-10 w-full h-44 rounded-lg overflow-hidden bg-surface-container shadow-md group-hover:shadow-primary-container/20 transition-all duration-300">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Neural network matrix weights and tensor flow computations illustrating LoRA adapters and LLM token attention heads in violet and obsidian." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfNQU0LFmQWqk-ZhhXrQ5tRlwox8NH7oXZ5e6Hu7HwAm9OoSUiX_Hq5C73KeLRuood5klqFDfdhI-ELdz4fQKvAKUwj5_292Tib2hu17jEvPLUu4bsnC_jye0fTIBfiLQ99sLdGP96jWqhzoq07YcgKMeOkd4KZ1Cc2dMwXzVE2GIUG9HuSlnjE03UdywSafSPw_7cCTGvcE_9bt3GmfC03qwTN-Eu7N5kCqiAoFk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-2 left-2 z-20">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-error">lock</span> Private
+            </span>
+</div>
+<div class="absolute bottom-2 right-2 z-20 flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">video_library</span> 9 videos
+            </span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-black/85 text-on-surface-variant font-label-sm text-label-sm">7h 10m</span>
+</div>
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-surface-container-lowest/40 backdrop-blur-xs transition-opacity duration-200">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight hover:text-primary transition-colors cursor-pointer">AI &amp; LLM Fine-Tuning Sandbox</h3>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Updated 5 hours ago • vLLM inference &amp; quantized weights</p>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-primary font-medium">2 / 9 watched (22%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 22%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-space-md">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#ai</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#llm</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">#pytorch</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span> Play All
+          </button>
+<button class="px-space-sm h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" title="Manage Queue Order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: QUICK STATS & BINGE QUEUE SUMMARY BANNER -->
+<div class="mt-space-xl p-space-md lg:p-space-lg rounded-xl bg-surface-container-low flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">smart_display</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Watch Later Continuous Queue</h4>
+<span class="px-2 py-0.5 rounded-full bg-error/20 text-error font-label-sm text-label-sm font-semibold">18 Unwatched</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Automated queue of unviewed lessons ordered by optimal prerequisite track sequence.</p>
+</div>
+</div>
+<!-- Banner Actions -->
+<div class="flex items-center gap-space-sm flex-wrap w-full lg:w-auto justify-end">
+<button class="flex items-center gap-space-xs h-10 px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Library JSON</span>
+</button>
+<button class="flex items-center gap-space-xs h-10 px-space-md rounded-lg bg-primary-container text-on-primary-container hover:bg-inverse-primary transition-all font-body-sm text-body-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Start Binge Session ▶</span>
+</button>
+</div>
+</div>
+<!-- SECTION 5: MODAL OVERLAY (NEW PLAYLIST) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-black/80 backdrop-blur-md hidden transition-opacity duration-200" id="newPlaylistModal">
+<div class="relative w-full max-w-lg rounded-xl bg-surface-container-low p-space-lg shadow-2xl flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-primary">playlist_add</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Create New Playlist</h2>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Inputs -->
+<div class="flex flex-col gap-space-md">
+<!-- Title Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Playlist Title *</label>
+<input class="h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g. Distributed Consensus Deep Dive" type="text"/>
+</div>
+<!-- Description Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Description / Notes</label>
+<textarea class="p-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container resize-none" placeholder="Optional learning roadmap notes, target certifications, or book cross-references..." rows="3"></textarea>
+</div>
+<!-- Visibility Pill Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Visibility Status</label>
+<div class="grid grid-cols-1 gap-2">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-1 accent-primary-container" name="visibility" type="radio" value="public"/>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">Public 🌐</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Anyone in the RKSkillTube community can view, clone and follow.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="mt-1 accent-primary-container" name="visibility" type="radio" value="private"/>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">Private 🔒</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Restricted strictly to your authenticated workspace profile.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="mt-1 accent-primary-container" name="visibility" type="radio" value="unlisted"/>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">Unlisted 🔗</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Only colleagues and peers with direct cryptographic URL token.</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="px-space-md h-10 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm font-semibold" id="cancelModalBtn">Cancel</button>
+<button class="px-space-md h-10 rounded-lg bg-primary-container text-on-primary-container hover:bg-inverse-primary hover:shadow-[0_0_16px_rgba(79,70,229,0.35)] transition-all font-body-sm text-body-sm font-semibold" id="confirmCreateBtn">Create Playlist</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions & Functional Scripting
+  const openModalBtn = document.getElementById('openModalBtn');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const cancelModalBtn = document.getElementById('cancelModalBtn');
+  const confirmCreateBtn = document.getElementById('confirmCreateBtn');
+  const modal = document.getElementById('newPlaylistModal');
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const playlistCards = document.querySelectorAll('.playlist-card');
+  const searchInput = document.getElementById('playlistSearch');
+
+  function toggleModal(show) {
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  if (openModalBtn) openModalBtn.addEventListener('click', () => toggleModal(true));
+  if (closeModalBtn) closeModalBtn.addEventListener('click', () => toggleModal(false));
+  if (cancelModalBtn) cancelModalBtn.addEventListener('click', () => toggleModal(false));
+  if (confirmCreateBtn) {
+    confirmCreateBtn.addEventListener('click', () => {
+      toggleModal(false);
+    });
+  }
+
+  // Close modal when pressing Escape or outside click
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      toggleModal(false);
+    }
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
+      e.preventDefault();
+      searchInput.focus();
+    }
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) toggleModal(false);
+  });
+
+  // Filter Tabs
+  filterTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach((t) => {
+        t.classList.remove('bg-primary-container', 'text-on-primary-container');
+        t.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      tab.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      tab.classList.add('bg-primary-container', 'text-on-primary-container');
+
+      const filterVal = tab.getAttribute('data-filter');
+      playlistCards.forEach((card) => {
+        const vis = card.getAttribute('data-visibility');
+        if (filterVal === 'all' || vis === filterVal) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Quick Search Filter
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    playlistCards.forEach((card) => {
+      const name = (card.getAttribute('data-name') || '').toLowerCase();
+      const text = card.textContent.toLowerCase();
+      if (name.includes(query) || text.includes(query)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+</script></main></div>
+</body></html>

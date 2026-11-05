@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><meta content="web_dashboard" name="shell-type"/></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#d0bcff", "on-secondary-container": "#e6ecff", "inverse-primary": "#4d44e3", "primary-fixed": "#e2dfff", "surface-container": "#1c2028", "secondary-fixed-dim": "#adc6ff", "surface-variant": "#31353e", "on-error-container": "#ffdad6", "on-surface-variant": "#c7c4d8", "outline": "#918fa1", "on-surface": "#dfe2ee", "surface-dim": "#0f131c", "surface-bright": "#353942", "on-tertiary-container": "#e3d5ff", "on-primary-fixed-variant": "#3323cc", "on-tertiary-fixed": "#23005c", "on-secondary": "#002e6a", "on-primary-container": "#dad7ff", "surface-container-low": "#181c24", "on-tertiary": "#3c0091", "error-container": "#93000a", "on-secondary-fixed": "#001a42", "error": "#ffb4ab", "surface": "#0f131c", "primary": "#c3c0ff", "surface-container-high": "#262a33", "tertiary-fixed-dim": "#d0bcff", "secondary-fixed": "#d8e2ff", "primary-container": "#4f46e5", "outline-variant": "#464555", "on-background": "#dfe2ee", "on-error": "#690005", "secondary-container": "#0566d9", "inverse-surface": "#dfe2ee", "tertiary-fixed": "#e9ddff", "primary-fixed-dim": "#c3c0ff", "on-secondary-fixed-variant": "#004395", "surface-container-lowest": "#0a0e16", "tertiary-container": "#6f3dd9", "background": "#0f131c", "on-primary-fixed": "#0f0069", "inverse-on-surface": "#2c3039", "on-primary": "#1d00a5", "surface-container-highest": "#31353e", "secondary": "#adc6ff", "on-tertiary-fixed-variant": "#5516be", "surface-tint": "#c3c0ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-lg-mobile": ["Geist"], "display-xl-mobile": ["Geist"], "display-xl": ["Geist"], "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-md": ["Inter"], "headline-sm": ["Geist"], "body-sm": ["Inter"], "code-inline": ["JetBrains Mono"], "headline-lg": ["Geist"], "headline-md": ["Geist"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "code-inline": ["13px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 z-50"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(79,70,229,0.45)]"><span class="material-symbols-outlined text-white text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">RKSkillTube <span class="text-primary font-semibold tracking-wider text-body-sm px-1.5 py-0.5 rounded bg-primary-container/20 border border-primary/30 uppercase ml-0.5">PRO</span></span></div><span class="hidden md:inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high border border-outline-variant/40 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Creator Studio</span></div><div class="flex-1 max-w-2xl mx-space-md flex items-center gap-space-xs"><div class="relative flex items-center flex-1"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-16 bg-surface-container-low border border-outline-variant/30 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/40 transition-all" placeholder="Search catalog, videos, modules, or tags..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant/30 pointer-events-none">/</span></div><button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest border border-tertiary/30 text-tertiary font-body-sm text-body-sm flex items-center gap-space-xs transition-colors shrink-0 shadow-[0_0_12px_rgba(208,188,255,0.15)]"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-medium">AI Search</span></button></div><div class="flex items-center gap-space-sm shrink-0"><div class="relative group"><button class="h-9 px-space-sm rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-medium flex items-center gap-space-xs shadow-[0_0_16px_rgba(79,70,229,0.35)] transition-all"><span class="material-symbols-outlined text-[18px]">add</span><span>Create</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="hidden group-hover:flex absolute right-0 top-full pt-1 flex-col z-50"><div class="w-52 py-1 bg-surface-container-high border border-outline-variant/40 rounded-xl shadow-2xl flex flex-col"><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-primary">upload</span>Upload Video</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-tertiary">library_books</span>New Course Curriculum</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-error">podcasts</span>Create Live Stream</a></div></div></div><div class="relative"><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-outline-variant/60 cursor-pointer transition-all"><div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-white ring-1 ring-white/20"><span class="material-symbols-outlined text-[16px]">terminal</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-1"><span class="font-body-sm text-body-sm font-medium text-on-surface leading-none">CodeWithRK</span><span class="material-symbols-outlined text-[14px] text-secondary">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">PRO Creator</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="w-8 h-8 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/20 z-40 flex flex-col justify-between p-space-sm"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-1"><span class="font-label-sm text-label-sm font-medium text-on-surface-variant uppercase tracking-wider">Studio Management</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-white font-medium shadow-[0_0_16px_rgba(79,70,229,0.3)] border-l-2 border-primary"><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio-content-and-videos" href="#">Content &amp; Videos</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio-dashboard" href="#">Studio Overview</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="watch-later-queue-management" href="#">Watch Later Queue</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="course-builder" href="#">Course Builder</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="analytics-insights" href="#">Analytics &amp; Insights</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="monetization-payouts" href="#">Monetization &amp; Payouts</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="comments-q-and-a" href="#">Comments &amp; Q&amp;A</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="customization" href="#">Customization</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm rounded-xl bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">cloud</span><span class="font-label-md text-label-md text-on-surface font-semibold">CDN Storage</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold">64.2%</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mb-2"><div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 64.2%"></div></div><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-2"><span>321 GB of 500 GB</span><span class="text-primary font-medium">PRO Tier</span></div><a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-primary hover:text-tertiary font-medium transition-colors" href="#"><span>Manage Storage</span><span class="material-symbols-outlined text-[14px]">north_east</span></a></div></aside><div class="pl-64"><main class="relative w-full pt-16 px-gutter-desktop py-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Active Sidebar Nav Sync Script -->
+<script>
+    (function() {
+      const activeLink = document.querySelector('nav a[data-path="monetization-payouts"]');
+      if (activeLink) {
+        document.querySelectorAll('nav a').forEach(el => {
+          el.className = 'flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm';
+        });
+        activeLink.className = 'flex items-center px-space-sm py-2 rounded-xl text-white font-medium bg-primary-container shadow-[0_0_16px_rgba(79,70,229,0.3)] font-body-sm text-body-sm';
+      }
+    })();
+  </script>
+<!-- Dashboard Master Content Wrapper -->
+<div class="flex flex-col gap-space-lg w-full pb-space-xl">
+<!-- Top Breadcrumb & Page Command Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span class="hover:text-primary transition-colors cursor-pointer">Creator Studio</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">Monetization &amp; Payouts</span>
+<span>/</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-code-inline text-code-inline">@CodeWithRK</span>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Earnings &amp; Revenue Operations</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-inner">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            PRO CREATOR TIER • 80/20 REVENUE SPLIT
+          </span>
+</div>
+</div>
+<!-- Header Action Controls -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Date Cycle Selector -->
+<div class="relative flex items-center bg-surface-container-low rounded-xl px-space-sm py-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px] mr-1.5">date_range</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Cycle: Nov 1 – Nov 30, 2026</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] ml-1">expand_more</span>
+</div>
+<!-- Currency Switcher -->
+<div class="flex items-center bg-surface-container-low rounded-xl px-space-sm py-1.5 shadow-sm">
+<span class="font-code-inline text-code-inline font-bold text-secondary mr-1">$</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">USD</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] ml-1">arrow_drop_down</span>
+</div>
+<!-- Tax & CSV Export Button -->
+<button class="flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm px-space-sm py-1.5 rounded-xl transition-all shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">receipt_long</span>
+<span>Export 1099 &amp; Ledger</span>
+</button>
+</div>
+</div>
+<!-- 1. FINANCIAL SUMMARY HERO (3 High-Impact Bento Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Card 1: Available for Immediate Payout (Emerald Highlighted) -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between relative overflow-hidden shadow-lg">
+<div class="absolute -right-12 -top-12 w-40 h-40 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-1 relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Available for Immediate Payout</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Ready
+            </span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-xl text-display-xl font-bold text-on-surface tracking-tight">$3,842<span class="text-on-surface-variant text-headline-lg font-normal">.50</span></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+            Next automated cycle release in <strong class="text-on-surface font-medium">4 days (Nov 15)</strong>
+</p>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-md relative z-10">
+<button class="w-full h-10 px-space-md rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-semibold flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(79,70,229,0.35)] transition-all">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Instant Withdraw via Stripe / Razorpay</span>
+</button>
+<div class="flex items-center justify-between px-space-sm py-2 rounded-xl bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">Stripe Express (•••• 4821) &amp; Route</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Synced</span>
+</div>
+</div>
+</div>
+<!-- Card 2: This Month's Gross Revenue (Analytics / Sparkline) -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">This Month's Gross Revenue</span>
+<span class="flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+              +18.4% MoM
+            </span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-xl text-display-xl font-bold text-on-surface tracking-tight">$5,210<span class="text-on-surface-variant text-headline-lg font-normal">.00</span></span>
+</div>
+<!-- Mini Inline SVG Sparkline -->
+<div class="w-full h-9 my-1">
+<svg class="w-full h-full text-secondary" preserveaspectratio="none" viewbox="0 0 240 40">
+<defs>
+<lineargradient id="grad-revenue" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="currentColor" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M 0,32 Q 25,28 50,30 T 90,20 T 130,22 T 170,12 T 210,14 T 240,6 L 240,40 L 0,40 Z" fill="url(#grad-revenue)"></path>
+<path d="M 0,32 Q 25,28 50,30 T 90,20 T 130,22 T 170,12 T 210,14 T 240,6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2 bg-surface-container p-space-sm rounded-xl">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              Course Curricula Sales
+            </span>
+<span class="font-code-inline text-code-inline font-medium text-on-surface">$3,450.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Tier Memberships
+            </span>
+<span class="font-code-inline text-code-inline font-medium text-on-surface">$1,760.00</span>
+</div>
+<div class="flex items-center justify-between pt-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Net take-home after gateways:</span>
+<span class="font-code-inline text-code-inline text-secondary font-semibold">$4,912.80</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Active Paid Members & Retention -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Subscribers &amp; Enrollees</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm font-medium">94.2% Retention</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">412</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Tier Members</span>
+<span class="text-outline-variant font-code-inline">•</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">890</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Enrollments</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1 font-medium">
+<span class="material-symbols-outlined text-[16px]">group_add</span>
+            +34 new paid subscribers this week
+          </p>
+</div>
+<div class="flex flex-col gap-2 mt-space-sm p-space-sm rounded-xl bg-surface-container">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Lifetime Creator Revenue</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$64,280<span class="text-on-surface-variant text-body-sm">.00</span></span>
+</div>
+<!-- Progress representation -->
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container via-secondary to-tertiary rounded-full" style="width: 82%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Annual Target: $75,000</span>
+<span class="text-primary font-medium">85.7% Achieved</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. MONETIZATION STREAMS (Interactive Multi-Stream Studio Section) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col gap-space-md">
+<!-- Stream Header with Tab Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Revenue Generation Streams</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct breakdown of modular course curricula and recurring membership cohorts</span>
+</div>
+<!-- Custom Styled Tabs -->
+<div class="flex items-center p-1 bg-surface-container rounded-xl self-start sm:self-auto" id="revenue-tabs">
+<button class="flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-primary-container text-white font-body-sm text-body-sm font-semibold transition-all shadow-[0_0_12px_rgba(79,70,229,0.3)]" id="tab-btn-courses" onclick="switchStreamTab('courses')">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Course Sales &amp; Curricula (66%)</span>
+</button>
+<button class="flex items-center gap-2 px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all" id="tab-btn-memberships" onclick="switchStreamTab('memberships')">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span>Channel Membership Tiers (34%)</span>
+</button>
+</div>
+</div>
+<!-- Revenue Split Banner -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm p-space-sm rounded-xl bg-surface-container">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">percent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Platform Fee Engine: 80% Creator / 20% Platform split</span>
+<span class="font-label-sm text-label-sm text-secondary">0% platform fee applies to sales generated via your direct creator referral links.</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto shrink-0">
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-code-inline text-code-inline">Referral: rkskilltube.dev/c/CodeWithRK</span>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors" onclick="navigator.clipboard.writeText('https://rkskilltube.dev/c/CodeWithRK');" title="Copy Referral Link">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- TAB 1 CONTENT: Courses Table -->
+<div class="flex flex-col gap-space-md" id="tab-courses-panel">
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-sm rounded-l-lg">Curriculum Title</th>
+<th class="py-2.5 px-space-sm text-right">Price</th>
+<th class="py-2.5 px-space-sm text-right">Sales Count</th>
+<th class="py-2.5 px-space-sm text-right">Gross Total</th>
+<th class="py-2.5 px-space-sm text-right">Creator Cut (80%)</th>
+<th class="py-2.5 px-space-sm text-center">Refund Rate</th>
+<th class="py-2.5 px-space-sm text-right rounded-r-lg">Analytics</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-surface-container">
+<!-- Course Row 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-3">
+<img class="w-12 h-8 rounded-lg object-cover bg-surface-container-highest shrink-0" data-alt="Dark high-tech cinematic course banner for event-driven microservices architecture Kafka and Go language with neon purple code streams and network topology nodes on deep black obsidian canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHPzVZwa5tjcdABjhvyJs4MdVr66S25xMrylbA7f_ZM5xNvWrty2N2UU7JmBk6xnFnKZ2Q9mMpYATWYlU-2PfrFjWcT0V0HpqycVO4RDo0EJgq1xoi4tb6saIpAPJcodahQfX435ShZv_PGYbJ9kBiGxbd78D1c6sNGcao0mEuy8fKp7izfS8jHoQvnKX00D28kVBWErp71s29VV_3yU3Vn1elFDZf-8qRRTULDJE"/>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Mastering Event-Driven Microservices with Kafka &amp; Go</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 Lessons • Updated 3 days ago</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface font-medium">$24.99</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface">480</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface-variant">$11,995.20</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-secondary">$9,596.16</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex px-1.5 py-0.5 rounded text-secondary bg-surface-container font-label-sm text-label-sm font-semibold">0.8%</span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</td>
+</tr>
+<!-- Course Row 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-3">
+<img class="w-12 h-8 rounded-lg object-cover bg-surface-container-highest shrink-0" data-alt="Architectural technical diagram thumbnail representing a distributed storage engine written in Rust with deep blue memory visualization and atomic disk logs in dark mode styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC-wKqB9biTgaDZOjmbcvU_nUJEvli1RY-MYbXmF4bTeW8LeDbqWD-etqVK92STJjo5uZFm6OU_XeNtqLXgaZ9orIb6xgeVXjQKO9m98cRO1il0V_JCFm-x8UhKPEE28LVTGPrHLVPPbZNUBE9_GLy_AwHEBmA3CXXWQ8c-2FNCXb8wZsz3NjZP3ZchMOQpB-M5jKTOVUmRD6OpHRDr8DNAYeojuorXY_efIkjIYw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Building a Distributed Database from Scratch in Rust</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">58 Lessons • Flagship Curriculum</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface font-medium">$39.99</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface">310</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface-variant">$12,396.90</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-secondary">$9,917.52</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex px-1.5 py-0.5 rounded text-secondary bg-surface-container font-label-sm text-label-sm font-semibold">0.4%</span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</td>
+</tr>
+<!-- Course Row 3 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-3">
+<img class="w-12 h-8 rounded-lg object-cover bg-surface-container-highest shrink-0" data-alt="Technical visual representing Linux kernel eBPF bytecode tracing and Kubernetes ingress clusters rendered in indigo wireframe on high contrast obsidian dark canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR1nrfzh7ZtfPWxVGxwVS5j3sfGNAJNt-c5PV2CmUDQcO8PvfLGTI8lKV0o2biIHLxc0Ujt1VRSmg3H4zygU8nXr2xv6CRbNsX9_Sr7PdxUMTWL3WnicrsaWU3tDMGOCuNk3oA0yEYqqZudq36AvP4n6hm9RJnD0lus55GFggu_ynEoOjyH0nLnFGGKylU7u1ZQUlELEzunx-4fx_YsDYI-lNqNxaxdHgHklqK6oM"/>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Kubernetes &amp; eBPF Deep Dive: Observability at Scale</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24 Lessons • Recently Released</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface font-medium">$29.99</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface">100</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline text-on-surface-variant">$2,999.00</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-secondary">$2,399.20</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex px-1.5 py-0.5 rounded text-secondary bg-surface-container font-label-sm text-label-sm font-semibold">1.1%</span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Curriculum Summary Metrics Footer -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs font-label-sm text-label-sm text-on-surface-variant px-space-sm">
+<div class="flex items-center gap-4">
+<span>Total Units Sold: <strong class="text-on-surface font-code-inline">890</strong></span>
+<span>Average Cart Basket Size: <strong class="text-secondary font-code-inline">$28.40</strong></span>
+<span>Cumulative Creator Net Cut: <strong class="text-secondary font-code-inline">$21,912.88</strong></span>
+</div>
+<button class="text-primary hover:text-tertiary font-body-sm text-body-sm font-medium flex items-center gap-1 transition-colors">
+<span>View All Curricula Analytics</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- TAB 2 CONTENT: Memberships Tiers Grid (Hidden by default, switched via JS) -->
+<div class="hidden grid-cols-1 md:grid-cols-3 gap-space-md" id="tab-memberships-panel">
+<!-- Tier 1: Code Apprentice -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">240 active members</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Code Apprentice</h3>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary font-code-inline">$4.99</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">/ month</span>
+</div>
+<span class="font-code-inline text-code-inline text-on-surface-variant mt-0.5">Generates $1,197.60/mo MRR</span>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Tier Perks</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Custom Discord Supporter Role</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Exclusive Monthly Q&amp;A Livestream</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Early Access to Free Videos (48h)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<button class="w-full py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-medium transition-all flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Manage Tier</span>
+</button>
+</div>
+</div>
+<!-- Tier 2: Senior Architect -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between shadow-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-primary-container/30 text-tertiary flex items-center justify-center shadow-[0_0_12px_rgba(111,61,217,0.3)]">
+<span class="material-symbols-outlined text-[18px]">diamond</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold">172 active members</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Senior Architect</h3>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-tertiary font-code-inline">$19.99</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">/ month</span>
+</div>
+<span class="font-code-inline text-code-inline text-on-surface-variant mt-0.5">Generates $3,438.28/mo MRR</span>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Tier Perks</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Full Course &amp; Git Repo Access</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Bi-Weekly 1-on-1 Code Reviews</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Private Architecture Sandbox</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Tamper-proof certification</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm relative z-10">
+<button class="w-full py-2 rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-semibold transition-all flex items-center justify-center gap-1.5 shadow-[0_0_12px_rgba(79,70,229,0.25)]">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Manage Tier</span>
+</button>
+</div>
+</div>
+<!-- Add New Membership Tier Prompt Card -->
+<div class="p-space-md rounded-xl bg-surface-container-high/40 hover:bg-surface-container-high/70 transition-all flex flex-col items-center justify-center text-center group cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary group-hover:scale-110 transition-all mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors">+ Add New Membership Tier</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-xs">Introduce VIP 1-on-1 Mentorship or Enterprise Team Access cohorts with custom monthly pricing.</p>
+<span class="mt-space-sm px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Supports recurring billing</span>
+</div>
+</div>
+</div>
+<!-- 3. RECENT PAYOUT HISTORY TABLE & 4. COMPLIANCE DRAWER (Split Section) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Recent Payout Ledger (8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Disbursement &amp; Payout Ledger</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immutable record of automatic ACH transfers, card payouts, and wire releases</span>
+</div>
+<!-- Table Filters -->
+<div class="flex items-center gap-space-xs">
+<select class="bg-surface-container text-on-surface font-label-sm text-label-sm px-space-xs py-1.5 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary">
+<option>All Gateways</option>
+<option>Stripe Express</option>
+<option>Razorpay Route</option>
+</select>
+<select class="bg-surface-container text-on-surface font-label-sm text-label-sm px-space-xs py-1.5 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary">
+<option>Status: All</option>
+<option>Completed</option>
+<option>Processing</option>
+</select>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant rounded-lg font-label-sm text-label-sm">2026</span>
+</div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-sm rounded-l-lg">Disbursement ID</th>
+<th class="py-2.5 px-space-sm">Date</th>
+<th class="py-2.5 px-space-sm">Gateway</th>
+<th class="py-2.5 px-space-sm">Destination</th>
+<th class="py-2.5 px-space-sm text-right">Amount</th>
+<th class="py-2.5 px-space-sm text-center">Status</th>
+<th class="py-2.5 px-space-sm text-right rounded-r-lg">Receipt</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-surface-container">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-primary">#TXN-94021</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-code-inline text-code-inline">Nov 01, 2026</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Stripe Express</span>
+</div>
+</td>
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-on-surface-variant">Chase Business •••• 9210</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-on-surface">$1,850.00</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Paid
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-code-inline text-code-inline" href="#">
+<span>PDF</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-primary">#TXN-88219</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-code-inline text-code-inline">Oct 15, 2026</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Razorpay Route</span>
+</div>
+</td>
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-on-surface-variant">HDFC FX •••• 3412</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-on-surface">$2,140.50</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Paid
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-code-inline text-code-inline" href="#">
+<span>PDF</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</a>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-primary">#TXN-82041</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-code-inline text-code-inline">Oct 01, 2026</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Stripe Express</span>
+</div>
+</td>
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-on-surface-variant">Chase Business •••• 9210</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-on-surface">$1,920.00</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Paid
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-code-inline text-code-inline" href="#">
+<span>PDF</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-primary">#TXN-79102</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-code-inline text-code-inline">Sep 15, 2026</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Stripe Express</span>
+</div>
+</td>
+<td class="py-3 px-space-sm font-code-inline text-code-inline text-on-surface-variant">Chase Business •••• 9210</td>
+<td class="py-3 px-space-sm text-right font-code-inline text-code-inline font-bold text-on-surface">$1,640.00</td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Paid
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-code-inline text-code-inline" href="#">
+<span>PDF</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+<span>Showing 4 of 28 disbursements</span>
+<div class="flex items-center gap-2">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high transition-colors" disabled="">Previous</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- 4. TAX & COMPLIANCE QUICK DRAWER / WIDGET (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Tax Status Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Tax &amp; Compliance</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">IRS 2026 Compliant</span>
+</div>
+<div class="flex flex-col gap-3 mt-1">
+<!-- Form W-9 / W-8BEN Status -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">W-9 / W-8BEN Tax Form</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status: Verified &amp; Up to Date (TIN: •••-••-8921)</span>
+<a class="font-label-sm text-label-sm text-primary hover:text-tertiary mt-1 inline-flex items-center gap-0.5" href="#">
+                  Update Form Document <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- 1099-K Status -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">account_balance</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">1099-K Electronic Filing</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Threshold projected at $64K — Ready for Jan 2027 dispatch.</span>
+<span class="font-code-inline text-code-inline text-secondary font-medium mt-1">Status: Enrolled via Stripe 1099</span>
+</div>
+</div>
+</div>
+<!-- Direct Creator Payout Desk Support -->
+<div class="mt-2 pt-space-sm bg-surface-container/50 p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Creator Payout Desk</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Priority 4h turnaround SLA</span>
+</div>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-medium transition-all">
+              Contact Desk
+            </button>
+</div>
+</div>
+<!-- Real-Time Split Ledger Mini Notice -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Direct Routing Logic</span>
+<span class="font-code-inline text-code-inline text-secondary font-bold">ACTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Platform cuts are deducted at settlement before escrow clearance. Automated ACH batches trigger every second Tuesday at 00:00 UTC.
+          </p>
+<div class="flex items-center gap-2 font-code-inline text-code-inline text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+<span>Cryptographic Escrow: SHA-256 Validated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Tab Switcher Script -->
+<script>
+    function switchStreamTab(tab) {
+      const coursesPanel = document.getElementById('tab-courses-panel');
+      const membershipsPanel = document.getElementById('tab-memberships-panel');
+      const coursesBtn = document.getElementById('tab-btn-courses');
+      const membershipsBtn = document.getElementById('tab-btn-memberships');
+
+      if (tab === 'courses') {
+        coursesPanel.classList.remove('hidden');
+        membershipsPanel.classList.add('hidden');
+        membershipsPanel.classList.remove('grid');
+
+        coursesBtn.className = 'flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-primary-container text-white font-body-sm text-body-sm font-semibold transition-all shadow-[0_0_12px_rgba(79,70,229,0.3)]';
+        membershipsBtn.className = 'flex items-center gap-2 px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all';
+      } else {
+        coursesPanel.classList.add('hidden');
+        membershipsPanel.classList.remove('hidden');
+        membershipsPanel.classList.add('grid');
+
+        membershipsBtn.className = 'flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-primary-container text-white font-body-sm text-body-sm font-semibold transition-all shadow-[0_0_12px_rgba(79,70,229,0.3)]';
+        coursesBtn.className = 'flex items-center gap-2 px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all';
+      }
+    }
+  </script>
+</div></main></div></body></html>

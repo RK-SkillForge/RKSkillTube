@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><meta content="web_dashboard" name="shell-type"/><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#d0bcff", "on-secondary-container": "#e6ecff", "inverse-primary": "#4d44e3", "primary-fixed": "#e2dfff", "surface-container": "#1c2028", "secondary-fixed-dim": "#adc6ff", "surface-variant": "#31353e", "on-error-container": "#ffdad6", "on-surface-variant": "#c7c4d8", "outline": "#918fa1", "on-surface": "#dfe2ee", "surface-dim": "#0f131c", "surface-bright": "#353942", "on-tertiary-container": "#e3d5ff", "on-primary-fixed-variant": "#3323cc", "on-tertiary-fixed": "#23005c", "on-secondary": "#002e6a", "on-primary-container": "#dad7ff", "surface-container-low": "#181c24", "on-tertiary": "#3c0091", "error-container": "#93000a", "on-secondary-fixed": "#001a42", "error": "#ffb4ab", "surface": "#0f131c", "primary": "#c3c0ff", "surface-container-high": "#262a33", "tertiary-fixed-dim": "#d0bcff", "secondary-fixed": "#d8e2ff", "primary-container": "#4f46e5", "outline-variant": "#464555", "on-background": "#dfe2ee", "on-error": "#690005", "secondary-container": "#0566d9", "inverse-surface": "#dfe2ee", "tertiary-fixed": "#e9ddff", "primary-fixed-dim": "#c3c0ff", "on-secondary-fixed-variant": "#004395", "surface-container-lowest": "#0a0e16", "tertiary-container": "#6f3dd9", "background": "#0f131c", "on-primary-fixed": "#0f0069", "inverse-on-surface": "#2c3039", "on-primary": "#1d00a5", "surface-container-highest": "#31353e", "secondary": "#adc6ff", "on-tertiary-fixed-variant": "#5516be", "surface-tint": "#c3c0ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-lg-mobile": ["Geist"], "display-xl-mobile": ["Geist"], "display-xl": ["Geist"], "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-md": ["Inter"], "headline-sm": ["Geist"], "body-sm": ["Inter"], "code-inline": ["JetBrains Mono"], "headline-lg": ["Geist"], "headline-md": ["Geist"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "code-inline": ["13px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 z-50"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(79,70,229,0.45)]"><span class="material-symbols-outlined text-white text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">RKSkillTube <span class="text-primary font-semibold tracking-wider text-body-sm px-1.5 py-0.5 rounded bg-primary-container/20 border border-primary/30 uppercase ml-0.5">PRO</span></span></div><span class="hidden md:inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high border border-outline-variant/40 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Creator Studio</span></div><div class="flex-1 max-w-2xl mx-space-md flex items-center gap-space-xs"><div class="relative flex items-center flex-1"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-16 bg-surface-container-low border border-outline-variant/30 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/40 transition-all" placeholder="Search catalog, videos, modules, or tags..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant/30 pointer-events-none">/</span></div><button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest border border-tertiary/30 text-tertiary font-body-sm text-body-sm flex items-center gap-space-xs transition-colors shrink-0 shadow-[0_0_12px_rgba(208,188,255,0.15)]"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-medium">AI Search</span></button></div><div class="flex items-center gap-space-sm shrink-0"><div class="relative group"><button class="h-9 px-space-sm rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-medium flex items-center gap-space-xs shadow-[0_0_16px_rgba(79,70,229,0.35)] transition-all"><span class="material-symbols-outlined text-[18px]">add</span><span>Create</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="hidden group-hover:flex absolute right-0 top-full pt-1 flex-col z-50"><div class="w-52 py-1 bg-surface-container-high border border-outline-variant/40 rounded-xl shadow-2xl flex flex-col"><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-primary">upload</span>Upload Video</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-tertiary">library_books</span>New Course Curriculum</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-error">podcasts</span>Create Live Stream</a></div></div></div><div class="relative"><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-outline-variant/60 cursor-pointer transition-all"><div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-white ring-1 ring-white/20"><span class="material-symbols-outlined text-[16px]">terminal</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-1"><span class="font-body-sm text-body-sm font-medium text-on-surface leading-none">CodeWithRK</span><span class="material-symbols-outlined text-[14px] text-secondary">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">PRO Creator</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="w-8 h-8 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/20 z-40 flex flex-col justify-between p-space-sm"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-1"><span class="font-label-sm text-label-sm font-medium text-on-surface-variant uppercase tracking-wider">Studio Management</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-white font-medium shadow-[0_0_16px_rgba(79,70,229,0.3)] border-l-2 border-primary"><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio-content-and-videos" href="#">Content &amp; Videos</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio-dashboard" href="#">Studio Overview</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="watch-later-queue-management" href="#">Watch Later Queue</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="course-builder" href="#">Course Builder</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="analytics-insights" href="#">Analytics &amp; Insights</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="monetization-payouts" href="#">Monetization &amp; Payouts</a><a class="flex items-center px-space-sm py-2 rounded-xl bg-primary-container text-white font-medium shadow-[0_0_16px_rgba(79,70,229,0.3)] border-l-2 border-primary transition-all font-body-sm text-body-sm" data-path="comments-and-q-and-a" href="#">Comments &amp; Q&amp;A</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="customization" href="#">Customization</a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm rounded-xl bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">cloud</span><span class="font-label-md text-label-md text-on-surface font-semibold">CDN Storage</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold">64.2%</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mb-2"><div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 64.2%"></div></div><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-2"><span>321 GB of 500 GB</span><span class="text-primary font-medium">PRO Tier</span></div><a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-primary hover:text-tertiary font-medium transition-colors" href="#"><span>Manage Storage</span><span class="material-symbols-outlined text-[14px]">north_east</span></a></div></aside><div class="pl-64"><main class="relative w-full pt-16 px-gutter-desktop py-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Telemetry Bar -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl mb-space-md shadow-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Creator Studio</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span>Discussions &amp; Support</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-primary font-semibold">@CodeWithRK</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Comments &amp; Student Q&amp;A Inbox</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Median Response: 34 mins (Top 5% Instructor)</span>
+</span>
+</div>
+</div>
+<!-- Batch Controls -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">done_all</span>
+<span>Mark All as Read</span>
+</button>
+<button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+<span>Export Q&amp;A Digest</span>
+</button>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-tertiary-container/30 text-tertiary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>AI Auto-Triage Active</span>
+</div>
+</div>
+</div>
+<!-- Quick KPI Telemetry Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Unanswered</span>
+<span class="font-headline-md text-headline-md font-bold text-error mt-0.5">24 Pending</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">High SLA Priority</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Code Inquiries</span>
+<span class="font-headline-md text-headline-md font-bold text-tertiary mt-0.5">18 Snippets</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compiler / Arch</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Community Score</span>
+<span class="font-headline-md text-headline-md font-bold text-secondary mt-0.5">99.2% Helpful</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2,481 Upvoted</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Solution Pins</span>
+<span class="font-headline-md text-headline-md font-bold text-primary mt-0.5">142 Pinned</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Canonical Answers</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-container/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">push_pin</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter & Triage Toolbar -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl mb-space-md shadow-md">
+<!-- Segmented Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="h-8 px-3 rounded-xl bg-primary-container text-white font-body-sm text-body-sm font-medium flex items-center gap-1.5 shrink-0 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span>I Haven't Responded (24)</span>
+</button>
+<button class="h-8 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-tertiary">data_object</span>
+<span>Technical Code Questions (18)</span>
+</button>
+<button class="h-8 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm shrink-0 transition-colors">
+<span>Course Q&amp;A (42)</span>
+</button>
+<button class="h-8 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm shrink-0 transition-colors">
+<span>Published &amp; Resolved</span>
+</button>
+<button class="h-8 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 shrink-0 transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Held for Review (3)</span>
+</button>
+</div>
+<!-- Search & Triage Controls Row -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs w-full lg:w-auto flex-1">
+<div class="relative flex items-center flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-14 bg-surface-container rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search comments by keyword, student handle, or lesson ID..." type="text"/>
+<span class="absolute right-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">Ctrl+K</span>
+</div>
+<button class="h-9 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1 shrink-0">
+<span>All Courses &amp; Lessons</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-between lg:justify-end">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort:</span>
+<button class="h-9 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1">
+<span class="font-medium">Unanswered Priority</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span>
+</button>
+</div>
+<button class="h-9 px-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">select_all</span>
+<span>Batch Actions</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- Left Column: Threaded Q&A Interactive Cards (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- CARD 1: High-Priority Technical Code Question (Expanded) -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<!-- Card Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<img class="w-10 h-10 rounded-xl object-cover shrink-0 shadow-sm" data-alt="Close-up portrait of software engineer Rahul with glasses smiling slightly in a modern technical workspace surrounded by dark dual display monitors with vibrant purple and indigo code terminals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGF4yGxXTx3I5aVLxXdkNGR_d0Jfft2w6MBUUz-rNnOKOLo7eLoIs0qXIpo5ZppCsrRx3_wXVydQBIyNZyhr7tJx6pk7ciKh0XT-tiN3faceRrdPkx0DTlp0UI04RPtIR5SuODUFZmNH2-gZzRiZlzb15mNXj1fVeOcviahr2K1IcfV6czzwaesBH8ev1iDH8dg21qTPUBY-KyLM1P4jbEcAd2_BHIVEUx_GhsMNg"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-body-md text-body-md font-bold text-on-surface">Rahul Sharma</span>
+<span class="font-label-sm text-label-sm text-primary">@dev_rahul</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase">PRO Learner</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 18 mins ago</span>
+</div>
+<div class="flex items-center gap-2 mt-1 flex-wrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant">System Design Masterclass • Lesson 4: Distributed Caching</span>
+<a class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]">play_circle</span>
+<span>12:45 Jump to Video</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm shrink-0 self-start">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>Technical Architecture • High Priority</span>
+</div>
+</div>
+<!-- Question Body -->
+<div class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Why do we use Redis cluster hashing slots (16,384 slots) with CRC16 instead of standard consistent hashing with a virtual node ring here? In high-concurrency re-sharding, doesn't consistent hashing minimize key migrations more predictably?
+        </div>
+<!-- Syntax-Highlighted Snippet Box -->
+<div class="bg-surface-dim rounded-xl overflow-hidden shadow-inner">
+<div class="bg-surface-container px-space-sm py-1.5 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary/70"></span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium ml-1">cluster_slot_calc.go</span>
+</div>
+<button class="flex items-center gap-1 hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+<div class="p-space-sm overflow-x-auto font-code-inline text-code-inline leading-relaxed text-on-surface-variant">
+<p><span class="text-tertiary">// Redis Cluster CRC16 slot calculation</span></p>
+<p><span class="text-primary font-semibold">func</span> <span class="text-secondary font-semibold">Slot</span>(key <span class="text-tertiary">string</span>) <span class="text-tertiary">uint16</span> {</p>
+<p class="pl-4"> <span class="text-primary font-semibold">return</span> crc16.<span class="text-secondary">Checksum</span>([]<span class="text-tertiary">byte</span>(key)) % <span class="text-tertiary">16384</span></p>
+<p>}</p>
+<p class="mt-1"><span class="text-tertiary">// Versus Consistent Hash Ring with 256 vnodes:</span></p>
+<p>ring.<span class="text-secondary">AddNode</span>(<span class="text-secondary">"cache-shard-04"</span>, <span class="text-tertiary">256</span>)</p>
+</div>
+</div>
+<!-- Student Context Banner -->
+<div class="flex items-center justify-between px-space-sm py-2 rounded-xl bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Enrolled in Flagship Cohort • Completed 42% of course (Progress on schedule)</span>
+</div>
+<span class="text-primary font-medium">Cohort Batch 08</span>
+</div>
+<!-- Interactive Reaction Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-error">favorite</span>
+<span>12</span>
+</button>
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">thumb_up</span>
+<span>34</span>
+</button>
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">push_pin</span>
+<span>Pin Solution</span>
+</button>
+</div>
+<button class="h-8 px-3 rounded-xl bg-tertiary-container/30 hover:bg-tertiary-container/50 text-tertiary font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Draft AI Response</span>
+</button>
+</div>
+<!-- Expanded Inline "Reply as Instructor" Workspace -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm shadow-md mt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</div>
+<span class="font-body-sm text-body-sm font-bold text-on-surface">Replying as CodeWithRK</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container/30 text-secondary font-label-sm text-label-sm uppercase font-semibold">Lead Instructor</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Markdown &amp; LaTeX Enabled</span>
+</div>
+<!-- Rich Text Formatting Bar -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-xl">
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">functions</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">add_link</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</button>
+<div class="h-4 w-px bg-surface-container-high mx-1"></div>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span>
+<span>Insert AI Snippet</span>
+</button>
+</div>
+<!-- Textarea Draft -->
+<textarea class="w-full bg-surface-container-lowest p-space-sm rounded-xl font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none resize-y leading-relaxed" rows="4">Great question @dev_rahul! Consistent hashing minimizes key movement during single-node additions, but Redis cluster slots provide deterministic slot ownership and zero cluster-wide coordination overhead when routing requests via client-side smart drivers. 
+
+When a slot migrates during resharding, client topology receives an ASK or MOVED redirection payload, keeping cluster gossip bandwidth minimal and avoiding boundary ambiguity across heterogeneous network topologies.</textarea>
+<!-- Reply Footer Options & Trigger -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-md flex-wrap">
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-highest text-primary-container accent-primary-container" type="checkbox"/>
+<span>Pin reply as Accepted Instructor Solution</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-highest text-primary-container accent-primary-container" type="checkbox"/>
+<span>Notify Rahul via email &amp; push</span>
+</label>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="h-9 px-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-body-sm text-body-sm transition-colors">Discard</button>
+<button class="h-9 px-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm transition-colors">Save Private Note</button>
+<button class="h-9 px-4 rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-medium flex items-center gap-1.5 shadow-sm transition-all">
+<span>Send Official Reply</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 2: Verified Course Feedback & Certificate Celebration -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<img class="w-10 h-10 rounded-xl object-cover shrink-0 shadow-sm" data-alt="Portrait of Elena, an energetic backend systems engineer with dark hair tied back in an architectural glass engineering office with deep blue accent ambient lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD55CO3UFADKN86xZICbvDXJ10hUauHoUxuJrSjTl_zJXJVoPEVRzPHlxc-542DMPvLIxOd09Y2hBRyRBTkn15IRx9OwBTfmCrujqb89-JQ_w2K6BcPPuF5bv12VKJDeM_41LIjaMZ8ML6Pb0tfj9R1ayiyxsbOyGdpPMs5LAD3eubgmJiRMCAg1lbaReUqHX_7ql3icrzSie6Tlx1AsNd3NhQkbOwFA_HiN47Cj3U"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-body-md text-body-md font-bold text-on-surface">Elena Rostova</span>
+<span class="font-label-sm text-label-sm text-secondary">@elena_dev</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm uppercase">Alumni ✓</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 2 hours ago</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rust Systems Engineering &amp; Memory Layouts • Final Milestone</span>
+</div>
+</div>
+<!-- 5-Star Badge -->
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm shrink-0 self-start">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">5.0 Star Feedback</span>
+</div>
+</div>
+<div class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Certificate verified and added to LinkedIn! Loved the hands-on project building a custom B-Tree storage engine from scratch. The concurrency debugging section saved me days at work.
+        </div>
+<!-- Verified Credential Preview Badge -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-space-sm rounded-xl bg-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Verified Credential #RKS-9842-RUST</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SHA-256 Validated on Polygon Ledger</span>
+</div>
+</div>
+<button class="h-8 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm flex items-center gap-1 self-start sm:self-auto transition-colors">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+<span>View Public Record</span>
+</button>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="text-on-surface-variant">Instructor Liked</span>
+</button>
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">reply</span>
+<span>Reply</span>
+</button>
+<button class="h-8 px-2.5 rounded-xl bg-secondary-container/30 hover:bg-secondary-container/50 text-secondary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span>Feature in Testimonials</span>
+</button>
+</div>
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Share</span>
+</button>
+</div>
+</article>
+<!-- CARD 3: Follow-Up Threaded Lesson Query -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<img class="w-10 h-10 rounded-xl object-cover shrink-0 shadow-sm" data-alt="Portrait of Marcus, a cloud reliability engineer with headphones around neck at a modern tech hub with dark slate background and faint neon purple reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeSalsNe_lycnNMNpLDfq_4ImnbdG3Xvu13U155vojbhqHGaytL96DEmzqovWPYpXnMzSiYq9WZeOKEYmVfXkHIeRGti2njhDkAv2sn_S4xBqXlPFdMEX4jU8E9dx4sm_SnkFwJGairFYbZkhx9A3wZlWjRRBsAAfwUMMcD4qjFQ2D8Zu8MXx7pdWt5X5tT_6FS0p9tuMIvFrnnbgx8QhyVJ2qPrlCxJ3dgChwLR4"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-body-md text-body-md font-bold text-on-surface">Marcus Chen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">@mchen_infra</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">DevOps Engineer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 5 hours ago</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5 flex-wrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kubernetes &amp; eBPF Deep Dive • Lesson 9: Cilium XDP Filters</span>
+<a class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]">play_circle</span>
+<span>24:10 Timestamp</span>
+</a>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0 self-start">
+            1 Peer Reply • Instructor Response Pending
+          </span>
+</div>
+<div class="font-body-md text-body-md text-on-surface leading-relaxed">
+          At 24:10, when loading the eBPF program into the kernel with <code class="px-1.5 py-0.5 bg-surface-container text-tertiary rounded font-code-inline text-code-inline">bpftool</code>, do we need <code class="px-1.5 py-0.5 bg-surface-container text-tertiary rounded font-code-inline text-code-inline">CAP_SYS_ADMIN</code>, or does <code class="px-1.5 py-0.5 bg-surface-container text-tertiary rounded font-code-inline text-code-inline">CAP_BPF</code> suffice on Linux 5.8+?
+        </div>
+<!-- Peer Reply Sub-thread Preview -->
+<div class="ml-4 pl-4 bg-surface-container p-space-sm rounded-xl flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Alex K. (@alex_k8s)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">• Peer Answer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 hours ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            On Linux 5.8+, CAP_BPF alone is sufficient for loading network programs like XDP, provided you also have CAP_NET_ADMIN if attaching directly to the network interface card device driver.
+          </p>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">reply</span>
+<span>Quick Reply</span>
+</button>
+<button class="h-8 px-3 rounded-xl bg-secondary-container/20 hover:bg-secondary-container/40 text-secondary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Endorse Peer Answer</span>
+</button>
+</div>
+<button class="h-8 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span>Mark Resolved</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Right-Side Column: Triage & AI Co-Pilot Dock (4 Cols / ~33%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Gemini AI Co-Pilot Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Gemini Auto-Triage</h2>
+<span class="font-label-sm text-label-sm text-tertiary">8 Drafts Prepared</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          AI generated contextual drafts by cross-referencing video transcripts, lecture slides, and Git repo commits.
+        </p>
+<!-- Suggested Item Card -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Suggested for @dev_rahul</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lesson 4 Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3">
+            "Redis cluster slots (0-16383) use deterministic mapping via CRC16 so client drivers can cache the route table locally. Consistent hash rings with virtual nodes..."
+          </p>
+<div class="flex items-center gap-2 mt-1">
+<button class="h-7 px-2.5 rounded-lg bg-primary-container hover:bg-inverse-primary text-white font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Review &amp; Insert</span>
+</button>
+<button class="h-7 px-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm transition-colors">
+              Regenerate
+            </button>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Suggested for @mchen_infra</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lesson 9 Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3">
+            "Under Linux 5.8+, CAP_BPF isolates eBPF privilege from CAP_SYS_ADMIN. However, for XDP link attach, CAP_NET_ADMIN is mandatory on network namespaces..."
+          </p>
+<div class="flex items-center gap-2 mt-1">
+<button class="h-7 px-2.5 rounded-lg bg-primary-container hover:bg-inverse-primary text-white font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Review &amp; Insert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Trending Question Topics Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Trending Topics</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last 7 Days</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="font-code-inline text-code-inline text-tertiary">#redis-cluster</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">14 queries</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="font-code-inline text-code-inline text-secondary">#ebpf-cilium</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">9 queries</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="font-code-inline text-code-inline text-primary">#rust-borrow-checker</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">8 queries</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="font-code-inline text-code-inline text-on-surface">#kafka-outbox-pattern</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">6 queries</span>
+</div>
+</div>
+</div>
+<!-- Instructor Office Hours & Live Broadcast -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-xl bg-secondary-container/30 flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">podcasts</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Office Hours &amp; Broadcast</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Community Sync</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">event</span>
+<span>Thursday at 5:00 PM UTC</span>
+</div>
+<span class="font-body-md text-body-md font-bold text-on-surface">Distributed Consensus Deep Dive</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Live code walkthrough answering complex questions on Raft, Paxos, and Zab implementations.
+          </p>
+</div>
+<button class="w-full h-9 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-medium flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-primary">campaign</span>
+<span>+ Post Announcement to All Enrollees</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

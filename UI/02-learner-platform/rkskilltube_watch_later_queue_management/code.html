@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-container":"#0566d9","outline-variant":"#464555","surface-container-lowest":"#0a0e16","surface-container":"#1c2028","on-secondary-fixed":"#001a42","surface-tint":"#c3c0ff","on-surface":"#dfe2ee","error-container":"#93000a","on-secondary":"#002e6a","tertiary-container":"#6f3dd9","on-tertiary":"#3c0091","on-background":"#dfe2ee","error":"#ffb4ab","on-primary-fixed-variant":"#3323cc","on-error-container":"#ffdad6","on-error":"#690005","on-surface-variant":"#c7c4d8","tertiary-fixed":"#e9ddff","on-tertiary-fixed":"#23005c","primary":"#c3c0ff","on-secondary-container":"#e6ecff","surface-container-high":"#262a33","inverse-surface":"#dfe2ee","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#004395","primary-container":"#4f46e5","tertiary":"#d0bcff","on-tertiary-fixed-variant":"#5516be","surface-dim":"#0f131c","primary-fixed-dim":"#c3c0ff","inverse-on-surface":"#2c3039","background":"#0f131c","secondary-fixed":"#d8e2ff","on-primary-container":"#dad7ff","outline":"#918fa1","primary-fixed":"#e2dfff","surface-bright":"#353942","inverse-primary":"#4d44e3","surface-variant":"#31353e","on-primary":"#1d00a5","surface":"#0f131c","surface-container-low":"#181c24","on-tertiary-container":"#e3d5ff","secondary-fixed-dim":"#adc6ff","surface-container-highest":"#31353e","secondary":"#adc6ff","on-primary-fixed":"#0f0069"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-tablet":"1.5rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem","margin":"1rem"},"fontFamily":{"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Geist"],"headline-lg-mobile":["Geist"],"display-xl":["Geist"],"body-lg":["Inter"],"headline-sm":["Geist"],"code-inline":["JetBrains Mono"],"body-sm":["Inter"],"display-xl-mobile":["Geist"],"headline-md":["Geist"]},"fontSize":{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-inline":["13px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"display-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-space-md lg:px-space-lg"><div class="flex items-center gap-space-md"><button class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">menu</span></button><div class="flex items-center gap-space-sm"><img alt="RKSkillTube Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAvLXp8zwh6rPC2aZUFxhGK0rYQB-fCtj1uIcfjx_m8QbUk2_NVdMRSwQ6JbWUw3HQ3SCD8uQZawRZfDo0MxeEzH1UomuQcOtfP1EGDSNS98TVTtf8E-xRxX-s_ZzfMaNbHVgmRNtgWMHImE_Y23kEM3DY7YpbIbM7Ya3Z3WXEX7W6H-RRvjjF3p2ly7YrX_VAOpF2YczDmrJUd2pDwNzv4ayAyjuNkpCd-uM9sTg"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">RKSkillTube</span><span class="px-space-xs py-0.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-semibold">PRO</span></div></div></div><div class="hidden md:flex items-center gap-space-sm flex-1 max-w-2xl mx-space-lg"><div class="flex items-center flex-1 h-10 px-space-sm rounded-lg bg-surface-container-low border border-outline-variant/40 focus-within:border-primary-container transition-all"><span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">search</span><input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none" placeholder="Search lessons, architectures, algorithms..." type="text"/><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Ctrl+K</span><button class="ml-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">mic</span></button></div><button class="flex items-center gap-space-xs h-10 px-space-sm rounded-lg bg-tertiary-container/30 border border-tertiary/30 text-tertiary hover:bg-tertiary-container/50 hover:text-on-tertiary-container transition-all" type="button"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-label-md text-label-md">AI Search</span></button></div><div class="flex items-center gap-space-md"><div class="relative"><button class="flex items-center gap-space-xs h-9 px-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Create</span></button></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9FQ4pJVAlxRNdq8ajydBwRA-d5SQatDNKMibAnpt4InMXtlsTMNpFUD3JdUIErljX-R4caRsNJDQBPsTwPM2xbryksyBoVTiF4YWtiNQ6Wh39PvbynRvRJtJhLk_Hu1gder1SF_WYKf0JerBz0cAcInYJ2XFxJUAU3lrUTyprXKeHPkRrXuTubukQ_81yLJcvV781c-9mtvnOMkqREuXmWu4p49tTg8fnC8ydsaM"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden xl:flex flex-col text-left"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Alex Rivers</span><span class="font-label-sm text-label-sm text-secondary">Creator / Pro</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest/90 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between py-space-md px-space-sm overflow-y-auto z-40"><div class="flex flex-col gap-space-md"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="explore-feed" href="#">Explore</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="subscriptions" href="#">Subscriptions</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="watch" href="#">Watch</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="playlists-library" href="#">Playlists / Library</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="creator-studio" href="#">Creator Studio</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="course-builder" href="#">Course Builder</a></nav><div class="pt-space-sm border-t border-outline-variant/30 flex flex-col gap-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider">Learning Tracks</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-system-design" href="#">System Design</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-full-stack" href="#">Full-Stack</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-dsa-algorithms" href="#">DSA &amp; Algorithms</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-ai-machine-learning" href="#">AI &amp; Machine Learning</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="track-cloud-devops" href="#">Cloud DevOps</a></nav></div></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30"><a class="block p-space-sm rounded-lg bg-surface-container-low border border-tertiary/40 hover:border-tertiary transition-all" data-path="gemini-ai-tutor" href="#"><div class="flex items-center gap-space-xs text-tertiary mb-1"><span class="material-symbols-outlined text-[18px]">psychology</span><span class="font-label-md text-label-md font-semibold">AI Study Tutor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Interactive code analysis, system review &amp; mock interviews.</p></a></div></aside><div class="pl-64"><main class="w-full min-h-screen pt-16 px-space-md lg:px-space-lg bg-surface"><div class="flex flex-col w-full">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg w-full items-start">
+<!-- LEFT SUMMARY PANEL (Sticky Sidebar / Card, ~28% width) -->
+<div class="xl:col-span-4 2xl:col-span-3 flex flex-col gap-space-md xl:sticky xl:top-20 z-10">
+<!-- Queue Hero Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-xl p-space-lg flex flex-col gap-space-md">
+<!-- Glow Layer -->
+<div class="absolute -top-24 -left-24 w-60 h-60 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -right-20 w-52 h-52 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Visual Art Header -->
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-lowest flex items-center justify-center group shadow-md">
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-container-lowest via-surface-container-low/60 to-primary-container/30 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Dark obsidian technical workspace with glowing indigo and neon blue circuit board traces, low latency data streaming diagrams, and high precision developer tooling interfaces on multiple screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5WaZ_hXQQZZ4PRxF1VMvuteH5NwbEuHX8Jv-sUmKMImNYH-tArQSlv19Oc87YMTQG64x8nF2JPoVa4MqN-qowJLllUDlAQ83z6KuavSsEPiUbbxt7BjnzQOGmxLKPiHk3IPXrxKDSrSlkshK7DpLzOPADJ4T6ITPObVT4QbluLQxABCnRg3pEzx6BlbZhTmUb0uUaHynUWRAtH-40Ccai5qkaozDBxrJYaQTSDc"/>
+<div class="relative z-20 flex flex-col items-center gap-space-xs text-center p-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">history_toggle_off</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold bg-surface-container-lowest/80 px-2 py-0.5 rounded">STUDY QUEUE</span>
+</div>
+<div class="absolute bottom-2 right-2 z-20 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+            SYNCED
+          </div>
+</div>
+<!-- Identity & Metadata -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Watch Later</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">18 videos • Total Study Time: 6h 42m • Updated today</p>
+</div>
+<!-- Progress Summary -->
+<div class="flex flex-col gap-space-xs bg-surface-container-lowest/70 p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              4 watched
+            </span>
+<span class="text-on-surface-variant">14 remaining</span>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden flex gap-0.5">
+<div class="h-full bg-secondary-container rounded-l-full" style="width: 22.2%"></div>
+<div class="h-full bg-primary-container" style="width: 16.6%"></div>
+<div class="h-full bg-surface-container flex-1 rounded-r-full"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant/80 pt-0.5">
+<span>22% completed</span>
+<span>Est. 5h 14m left</span>
+</div>
+</div>
+<!-- Main Actions -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-11 px-space-md rounded-lg bg-primary-container hover:bg-inverse-primary text-on-primary font-body-md text-body-md font-medium flex items-center justify-center gap-space-sm shadow-lg transition-all group" id="btnPlayAll" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play All from Beginning</span>
+</button>
+<button class="w-full h-10 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-md text-body-md font-medium flex items-center justify-center gap-space-sm transition-all" id="btnShuffle" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">shuffle</span>
+<span>Shuffle Queue</span>
+</button>
+<button class="w-full h-9 px-space-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-error font-body-sm text-body-sm flex items-center justify-center gap-space-xs transition-colors" id="btnClearWatched" type="button">
+<span class="material-symbols-outlined text-[16px]">cleaning_services</span>
+<span>Clear watched videos (4)</span>
+</button>
+</div>
+<!-- Quick Sorting & Settings -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="queueSort">Queue Order</label>
+<div class="relative">
+<select class="w-full h-10 pl-space-sm pr-space-lg rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high appearance-none cursor-pointer" id="queueSort">
+<option value="date-newest">Date Added (Newest)</option>
+<option value="date-oldest">Date Added (Oldest)</option>
+<option value="shortest">Shortest Duration</option>
+<option value="longest">Longest Duration</option>
+<option value="instructor">Instructor Name</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Storage & Offline Sync Info -->
+<div class="rounded-lg bg-surface-container-lowest/80 p-space-sm flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">cloud_download</span>
+<span>Offline Sync</span>
+</div>
+<span class="text-secondary font-semibold">Enabled</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>3.2 GB cached locally</span>
+<span>Auto-cleanup: ON</span>
+</div>
+</div>
+</div>
+<!-- Quick AI Recommendation Widget -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+<span class="font-label-md text-label-md font-semibold">Smart Queue Optimizer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          AI suggests grouping PostgreSQL indexing modules before distributed systems to optimize conceptual continuity.
+        </p>
+<button class="mt-space-xs text-left font-label-sm text-label-sm text-tertiary hover:underline flex items-center gap-1" type="button">
+<span>Apply suggested sequence</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- RIGHT REORDERABLE VIDEO QUEUE (~72% width) -->
+<div class="xl:col-span-8 2xl:col-span-9 flex flex-col gap-space-md">
+<!-- Queue Control Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm bg-surface-container-low p-space-sm rounded-xl shadow-md">
+<!-- Search & Quick Filters -->
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- In-Queue Search -->
+<div class="flex items-center h-9 px-space-sm rounded-lg bg-surface-container-lowest flex-1 min-w-[200px] max-w-md">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant mr-space-xs">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none" id="queueSearchInput" placeholder="Search in queue..." type="text"/>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Ctrl+F</kbd>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-1 overflow-x-auto py-1">
+<button class="filter-chip h-7 px-3 rounded-full bg-primary-container/20 text-primary font-body-sm text-body-sm font-medium transition-colors" data-filter="all" type="button">
+              All (18)
+            </button>
+<button class="filter-chip h-7 px-3 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant font-body-sm text-body-sm transition-colors" data-filter="unwatched" type="button">
+              Unwatched (14)
+            </button>
+<button class="filter-chip h-7 px-3 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant font-body-sm text-body-sm transition-colors" data-filter="inprogress" type="button">
+              In Progress (3)
+            </button>
+<button class="filter-chip h-7 px-3 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant font-body-sm text-body-sm transition-colors" data-filter="completed" type="button">
+              Completed (1)
+            </button>
+<button class="filter-chip h-7 px-3 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant font-body-sm text-body-sm transition-colors" data-filter="short" type="button">
+              &lt; 15 mins
+            </button>
+</div>
+</div>
+<!-- Bulk Controls -->
+<div class="flex items-center gap-space-xs self-end lg:self-auto">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1" id="btnSelectAll" type="button">
+<span class="material-symbols-outlined text-[16px]">select_all</span>
+<span class="hidden sm:inline">Select All</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1" id="btnSavePlaylist" type="button">
+<span class="material-symbols-outlined text-[16px]">playlist_add</span>
+<span class="hidden sm:inline">Save as Playlist</span>
+</button>
+<button class="h-8 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error transition-colors" id="btnBulkRemove" title="Bulk Remove Selected" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Video Queue Items Container -->
+<div class="flex flex-col gap-space-xs" id="videoQueueList">
+<!-- Queue Item 01: In Progress -->
+<div class="queue-row group relative bg-surface-container-low hover:bg-surface-container transition-all duration-150 rounded-xl p-space-sm flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-sm" data-status="inprogress" draggable="true">
+<!-- Grab Handle & Order Num -->
+<div class="flex items-center gap-space-xs self-start md:self-center shrink-0">
+<button class="grab-handle p-1 text-on-surface-variant/40 hover:text-on-surface cursor-grab active:cursor-grabbing rounded" title="Drag to reorder" type="button">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant/70 w-6 text-center font-bold">01</span>
+</div>
+<!-- Video Thumbnail Container -->
+<div class="relative w-full sm:w-56 aspect-video shrink-0 rounded-lg overflow-hidden bg-surface-container-lowest group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dark high-contrast PostgreSQL relational database architecture schematic showing B-Tree indexing algorithms, node splits, and disk page layouts with deep indigo and hyper blue glowing highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWmOB0QpK9lhB_ed08bk9lz_vuwjIWIbJF6Zp65j3FygA1xpFBURJ2LmVJSj66nM_80SjahhPaDdyiPsK5PqWdH6dsboQeMqw7H3jK2q4ImrXUaXR-ptGt1Ew2r4eX3w9jRYPM0BRkPEeCBGf8K4dVAMHRBSHKPKx6HRLVEdG8donM6Hckiq3rq1xeoqS3w65A6IZnXvEt_bW3-4v-OSjmRoJ0KQobageWaLye-Yk"/>
+<!-- Badges -->
+<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm font-semibold">
+              28:45
+            </span>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 12m left
+            </span>
+<!-- Progress Bar on bottom of thumb -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container-highest">
+<div class="h-full bg-secondary-container" style="width: 58%"></div>
+</div>
+</div>
+<!-- Video Metadata & Info -->
+<div class="flex flex-col justify-between flex-1 min-w-0 w-full gap-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors truncate block" href="#">
+                  PostgreSQL Indexing: B-Trees vs GiST Explained
+                </a>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="font-medium text-on-surface hover:underline flex items-center gap-0.5">
+                    @DatabaseInternals
+                    <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>84K views</span>
+<span>•</span>
+<span>Added 2 days ago</span>
+</div>
+</div>
+</div>
+<!-- Subject Tags -->
+<div class="flex flex-wrap items-center gap-1 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#postgresql</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#database</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#btree</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm font-mono">Resume at 16:20</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-1 self-end md:self-center shrink-0 opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface transition-all" title="Play Next" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Move to Top" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Add to Playlist" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+<button class="remove-btn p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all" title="Remove from Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant transition-all" title="More options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 02: Unwatched -->
+<div class="queue-row group relative bg-surface-container-low hover:bg-surface-container transition-all duration-150 rounded-xl p-space-sm flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-sm" data-status="unwatched" draggable="true">
+<!-- Grab Handle & Order Num -->
+<div class="flex items-center gap-space-xs self-start md:self-center shrink-0">
+<button class="grab-handle p-1 text-on-surface-variant/40 hover:text-on-surface cursor-grab active:cursor-grabbing rounded" title="Drag to reorder" type="button">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant/70 w-6 text-center font-bold">02</span>
+</div>
+<!-- Video Thumbnail Container -->
+<div class="relative w-full sm:w-56 aspect-video shrink-0 rounded-lg overflow-hidden bg-surface-container-lowest group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Technical illustration of distributed consensus and Redis cluster nodes locking mechanisms with neon cyan data arrows against an obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcRB-d-C9bZ9tRq9zaiVVG4SBn3i9IjR4USF8XFPxK6B6DkeUOmiKpmyDEqGhbWvJR-h_Cl6DfIx1aP_hmNun0b8Q3EyuYv919OD_WJ8AxJgB2hS23WbB-M7hiQ83CAGzAlzCPv3SFNR0siFSq3-lkFcrbl1P2tnN9PEnS3i_XniIcR0DrfcnbSKh2RPn9WwwKTDVoXDdmzVB4Gn2ODYPR2E7GwojG7aPqgHqbz1Y"/>
+<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm font-semibold">
+              34:10
+            </span>
+</div>
+<!-- Video Metadata & Info -->
+<div class="flex flex-col justify-between flex-1 min-w-0 w-full gap-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors truncate block" href="#">
+                  Implementing Distributed Locks with Redis &amp; Redlock
+                </a>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="font-medium text-on-surface hover:underline flex items-center gap-0.5">
+                    @SystemDesignPro
+                    <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>142K views</span>
+<span>•</span>
+<span>Added 3 days ago</span>
+</div>
+</div>
+</div>
+<!-- Subject Tags -->
+<div class="flex flex-wrap items-center gap-1 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#redis</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#distributed-systems</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#concurrency</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-1 self-end md:self-center shrink-0 opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface transition-all" title="Play Next" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Move to Top" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Add to Playlist" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+<button class="remove-btn p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all" title="Remove from Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant transition-all" title="More options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 03: In Progress -->
+<div class="queue-row group relative bg-surface-container-low hover:bg-surface-container transition-all duration-150 rounded-xl p-space-sm flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-sm" data-status="inprogress" draggable="true">
+<!-- Grab Handle & Order Num -->
+<div class="flex items-center gap-space-xs self-start md:self-center shrink-0">
+<button class="grab-handle p-1 text-on-surface-variant/40 hover:text-on-surface cursor-grab active:cursor-grabbing rounded" title="Drag to reorder" type="button">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant/70 w-6 text-center font-bold">03</span>
+</div>
+<!-- Video Thumbnail Container -->
+<div class="relative w-full sm:w-56 aspect-video shrink-0 rounded-lg overflow-hidden bg-surface-container-lowest group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Linux kernel internal trace visualizer and eBPF bytecode execution map displayed on a sleek high contrast dark terminal screen with violet accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTsc42mffcJ7uzzZdyX2gT992N3mngzvVxDDoWGerg6bOqS_v8QnDqjTNI34hUtsx2fNTkv67SUE32l_EvlTpc4_wm40qNHNd49ZcGRs_ISNmw2OGFgFmZwP_hZfkY79rB5S1ZpX51-0ASNGPmrB7RB472e1pH9OYc7xuJgdo1RsUOboi5towIagQ0ALyps0JpD9vZt1c2iXxvgTfJP7tuUCgS2wTCgB1xlLZSz9M"/>
+<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm font-semibold">
+              42:15
+            </span>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 31m left
+            </span>
+<!-- Progress Bar -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container-highest">
+<div class="h-full bg-secondary-container" style="width: 26%"></div>
+</div>
+</div>
+<!-- Video Metadata & Info -->
+<div class="flex flex-col justify-between flex-1 min-w-0 w-full gap-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors truncate block" href="#">
+                  eBPF Tracing for Low-Latency Go Microservices
+                </a>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="font-medium text-on-surface hover:underline flex items-center gap-0.5">
+                    @KernelHacker
+                    <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>67K views</span>
+<span>•</span>
+<span>Added 5 days ago</span>
+</div>
+</div>
+</div>
+<!-- Subject Tags -->
+<div class="flex flex-wrap items-center gap-1 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#ebpf</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#golang</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#observability</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-1 self-end md:self-center shrink-0 opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface transition-all" title="Play Next" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Move to Top" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Add to Playlist" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+<button class="remove-btn p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all" title="Remove from Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant transition-all" title="More options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 04: Unwatched & Short -->
+<div class="queue-row group relative bg-surface-container-low hover:bg-surface-container transition-all duration-150 rounded-xl p-space-sm flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-sm" data-duration="short" data-status="unwatched" draggable="true">
+<!-- Grab Handle & Order Num -->
+<div class="flex items-center gap-space-xs self-start md:self-center shrink-0">
+<button class="grab-handle p-1 text-on-surface-variant/40 hover:text-on-surface cursor-grab active:cursor-grabbing rounded" title="Drag to reorder" type="button">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant/70 w-6 text-center font-bold">04</span>
+</div>
+<!-- Video Thumbnail Container -->
+<div class="relative w-full sm:w-56 aspect-video shrink-0 rounded-lg overflow-hidden bg-surface-container-lowest group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Rust code snippet in dark neon editor theme showing zero-copy SIMD JSON deserializer parser buffers with low allocation memory benchmarks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk9-mYetz09HmVvxWKJ9UZYhxHxvSLNHyRpKQfIDMGfWXts_6cJLdiWc4m3RcnGz0z_u7YxiImoJHCHWVvvHWucvkP7dIY0P8aDJ7Ulbq6c_sCg9HpeGT0CjclQJ_aTW7CGiSXh7hpIvx1fttnidfzoH_5Zu-4n21UjuwAdDNU4p_94jLphmTcbpdCfi6p_KoIE7jRlRq4Ss3ZR3-aF9B6LUwfzX70YODjIUUUIpk"/>
+<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm font-semibold">
+              14:20
+            </span>
+</div>
+<!-- Video Metadata & Info -->
+<div class="flex flex-col justify-between flex-1 min-w-0 w-full gap-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors truncate block" href="#">
+                  Zero-Allocation JSON Parsing in Rust with SIMD
+                </a>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="font-medium text-on-surface hover:underline flex items-center gap-0.5">
+                    @RustArchitect
+                    <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>98K views</span>
+<span>•</span>
+<span>Added 1 week ago</span>
+</div>
+</div>
+</div>
+<!-- Subject Tags -->
+<div class="flex flex-wrap items-center gap-1 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#rust</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#simd</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#performance</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-1 self-end md:self-center shrink-0 opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface transition-all" title="Play Next" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Move to Top" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Add to Playlist" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+<button class="remove-btn p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all" title="Remove from Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant transition-all" title="More options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 05: Unwatched -->
+<div class="queue-row group relative bg-surface-container-low hover:bg-surface-container transition-all duration-150 rounded-xl p-space-sm flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-sm" data-status="unwatched" draggable="true">
+<!-- Grab Handle & Order Num -->
+<div class="flex items-center gap-space-xs self-start md:self-center shrink-0">
+<button class="grab-handle p-1 text-on-surface-variant/40 hover:text-on-surface cursor-grab active:cursor-grabbing rounded" title="Drag to reorder" type="button">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant/70 w-6 text-center font-bold">05</span>
+</div>
+<!-- Video Thumbnail Container -->
+<div class="relative w-full sm:w-56 aspect-video shrink-0 rounded-lg overflow-hidden bg-surface-container-lowest group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Kafka streaming partition rebalancing timeline animation diagram with glowing consumer groups and offset commit graphs in dark theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-DTtDlwdH6Sgcycwhoe0Wauj6YbPF8vEHmJSNqlgqHfGCBZdD4e8vT1mMC4sF_o98LXq2xTE7SX--eam6LCXvsgDRQFP0SqBuog3J9l_jZiVCmepr9gvXg05fJVKVU0MTDAUYx_W64C-myE_IZHNsLdvJGAGB9Jr8-gHqJAyvwLHMKvuotSeUpfpZz2fQg9C5FLjciDYuFbVp9iJIEey4yoz_Yh_KVT2KAc6o4eQ"/>
+<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm font-semibold">
+              37:50
+            </span>
+</div>
+<!-- Video Metadata & Info -->
+<div class="flex flex-col justify-between flex-1 min-w-0 w-full gap-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors truncate block" href="#">
+                  Kafka Consumer Lag &amp; Partition Rebalance Deep Dive
+                </a>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="font-medium text-on-surface hover:underline flex items-center gap-0.5">
+                    @CloudNativeDev
+                    <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>53K views</span>
+<span>•</span>
+<span>Added 1 week ago</span>
+</div>
+</div>
+</div>
+<!-- Subject Tags -->
+<div class="flex flex-wrap items-center gap-1 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#kafka</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#streaming</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#distributed</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-1 self-end md:self-center shrink-0 opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface transition-all" title="Play Next" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Move to Top" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Add to Playlist" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+<button class="remove-btn p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all" title="Remove from Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant transition-all" title="More options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 06: Completed Item -->
+<div class="queue-row group relative bg-surface-container-lowest/60 hover:bg-surface-container-low transition-all duration-150 rounded-xl p-space-sm flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-sm opacity-75 hover:opacity-100" data-status="completed" draggable="true">
+<!-- Grab Handle & Order Num -->
+<div class="flex items-center gap-space-xs self-start md:self-center shrink-0">
+<button class="grab-handle p-1 text-on-surface-variant/40 hover:text-on-surface cursor-grab active:cursor-grabbing rounded" title="Drag to reorder" type="button">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant/50 w-6 text-center font-bold">06</span>
+</div>
+<!-- Video Thumbnail Container -->
+<div class="relative w-full sm:w-56 aspect-video shrink-0 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-300" data-alt="Authentication sequence diagram with OAuth2 tokens and OpenID Connect cryptographically signed JWT flow diagrams illuminated in soft cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvWXUcu7f6UwReGvjdYJw9MB_y_M_zh9ZDylnkmqghip2n_nJQ61_JdRipdzj9raPx7-kz88Qr68d1dkiqslMozv0YadDdP8cFx809H6GnK-ZccO19YIe5pFJyrTL3HF4xGRYRv0q8_qWnnjdrGfcNhcgH6sY4utuPnMxZZXNzurRDErXjvuC0_evaPbG3mPcbsrk1zosRs7o4HmB7UbMlUmT8maxgLz-EYPCIxpw"/>
+<span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm font-semibold">
+              21:05
+            </span>
+<span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">check</span> Watched
+            </span>
+<!-- Progress Bar: 100% -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary-container"></div>
+</div>
+<!-- Video Metadata & Info -->
+<div class="flex flex-col justify-between flex-1 min-w-0 w-full gap-1">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors truncate block" href="#">
+                  OAuth2 &amp; OIDC Security Flow Architecture Masterclass
+                </a>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="font-medium text-on-surface hover:underline flex items-center gap-0.5">
+                    @SecurityProtocols
+                    <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>210K views</span>
+<span>•</span>
+<span>Completed yesterday</span>
+</div>
+</div>
+</div>
+<!-- Subject Tags -->
+<div class="flex flex-wrap items-center gap-1 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#oauth2</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">#security</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">replay</span> Re-watch
+              </span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-1 self-end md:self-center shrink-0 opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-on-surface transition-all" title="Replay Video" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Move to Top" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_top</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all" title="Add to Playlist" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+<button class="remove-btn p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all" title="Remove from Queue" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant transition-all" title="More options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Bottom Batch & Pagination Bar -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 6 of 18 items in queue</span>
+<button class="h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-medium transition-colors flex items-center gap-space-xs" type="button">
+<span>Load remaining 12 videos</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initWatchLaterQueue() {
+    // 1. Highlight Active Nav Item in the global shell
+    const libraryNav = document.querySelector('aside nav a[data-path="playlists-library"]');
+    if (libraryNav) {
+      libraryNav.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+      libraryNav.classList.remove('text-on-surface-variant');
+    }
+
+    // 2. Interactive Drag & Drop Reordering
+    const queueList = document.getElementById('videoQueueList');
+    if (queueList) {
+      let draggedItem = null;
+
+      const rows = queueList.querySelectorAll('.queue-row');
+      rows.forEach(row => {
+        row.addEventListener('dragstart', (e) => {
+          draggedItem = row;
+          row.classList.add('opacity-40');
+          e.dataTransfer.effectAllowed = 'move';
+        });
+
+        row.addEventListener('dragend', () => {
+          row.classList.remove('opacity-40');
+          draggedItem = null;
+          updateQueueIndices();
+        });
+
+        row.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          e.dataTransfer.dropEffect = 'move';
+          const bounding = row.getBoundingClientRect();
+          const offset = bounding.y + (bounding.height / 2);
+          if (e.clientY - offset > 0) {
+            row.style.borderBottom = '2px solid rgba(79, 70, 229, 0.8)';
+            row.style.borderTop = '';
+          } else {
+            row.style.borderTop = '2px solid rgba(79, 70, 229, 0.8)';
+            row.style.borderBottom = '';
+          }
+        });
+
+        row.addEventListener('dragleave', () => {
+          row.style.borderTop = '';
+          row.style.borderBottom = '';
+        });
+
+        row.addEventListener('drop', (e) => {
+          e.preventDefault();
+          row.style.borderTop = '';
+          row.style.borderBottom = '';
+          if (draggedItem && draggedItem !== row) {
+            const bounding = row.getBoundingClientRect();
+            const offset = bounding.y + (bounding.height / 2);
+            if (e.clientY - offset > 0) {
+              row.after(draggedItem);
+            } else {
+              row.before(draggedItem);
+            }
+            updateQueueIndices();
+          }
+        });
+      });
+    }
+
+    function updateQueueIndices() {
+      const allRows = document.querySelectorAll('#videoQueueList .queue-row');
+      allRows.forEach((row, idx) => {
+        const numSpan = row.querySelector('.font-label-md');
+        if (numSpan) {
+          numSpan.textContent = String(idx + 1).padStart(2, '0');
+        }
+      });
+    }
+
+    // 3. Remove Item Handler
+    document.querySelectorAll('.remove-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const row = e.target.closest('.queue-row');
+        if (row) {
+          row.style.transition = 'all 200ms ease';
+          row.style.opacity = '0';
+          row.style.transform = 'translateX(20px)';
+          setTimeout(() => {
+            row.remove();
+            updateQueueIndices();
+          }, 200);
+        }
+      });
+    });
+
+    // 4. Quick Filter Chips
+    const chips = document.querySelectorAll('.filter-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary-container/20', 'text-primary');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-container/20', 'text-primary');
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+        const filter = chip.getAttribute('data-filter');
+        const rows = document.querySelectorAll('#videoQueueList .queue-row');
+        rows.forEach(r => {
+          const status = r.getAttribute('data-status');
+          const isShort = r.getAttribute('data-duration') === 'short';
+          if (filter === 'all') {
+            r.style.display = 'flex';
+          } else if (filter === 'short') {
+            r.style.display = isShort ? 'flex' : 'none';
+          } else {
+            r.style.display = (status === filter) ? 'flex' : 'none';
+          }
+        });
+      });
+    });
+
+    // 5. In-Queue Search input filter
+    const searchInput = document.getElementById('queueSearchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const rows = document.querySelectorAll('#videoQueueList .queue-row');
+        rows.forEach(row => {
+          const title = row.querySelector('a')?.textContent.toLowerCase() || '';
+          const tags = row.textContent.toLowerCase();
+          if (!query || title.includes(query) || tags.includes(query)) {
+            row.style.display = 'flex';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // 6. Clear Watched Videos Trigger
+    const btnClearWatched = document.getElementById('btnClearWatched');
+    if (btnClearWatched) {
+      btnClearWatched.addEventListener('click', () => {
+        const watchedRows = document.querySelectorAll('#videoQueueList .queue-row[data-status="completed"]');
+        watchedRows.forEach(r => {
+          r.style.transition = 'all 200ms ease';
+          r.style.opacity = '0';
+          r.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            r.remove();
+            updateQueueIndices();
+          }, 200);
+        });
+      });
+    }
+  })();
+</script></main></div>
+</body></html>

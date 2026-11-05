@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en" style=""><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><meta content="web_dashboard" name="shell-type"/></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#4d44e3", "surface-container-low": "#181c24", "on-secondary-fixed-variant": "#004395", "error-container": "#93000a", "surface-tint": "#c3c0ff", "on-tertiary": "#3c0091", "on-tertiary-fixed-variant": "#5516be", "tertiary-fixed-dim": "#d0bcff", "inverse-on-surface": "#2c3039", "on-secondary-container": "#e6ecff", "error": "#ffb4ab", "primary-container": "#4f46e5", "primary": "#c3c0ff", "secondary-fixed": "#d8e2ff", "surface-bright": "#353942", "tertiary": "#d0bcff", "tertiary-fixed": "#e9ddff", "on-error": "#690005", "on-surface": "#dfe2ee", "secondary-fixed-dim": "#adc6ff", "secondary": "#adc6ff", "on-tertiary-container": "#e3d5ff", "on-primary-container": "#dad7ff", "surface-container-highest": "#31353e", "surface-container-lowest": "#0a0e16", "primary-fixed-dim": "#c3c0ff", "surface-container-high": "#262a33", "on-primary-fixed": "#0f0069", "secondary-container": "#0566d9", "outline-variant": "#464555", "primary-fixed": "#e2dfff", "on-tertiary-fixed": "#23005c", "on-error-container": "#ffdad6", "surface": "#0f131c", "surface-dim": "#0f131c", "on-surface-variant": "#c7c4d8", "on-primary-fixed-variant": "#3323cc", "on-background": "#dfe2ee", "on-primary": "#1d00a5", "background": "#0f131c", "outline": "#918fa1", "surface-variant": "#31353e", "on-secondary-fixed": "#001a42", "tertiary-container": "#6f3dd9", "on-secondary": "#002e6a", "inverse-surface": "#dfe2ee", "surface-container": "#1c2028" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-md": "1rem", "margin-desktop": "2rem", "margin": "1rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-md": ["Geist"], "display-xl": ["Geist"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "display-xl-mobile": ["Geist"], "label-md": ["JetBrains Mono"], "headline-sm": ["Geist"], "body-md": ["Inter"], "headline-lg-mobile": ["Geist"], "code-inline": ["JetBrains Mono"], "headline-lg": ["Geist"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "code-inline": ["13px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 z-50"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(79,70,229,0.45)]"><span class="material-symbols-outlined text-white text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">RKSkillTube <span class="text-primary font-normal">Studio</span></span></div><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-tertiary-container/30 border border-tertiary-container/50 text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Creator Hub</span></div><div class="flex-1 max-w-xl mx-space-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-16 bg-surface-container-low border border-outline-variant/30 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/40 transition-all" placeholder="Search your videos, courses, or comments..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant/30">Ctrl+K</span></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="relative group"><button class="h-9 px-space-sm rounded-xl bg-primary-container hover:bg-inverse-primary text-white font-body-sm text-body-sm font-medium flex items-center gap-space-xs shadow-[0_0_16px_rgba(79,70,229,0.35)] transition-all"><span class="material-symbols-outlined text-[18px]">add</span><span class="">Create</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="hidden group-hover:flex absolute right-0 top-full pt-1 flex-col z-50"><div class="w-52 py-1 bg-surface-container-high border border-outline-variant/40 rounded-xl shadow-2xl flex flex-col"><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-primary">upload</span>Upload Video</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-tertiary">library_books</span>New Course Curriculum</a><a class="px-space-sm py-2 hover:bg-surface-container-highest flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-error">podcasts</span>Create Live Stream</a></div></div></div><div class="relative"><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs py-1 pr-space-sm bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-outline-variant/60 cursor-pointer transition-all"><div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-white ring-1 ring-white/20"><span class="material-symbols-outlined text-[16px]">code</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-1"><span class="font-body-sm text-body-sm font-medium text-on-surface leading-none">CodeWithRK</span><span class="material-symbols-outlined text-[14px] text-secondary">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">48.5k Subs</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/20 z-40 flex flex-col justify-between p-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-white font-medium shadow-[0_0_16px_rgba(79,70,229,0.3)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="content-videos" href="#"><span class="material-symbols-outlined text-[20px]">video_library</span><span class="">Content &amp; Videos</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="course-builder" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="">Course Builder</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="analytics-insights" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="">Analytics &amp; Insights</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="monetization-payouts" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="">Monetization &amp; Payouts</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="comments-q-and-a" href="#"><span class="material-symbols-outlined text-[20px]">question_answer</span><span class="">Comments &amp; Q&amp;A</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="customization" href="#"><span class="material-symbols-outlined text-[20px]">palette</span><span class="">Customization</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-body-sm text-body-sm" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">Settings</span></a></nav><div class="p-space-sm rounded-xl bg-surface-container-low border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">cloud</span><span class="font-label-md text-label-md text-on-surface font-semibold">CDN Bandwidth</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold">28.4%</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mb-2"><div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 28.4%"></div></div><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-2"><span class="">142 GB used</span><span class="">500 GB plan</span></div><a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-primary hover:text-tertiary font-medium transition-colors" href="#"><span class="">Upgrade Tier</span><span class="material-symbols-outlined text-[14px]">north_east</span></a></div></aside><div class="pl-64"><main class="relative w-full pt-16 px-gutter-desktop py-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full relative">
+<!-- ========================================================================= -->
+<!-- BACKGROUND CREATOR CONTENT LAYER (Multitasking Workspace)                 -->
+<!-- Demonstrates uninterrupted curriculum & video operations beneath modal   -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-space-lg w-full pointer-events-auto select-none opacity-85 filter blur-[0.4px]">
+<!-- Content Workspace Page Header -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span>Curriculum Studio</span>
+<span>/</span>
+<span class="text-secondary font-semibold">Distributed Systems &amp; Microservices Architecture</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Course Lessons &amp; Artifacts</h1>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold tracking-wide">Course ID: crs_942_arch</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 shadow-sm hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[18px]">reorder</span>
+<span>Reorder Curriculum</span>
+</button>
+<button class="h-9 px-space-md rounded-xl bg-primary-container text-white font-body-sm text-body-sm font-medium flex items-center gap-1.5 shadow-lg shadow-primary-container/25">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Publish Chapter 3</span>
+</button>
+</div>
+</div>
+<!-- Active Curriculum Track Bento Row -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Total Enrolled Learners</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">groups</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">14,892</span>
+<div class="flex items-center gap-1 mt-1 text-label-sm font-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+18.4% this month</span>
+</div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Completion Velocity</span>
+<span class="material-symbols-outlined text-[20px] text-tertiary">speed</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">87.4%</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-2">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 87.4%"></div>
+</div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Active Video Stream Minutes</span>
+<span class="material-symbols-outlined text-[20px] text-primary">play_circle</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">342.6k</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1 block">CDN edge cached (Global PoPs)</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Gross Course Revenue</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">payments</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">$42,910</span>
+<span class="text-label-sm font-label-sm text-secondary mt-1 block">Tier: Enterprise + Pro Packs</span>
+</div>
+</div>
+</div>
+<!-- Background Table: Chapter Modules & Video Units -->
+<div class="bg-surface-container-low rounded-xl shadow-md overflow-hidden flex flex-col">
+<div class="px-space-lg py-space-md bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Chapter 3: High-Throughput Real-Time Pipelines</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">4 Lessons</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Auto-sync enabled</span>
+</div>
+</div>
+<div class="divide-y divide-surface-container-highest/40 font-body-sm text-body-sm">
+<!-- Row 1 -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-grab">drag_indicator</span>
+<div class="w-16 h-10 rounded bg-surface-container-highest overflow-hidden relative shrink-0">
+<img class="w-full h-full object-cover" data-alt="High tech software architectural diagram illustrating websocket protocol connections and load balancing topology on dark navy canvas with cyan glowing nodes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUmyYdsg7QProi89hlw38YSlRCNUvDv2A0bCm5Y4LjYPRBkkaJ2gV568WvCH66rJRWWyMpG2A2nNfGBph8m7GKJ84_wJAEUBpG2Upb0OKn9ckakZLVbpBwwwYhczBjONbOGhZ61-HhsPqHJ5DldAy9Oa2GzUOxIiAKygyxrVd_Vr-rEX8m2KUwYvmDt0uICPCtw5Mt0XxlusLefct6TEqmv8GtnCtYpmI9TKIeJ_M"/>
+<span class="absolute bottom-0.5 right-0.5 px-1 py-0.2 rounded bg-black/80 font-label-sm text-[9px] text-white">18:42</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">3.1 - Architecture Foundations: WebSocket Handshakes &amp; TCP Framing</span>
+<span class="text-on-surface-variant text-body-sm truncate">Published • 12,410 views • 98.2% positive ratings</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">1080p60 HLS</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-grab">drag_indicator</span>
+<div class="w-16 h-10 rounded bg-surface-container-highest overflow-hidden relative shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dark terminal screenshot showing Redis PubSub cluster commands and high throughput telemetry outputs with neon purple styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA7fvsFq1sUajfnD7Ikc8oQroaDVT6hmJccmHbVvcr9AFQ2bvf0R2owA7exoKqLhjAo2M6Wtmw1yla8o5izY7zwPd8f_6r4NoASeSiL6kCojJqwIG3J_ukYMNZqo5uxbKtNLXt58_FUpF91Z3pnYxJWx1qk95YmQxljYKPqJcl7FQgUbRmBZ2yeAmCuKlHYK94JTiqI5huO4E57mUByM_hiMdiEqMx7jcCvE7sJSM"/>
+<span class="absolute bottom-0.5 right-0.5 px-1 py-0.2 rounded bg-black/80 font-label-sm text-[9px] text-white">31:15</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">3.2 - Redis Pub/Sub Sharding &amp; Distributed Channel Synchronization</span>
+<span class="text-on-surface-variant text-body-sm truncate">Published • 9,842 views • 99.4% positive ratings</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">4K UHD HLS</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</div>
+</div>
+<!-- Row 3 (Incoming Upload Placeholder in background) -->
+<div class="p-space-md flex items-center justify-between bg-surface-container-high/40">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] animate-pulse">cloud_sync</span>
+<div class="w-16 h-10 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">videocam</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-medium text-on-surface truncate">3.3 - Building High-Throughput WebSockets with FastAPI &amp; Redis</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/20 text-secondary font-label-sm text-[10px] uppercase font-bold tracking-wider">Uploading 72%</span>
+</div>
+<span class="text-on-surface-variant text-body-sm truncate">Processing through Presigned S3 Ingestion API • Chunk 36/50</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-label-sm text-label-sm text-secondary">Est. 45s left</span>
+<div class="w-24 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 72%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- OVERLAY COMPOSITION 1: EXPANDED WIZARD MODAL (Glassmorphic Studio)        -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-surface-container-lowest/80 backdrop-blur-md transition-all duration-300" id="full-upload-modal">
+<div class="relative w-full max-w-6xl max-h-[942px] flex flex-col bg-surface-container-low/95 rounded-xl shadow-2xl shadow-black/80 overflow-hidden backdrop-blur-2xl">
+<!-- Volumetric Ambient Indigo Glow within modal container -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-tertiary-container/20 blur-3xl pointer-events-none"></div>
+<!-- Modal Top Bar -->
+<div class="relative px-space-lg py-space-md bg-surface-container/90 flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center shadow-lg shadow-primary-container/40">
+<span class="material-symbols-outlined text-white text-[20px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Upload Video &amp; Course Lesson</h2>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant">
+<span>RKSkillTube Studio Pipeline</span>
+<span>•</span>
+<span class="text-secondary font-medium">Session ID: #upl_fastapi_redis_09</span>
+</div>
+</div>
+</div>
+<!-- Action Controls: Minimize, Formats & Dismiss -->
+<div class="flex items-center gap-space-xs">
+<!-- Minimize to Background Dock Button -->
+<button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 shadow-sm transition-all group" id="btn-minimize-wizard" title="Minimize and keep working in studio">
+<span class="material-symbols-outlined text-[18px] text-primary group-hover:-translate-y-0.5 transition-transform">minimize</span>
+<span class="font-medium">Minimize to Dock</span>
+<span class="px-1.5 py-0.5 rounded-full bg-primary-container text-white font-label-sm text-[10px] font-bold">Non-blocking</span>
+</button>
+<!-- Help Button -->
+<button class="h-9 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span class="hidden sm:inline">Formats &amp; Limits</span>
+</button>
+<!-- Close Icon -->
+<button class="w-9 h-9 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all ml-1" id="btn-close-modal" title="Close dialog">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Non-Blocking Guarantee Banner -->
+<div class="px-space-lg py-2.5 bg-gradient-to-r from-primary-container/25 via-secondary-container/20 to-transparent flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[18px] text-secondary animate-pulse">bolt</span>
+<span><strong>Non-blocking upload:</strong> You can minimize this at any time and continue managing courses, editing curricula, or watching videos. Uploads will resume automatically.</span>
+</div>
+<span class="hidden md:inline-flex font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Resilient Stream Sync</span>
+</div>
+<!-- 4-Step Stepper Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Step 1: Completed -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-high/40">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-white flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[15px]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-secondary">Step 1</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Upload &amp; Storage Link</span>
+</div>
+</div>
+<!-- Step 2: Active -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-primary-container/20 shadow-[0_0_16px_rgba(79,70,229,0.25)]">
+<div class="w-6 h-6 rounded-full bg-primary-container text-white flex items-center justify-center font-label-sm text-label-sm font-bold shadow-md shadow-primary-container/50">
+<span>2</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] uppercase font-bold text-primary">Step 2 • Active</span>
+<span class="font-body-sm text-body-sm font-semibold text-white truncate">Details &amp; Metadata</span>
+</div>
+</div>
+<!-- Step 3: Next -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-high/20 opacity-70">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold">
+<span>3</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-on-surface-variant">Step 3</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface-variant truncate">Course Association</span>
+</div>
+</div>
+<!-- Step 4: Pending -->
+<div class="flex items-center gap-space-xs p-2 rounded-lg bg-surface-container-high/20 opacity-50">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold">
+<span>4</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-on-surface-variant">Step 4</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface-variant truncate">Visibility &amp; Tiers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Body Split Layout (58% Left Form / 42% Right Pipeline Engine) -->
+<div class="flex-1 overflow-y-auto p-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Form Fields & Video Details (7 cols = ~58%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Video Title Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">Lesson Title <span class="text-error">*</span></label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">61 / 100 characters</span>
+</div>
+<input class="w-full h-11 px-space-md rounded-xl bg-surface-container-highest/60 text-on-surface font-body-md text-body-md focus:bg-surface-container-highest focus:outline-none shadow-sm transition-all" type="text" value="Building High-Throughput WebSockets with FastAPI &amp; Redis"/>
+</div>
+<!-- Description Box with Markdown Toolbar & AI Generator -->
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">Description &amp; Engineering Notes</label>
+<!-- AI Generate Button -->
+<button class="h-7 px-space-xs rounded-lg bg-tertiary-container hover:bg-tertiary-container/80 text-on-tertiary-container font-label-md text-label-md font-semibold flex items-center gap-1 shadow-md shadow-tertiary-container/30 transition-all">
+<span class="material-symbols-outlined text-[15px] text-tertiary">auto_awesome</span>
+<span>✨ AI Generate Summary &amp; Timestamps with Gemini</span>
+</button>
+</div>
+<!-- Markdown Action Toolbar -->
+<div class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-high rounded-t-xl">
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Bold"><span class="material-symbols-outlined text-[18px]">format_bold</span></button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Italic"><span class="material-symbols-outlined text-[18px]">format_italic</span></button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Code"><span class="material-symbols-outlined text-[18px]">code</span></button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Link"><span class="material-symbols-outlined text-[18px]">link</span></button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="List"><span class="material-symbols-outlined text-[18px]">format_list_bulleted</span></button>
+<span class="h-4 w-px bg-surface-container-highest mx-1"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Markdown Supported</span>
+</div>
+<!-- Textarea -->
+<textarea class="w-full p-space-md rounded-b-xl bg-surface-container-highest/60 text-on-surface font-body-sm text-body-sm focus:bg-surface-container-highest focus:outline-none shadow-sm transition-all resize-none font-code-inline" rows="4">In this lesson, we build a production-grade distributed WebSocket architecture capable of handling 100k concurrent client handshakes using FastAPI ASGI workers and Redis channel multiplexing.
+
+Key Architectural Takeaways:
+- ASGI event loop connection pooling
+- Epoll sockets &amp; connection degradation backoff
+- Redis Streams vs PubSub latency benchmarks</textarea>
+</div>
+<!-- Course Curriculum Dropdown Association -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">Curriculum Association</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-sm text-primary text-[20px] pointer-events-none">auto_stories</span>
+<select class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-container-highest/60 text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option selected="">Attach to existing course → [Distributed Systems &amp; Microservices / Chapter 3: Real-Time Pipelines]</option>
+<option>Full-Stack Go &amp; Kubernetes Deep Dive / Chapter 1: Microservice Setup</option>
+<option>Standalone Tech Talk (Unassigned to Curriculum)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm text-on-surface-variant text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Thumbnail Selector (3 Auto-generated Frames + 1 Custom Dropzone) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">Video Thumbnail Selection</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-captured from FFmpeg Keyframes</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Frame 1: Selected -->
+<div class="relative aspect-video rounded-xl overflow-hidden shadow-lg shadow-primary-container/25 cursor-pointer group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High tech presentation slide with Python FastAPI code snippet on a dark modern ide theme with purple neon highlights and architect diagram." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUPVWMBINhH-eExfGpIR4u_TT2u-4RwQ5hxbejannYOhfrzjXSeVtjikl7A6PtGHNlZxxaUo7ToHPI_BiWMLYLOMcO4cRkzxVSf7YfCJfEW0WwO9RGaj2gYaRLfkL5WIKK5dnRFM4zmbzG6aKPRrQ5aDT29HhcwTidRBL8lIlrNFDNK6SZBKcFzdS9iFaMAOjAL9g-capbbx7nCEesbjGwMmBwyri7rMUlMJImrnE"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 font-label-sm text-label-sm text-white font-code-inline">02:14</span>
+<div class="absolute top-1 left-1 w-5 h-5 rounded-full bg-primary-container text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+</div>
+<!-- Frame 2 -->
+<div class="relative aspect-video rounded-xl overflow-hidden bg-surface-container-high cursor-pointer group opacity-80 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="System design whiteboard visual showing Redis in-memory broker caching topology with glowing blue message routes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtg5hSWix8WXLB37tYSvwlUN7zsHYKNUxERkP93WTM7mr7GeTLG1wgFHoxaoeECY5zEOHaBLjnRmKsoYjirH3qAfWSBtmkiBR56oG3Ze4EVN1JvQTNcsFa8HkAI0Axg2k3r41mLTPMZEoFBqzzTVe_MCybBn2oU7ICF7ZGshpjij1bqxnNKShmJcB1gQul0Xtl15TXvQnyTtbS0oPqS0toWARkWySQxuY2Ezvhi5w"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 font-label-sm text-label-sm text-white font-code-inline">08:35</span>
+</div>
+<!-- Frame 3 -->
+<div class="relative aspect-video rounded-xl overflow-hidden bg-surface-container-high cursor-pointer group opacity-80 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High volume load test terminal benchmark graph showing response latencies under heavy concurrent websocket traffic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS3dL0oCIAG6YNBXBPWwlioB4tyYQqOf7mbSKLC885u8Tvtkczs9tCm7RD4GN6QWa3ANF4TvmLyOrjdUD6vOor1nIZ-xXm2Z2xo3rgX01ZnPRYnNv27W-kPGJkYmvPlsa1s-55FiQlEipU1zBMHEI0f7p4wFL38jO8xxAWo6_Z07b37XpxAhQ0el-NUyANhmPkvlC7I5fjInVn9WJFdUVjZ525lyAuuX4hSo8kASE"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 font-label-sm text-label-sm text-white font-code-inline">14:20</span>
+</div>
+<!-- Custom Dropzone -->
+<div class="relative aspect-video rounded-xl bg-surface-container-highest/50 hover:bg-surface-container-highest flex flex-col items-center justify-center p-2 text-center cursor-pointer transition-colors group">
+<span class="material-symbols-outlined text-[22px] text-secondary group-hover:scale-110 transition-transform">add_photo_alternate</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface mt-1">Upload Custom</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">16:9 • 1920x1080</span>
+</div>
+</div>
+</div>
+<!-- Visibility & Access Selectors (Radio Cards) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">Publishing Policy &amp; Access Controls</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<!-- Public -->
+<div class="p-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest cursor-pointer flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">public</span>
+<div class="w-3.5 h-3.5 rounded-full bg-surface-container-highest"></div>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Public</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Visible to all</span>
+</div>
+<!-- Unlisted -->
+<div class="p-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest cursor-pointer flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">link</span>
+<div class="w-3.5 h-3.5 rounded-full bg-surface-container-highest"></div>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Unlisted</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Anyone with link</span>
+</div>
+<!-- Course Enrolled Only (Selected) -->
+<div class="p-space-sm rounded-xl bg-primary-container/20 shadow-md shadow-primary-container/20 cursor-pointer flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-primary">school</span>
+<div class="w-3.5 h-3.5 rounded-full bg-primary-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm font-bold text-white">Course Only</span>
+<span class="font-label-sm text-[10px] text-primary font-medium">Enrolled students</span>
+</div>
+<!-- Paid Tier -->
+<div class="p-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest cursor-pointer flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<div class="w-3.5 h-3.5 rounded-full bg-surface-container-highest"></div>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Pro Tier</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Paid subscribers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Upload & Cloud Pipeline Engine Inspector (5 cols = ~42%) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Video Preview Card with Aspect Ratio & Waveform Overlay -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-lg flex flex-col">
+<div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High resolution 4K software engineering coding screencast showcasing dynamic terminal windows and microservices architecture diagrams with dark obsidian style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4IIvP0RanIkiy9Jpa2OJ1m3coHe91dex7RapZ0Fm81gKAXQAsq18P4XQZ3VqV_o-D3YacwiViDPwdvRqi3jXqYzDJHcSkD8x5tJxWrOfcQ3ywJ2a5r3cB8irlakIV73v5kdIfIFz3dBg-lQxOLASDyqcIiV_B3-51dJ5sPHR8CRfYIaMFycMxsQzG3HXWueZsUXBG7DJiO51fQWETit4PEWp0pQMyC0m2U_G1w-4"/>
+<!-- Overlay Badges -->
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/80 font-label-sm text-label-sm text-secondary flex items-center gap-1 backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>4K UHD / 60fps</span>
+</div>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/80 font-label-sm text-label-sm text-white font-code-inline backdrop-blur-sm">
+                  24:18
+                </div>
+<!-- Animated Waveform / Audio Track indicator -->
+<div class="absolute bottom-2 left-2 right-2 px-space-sm py-1.5 rounded-lg bg-black/75 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">graphic_eq</span>
+<span class="font-label-sm text-label-sm text-on-surface font-code-inline">Dual Track Opus Audio • 48kHz</span>
+</div>
+<!-- Mini audio visualizer bars -->
+<div class="flex items-end gap-0.5 h-3.5">
+<span class="w-1 bg-secondary rounded-full animate-pulse h-2"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-3.5" style="animation-delay: 150ms"></span>
+<span class="w-1 bg-secondary rounded-full animate-pulse h-1.5" style="animation-delay: 300ms"></span>
+<span class="w-1 bg-primary rounded-full animate-pulse h-3" style="animation-delay: 75ms"></span>
+<span class="w-1 bg-secondary rounded-full animate-pulse h-2.5" style="animation-delay: 200ms"></span>
+</div>
+</div>
+</div>
+<!-- Video File Info & S3 Ingestion Telemetry -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-high">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">video_file</span>
+<span class="font-code-inline text-label-md text-on-surface font-semibold truncate">system_design_ep04_4k.mp4</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-inline shrink-0">1.4 GB</span>
+</div>
+<!-- Gradient Progress Bar (72%) -->
+<div class="flex flex-col gap-1">
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden shadow-inner">
+<div class="h-full bg-gradient-to-r from-primary-container via-secondary to-primary rounded-full transition-all duration-300" style="width: 72%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+<span class="text-secondary font-semibold">72% uploaded • 18.5 MB/s</span>
+<span class="font-code-inline">45s remaining • Chunk 36/50</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">cloud_sync</span>
+<span>Direct Presigned Multipart S3 API</span>
+</span>
+<button class="text-error hover:text-on-error-container font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>Abort Ingestion</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Celery Worker & FFmpeg Cloud Pipeline Preview -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">account_tree</span>
+<span class="font-headline-sm text-[15px] text-on-surface font-bold">Cloud Transcoding Pipeline</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-inline">Cluster: US-East-GPU</span>
+</div>
+<!-- Pipeline Stages -->
+<div class="flex flex-col gap-2 font-body-sm text-body-sm">
+<!-- Stage 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px] animate-spin">refresh</span>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">1. Multipart Ingestion</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-code-inline">Writing to S3 storage bucket</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-[11px] font-bold">72% Active</span>
+</div>
+<!-- Stage 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/30 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">pending</span>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">2. FFmpeg Adaptive Bitrate</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-code-inline">HLS 1080p60, 720p, 480p renditions</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[11px] font-medium">Queued (GPU-03)</span>
+</div>
+<!-- Stage 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/30 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">subtitles</span>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">3. WebVTT Sprites &amp; Transcription</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-code-inline">Scrubber timeline &amp; Gemini 1.5 speech-to-text</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[11px] font-medium">Queued</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Modal Action Bar -->
+<div class="px-space-lg py-space-md bg-surface-container-high/90 flex flex-wrap items-center justify-between gap-space-md shadow-lg">
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-highest font-body-sm text-body-sm font-medium transition-all">
+            Save Draft
+          </button>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Changes auto-saved 2s ago</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Secondary Minimize Button -->
+<button class="h-10 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-all" id="btn-minimize-secondary">
+<span class="material-symbols-outlined text-[18px]">vertical_align_bottom</span>
+<span>Minimize &amp; Continue Browsing</span>
+</button>
+<!-- Primary Next Button -->
+<button class="h-10 px-space-lg rounded-xl bg-gradient-to-r from-primary-container to-inverse-primary hover:opacity-95 text-white font-body-sm text-body-sm font-semibold flex items-center gap-1.5 shadow-lg shadow-primary-container/30 transition-all">
+<span>Next: Course Elements</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- OVERLAY COMPOSITION 2: PERSISTENT FLOATING BACKGROUND DOCK                -->
+<!-- Anchored in bottom-right corner, allows creator to multitask              -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-5 right-5 z-50 w-full max-w-[390px] bg-surface-container-lowest/95 backdrop-blur-2xl rounded-xl shadow-2xl shadow-black/90 flex flex-col overflow-hidden transition-all duration-300" id="floating-upload-dock">
+<!-- Dock Header -->
+<div class="px-space-md py-2.5 bg-surface-container-high flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container"></span>
+</span>
+<span class="font-headline-sm text-[13px] text-on-surface font-bold">Background Tasks (1 Upload, 1 Transcode)</span>
+</div>
+<!-- Dock Window Controls -->
+<div class="flex items-center gap-1">
+<!-- Expand Back into Modal -->
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-surface-container-highest text-primary hover:text-white flex items-center justify-center transition-all" id="btn-expand-dock" title="Expand to Full Studio Dialog">
+<span class="material-symbols-outlined text-[17px]">open_in_full</span>
+</button>
+<!-- Toggle Minimize / Fold dock -->
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all" id="btn-fold-dock" title="Toggle Dock Details">
+<span class="material-symbols-outlined text-[17px]">expand_more</span>
+</button>
+<!-- Close dismiss -->
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-error flex items-center justify-center transition-all" id="btn-close-dock" title="Dismiss Dock">
+<span class="material-symbols-outlined text-[17px]">close</span>
+</button>
+</div>
+</div>
+<!-- Dock Content Items (Collapsible container) -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low/90" id="dock-content-body">
+<!-- ITEM 1: Uploading Video with Circular Radial Ring -->
+<div class="p-space-sm rounded-xl bg-surface-container-high/60 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<!-- Circular Progress Ring (SVG) -->
+<div class="relative w-10 h-10 shrink-0 flex items-center justify-center">
+<svg class="w-10 h-10 transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Circle track -->
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<!-- Progress Circle (72%) -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="72, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="absolute font-label-sm text-[10px] text-on-surface font-bold font-code-inline">72%</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-inline text-label-sm text-on-surface font-semibold truncate">system_design_ep04_4k.mp4</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">18.5 MB/s • 45s left • 1.0 GB / 1.4 GB</span>
+</div>
+</div>
+<!-- Action Buttons (Pause & Cancel) -->
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Pause Upload">
+<span class="material-symbols-outlined text-[16px]">pause</span>
+</button>
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-error-container text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Cancel Upload">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- ITEM 2: Cloud Transcoding Worker Job -->
+<div class="p-space-sm rounded-xl bg-surface-container-high/60 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[16px]">video_settings</span>
+<span class="font-code-inline text-label-sm text-on-surface truncate">docker_basics_lesson1.mp4</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-tertiary font-label-sm text-[10px] font-bold">48%</span>
+</div>
+<!-- Status Pill in Warm Amber -->
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-[10px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] animate-spin">settings</span>
+<span>Transcoding HLS 1080p (Celery GPU-02)</span>
+</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Est. 1m 20s</span>
+</div>
+<!-- Micro Progress Bar -->
+<div class="w-full h-1 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-tertiary rounded-full animate-pulse" style="width: 48%"></div>
+</div>
+</div>
+<!-- Dock Resilient Safety Note Footer -->
+<div class="pt-1 flex items-center gap-1.5 text-label-sm text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[15px]">verified_user</span>
+<span>Safe to navigate or close tabs. Ingestion pipeline is resilient and cloud-synced.</span>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Client Script: Toggle Modal & Floating Dock States -->
+<script>
+    (function initUploadMultitask() {
+      const modal = document.getElementById('full-upload-modal');
+      const dock = document.getElementById('floating-upload-dock');
+      const btnMinimize = document.getElementById('btn-minimize-wizard');
+      const btnMinimizeSec = document.getElementById('btn-minimize-secondary');
+      const btnCloseModal = document.getElementById('btn-close-modal');
+      const btnExpandDock = document.getElementById('btn-expand-dock');
+      const btnFoldDock = document.getElementById('btn-fold-dock');
+      const dockContentBody = document.getElementById('dock-content-body');
+      const btnCloseDock = document.getElementById('btn-close-dock');
+
+      function minimizeModal() {
+        if (!modal) return;
+        modal.classList.add('hidden');
+        if (dock) {
+          dock.classList.remove('hidden');
+          dock.classList.add('animate-bounce');
+          setTimeout(() => dock.classList.remove('animate-bounce'), 1000);
+        }
+      }
+
+      function expandModal() {
+        if (!modal) return;
+        modal.classList.remove('hidden');
+      }
+
+      if (btnMinimize) btnMinimize.addEventListener('click', minimizeModal);
+      if (btnMinimizeSec) btnMinimizeSec.addEventListener('click', minimizeModal);
+      if (btnCloseModal) btnCloseModal.addEventListener('click', minimizeModal);
+      if (btnExpandDock) btnExpandDock.addEventListener('click', expandModal);
+
+      if (btnFoldDock && dockContentBody) {
+        let folded = false;
+        btnFoldDock.addEventListener('click', () => {
+          folded = !folded;
+          dockContentBody.classList.toggle('hidden', folded);
+          btnFoldDock.innerHTML = folded 
+            ? '<span class="material-symbols-outlined text-[17px]">expand_less</span>'
+            : '<span class="material-symbols-outlined text-[17px]">expand_more</span>';
+        });
+      }
+
+      if (btnCloseDock && dock) {
+        btnCloseDock.addEventListener('click', () => {
+          dock.classList.add('hidden');
+        });
+      }
+    })();
+  </script>
+</div></main></div>
+</body></html>

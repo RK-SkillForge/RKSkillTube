@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-container":"#0566d9","outline-variant":"#464555","surface-container-lowest":"#0a0e16","surface-container":"#1c2028","on-secondary-fixed":"#001a42","surface-tint":"#c3c0ff","on-surface":"#dfe2ee","error-container":"#93000a","on-secondary":"#002e6a","tertiary-container":"#6f3dd9","on-tertiary":"#3c0091","on-background":"#dfe2ee","error":"#ffb4ab","on-primary-fixed-variant":"#3323cc","on-error-container":"#ffdad6","on-error":"#690005","on-surface-variant":"#c7c4d8","tertiary-fixed":"#e9ddff","on-tertiary-fixed":"#23005c","primary":"#c3c0ff","on-secondary-container":"#e6ecff","surface-container-high":"#262a33","inverse-surface":"#dfe2ee","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#004395","primary-container":"#4f46e5","tertiary":"#d0bcff","on-tertiary-fixed-variant":"#5516be","surface-dim":"#0f131c","primary-fixed-dim":"#c3c0ff","inverse-on-surface":"#2c3039","background":"#0f131c","secondary-fixed":"#d8e2ff","on-primary-container":"#dad7ff","outline":"#918fa1","primary-fixed":"#e2dfff","surface-bright":"#353942","inverse-primary":"#4d44e3","surface-variant":"#31353e","on-primary":"#1d00a5","surface":"#0f131c","surface-container-low":"#181c24","on-tertiary-container":"#e3d5ff","secondary-fixed-dim":"#adc6ff","surface-container-highest":"#31353e","secondary":"#adc6ff","on-primary-fixed":"#0f0069"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-tablet":"1.5rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem","margin":"1rem"},"fontFamily":{"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Geist"],"headline-lg-mobile":["Geist"],"display-xl":["Geist"],"body-lg":["Inter"],"headline-sm":["Geist"],"code-inline":["JetBrains Mono"],"body-sm":["Inter"],"display-xl-mobile":["Geist"],"headline-md":["Geist"]},"fontSize":{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-inline":["13px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"display-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-space-md lg:px-space-lg"><div class="flex items-center gap-space-md"><button class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">menu</span></button><div class="flex items-center gap-space-sm"><img alt="RKSkillTube Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAvLXp8zwh6rPC2aZUFxhGK0rYQB-fCtj1uIcfjx_m8QbUk2_NVdMRSwQ6JbWUw3HQ3SCD8uQZawRZfDo0MxeEzH1UomuQcOtfP1EGDSNS98TVTtf8E-xRxX-s_ZzfMaNbHVgmRNtgWMHImE_Y23kEM3DY7YpbIbM7Ya3Z3WXEX7W6H-RRvjjF3p2ly7YrX_VAOpF2YczDmrJUd2pDwNzv4ayAyjuNkpCd-uM9sTg"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">RKSkillTube</span><span class="px-space-xs py-0.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-semibold">PRO</span></div></div></div><div class="hidden md:flex items-center gap-space-sm flex-1 max-w-2xl mx-space-lg"><div class="flex items-center flex-1 h-10 px-space-sm rounded-lg bg-surface-container-low border border-outline-variant/40 focus-within:border-primary-container transition-all"><span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">search</span><input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none" placeholder="Search lessons, architectures, algorithms..." type="text"/><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Ctrl+K</span><button class="ml-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">mic</span></button></div><button class="flex items-center gap-space-xs h-10 px-space-sm rounded-lg bg-tertiary-container/30 border border-tertiary/30 text-tertiary hover:bg-tertiary-container/50 hover:text-on-tertiary-container transition-all" type="button"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="font-label-md text-label-md">AI Search</span></button></div><div class="flex items-center gap-space-md"><div class="relative"><button class="flex items-center gap-space-xs h-9 px-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Create</span></button></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9FQ4pJVAlxRNdq8ajydBwRA-d5SQatDNKMibAnpt4InMXtlsTMNpFUD3JdUIErljX-R4caRsNJDQBPsTwPM2xbryksyBoVTiF4YWtiNQ6Wh39PvbynRvRJtJhLk_Hu1gder1SF_WYKf0JerBz0cAcInYJ2XFxJUAU3lrUTyprXKeHPkRrXuTubukQ_81yLJcvV781c-9mtvnOMkqREuXmWu4p49tTg8fnC8ydsaM"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden xl:flex flex-col text-left"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Alex Rivers</span><span class="font-label-sm text-label-sm text-secondary">Creator / Pro</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest/90 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between py-space-md px-space-sm overflow-y-auto z-40"><div class="flex flex-col gap-space-md"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="explore-feed" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-body-sm text-body-sm">Home</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="subscriptions" href="#"><span class="material-symbols-outlined text-[20px]">subscriptions</span><span class="font-body-sm text-body-sm">Subscriptions</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="trending" href="#"><span class="material-symbols-outlined text-[20px]">local_fire_department</span><span class="font-body-sm text-body-sm">Trending</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="enrolled-courses" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-body-sm text-body-sm">Enrolled Courses</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="saved-playlists" href="#"><span class="material-symbols-outlined text-[20px]">playlist_play</span><span class="font-body-sm text-body-sm">Saved Playlists</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="watch-later" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span class="font-body-sm text-body-sm">Watch Later</span></a></nav><div class="pt-space-sm border-t border-outline-variant/30 flex flex-col gap-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider">Learning Tracks</div><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-system-design" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">hub</span><span class="font-body-sm text-body-sm">System Design</span></div><span class="w-2 h-2 rounded-full bg-secondary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-full-stack" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">layers</span><span class="font-body-sm text-body-sm">Full-Stack</span></div><span class="w-2 h-2 rounded-full bg-primary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-dsa-algorithms" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">data_object</span><span class="font-body-sm text-body-sm">DSA &amp; Algorithms</span></div><span class="w-2 h-2 rounded-full bg-secondary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-ai-machine-learning" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-body-sm text-body-sm">AI &amp; Machine Learning</span></div><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="track-cloud-devops" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">cloud_done</span><span class="font-body-sm text-body-sm">Cloud DevOps</span></div><span class="w-2 h-2 rounded-full bg-primary-container"></span></a></div></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="creator-studio" href="#"><span class="material-symbols-outlined text-[20px]">video_settings</span><span class="font-body-sm text-body-sm font-medium">Creator Studio</span></a><a class="block p-space-sm rounded-lg bg-surface-container-low border border-tertiary/40 hover:border-tertiary transition-all" data-path="gemini-ai-tutor" href="#"><div class="flex items-center gap-space-xs text-tertiary mb-1"><span class="material-symbols-outlined text-[18px]">psychology</span><span class="font-label-md text-label-md font-semibold">AI Study Tutor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Interactive code analysis, system review &amp; mock interviews.</p></a></div></aside><div class="pl-64"><main class="w-full min-h-screen pt-16 px-space-md lg:px-space-lg bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Dynamic Ambient Backlight Glow -->
+<div class="relative w-full">
+<div class="absolute -top-10 left-1/4 w-[640px] h-[340px] bg-primary-container/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-20 right-1/4 w-[420px] h-[280px] bg-tertiary-container/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<!-- Main 2-Column Responsive Theatre Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop w-full items-start">
+<!-- LEFT CONTENT AREA: Media Canvas, Meta, Creator & Deep-Dive (approx. 70% on XL) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- 16:9 Cinema Player Container -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-container-lowest shadow-2xl group select-none">
+<!-- Background Cinema Video Visual Stream Simulation -->
+<div class="absolute inset-0 bg-surface-container-lowest flex items-center justify-center overflow-hidden">
+<!-- Simulated Architectural Blueprint & Engine Frame -->
+<div class="relative w-full h-full p-space-md flex flex-col justify-between bg-gradient-to-tr from-surface-container-lowest via-surface-container-low to-surface-container-lowest">
+<!-- Frame Header Watermark / Technical Status -->
+<div class="flex items-center justify-between z-10 opacity-70">
+<div class="flex items-center gap-space-sm bg-surface-container/70 backdrop-blur-md px-space-sm py-1 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">HLS Live Buffer • 1080p60 • Node: US-EAST-CLUSTER-04</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant bg-surface-container/60 px-space-sm py-1 rounded-lg">
+<span>RAFT_STATE:</span>
+<span class="text-secondary font-bold">CANDIDATE_ELECTION_TMR_EXPIRED</span>
+</div>
+</div>
+<!-- Central Diagnostic Overlay: Architectural Diagram & Protobuf Code -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center my-auto z-10 px-space-md">
+<!-- Interactive Topology Schema -->
+<div class="md:col-span-7 bg-surface-container-lowest/80 backdrop-blur-md p-space-md rounded-xl shadow-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Cluster Topology (Quorum N=5)</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/30 text-primary">TERM #14</span>
+</div>
+<!-- Inline SVG Cluster Architecture Graph -->
+<div class="w-full h-44 flex items-center justify-center">
+<svg class="w-full h-full text-on-surface" fill="none" viewbox="0 0 380 160">
+<!-- Connection Lines with Pulse Highlights -->
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.15" stroke-width="2" x1="190" x2="90" y1="40" y2="120"></line>
+<line stroke="currentColor" stroke-opacity="0.5" stroke-width="2" x1="190" x2="190" y1="40" y2="120"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.15" stroke-width="2" x1="190" x2="290" y1="40" y2="120"></line>
+<path d="M 190 40 L 50 75" opacity="0.6" stroke="#4f46e5" stroke-dasharray="2 2" stroke-width="1.5"></path>
+<path d="M 190 40 L 330 75" opacity="0.6" stroke="#4f46e5" stroke-dasharray="2 2" stroke-width="1.5"></path>
+<!-- Node 1: Candidate (Leader Elect) -->
+<g class="cursor-pointer">
+<circle cx="190" cy="40" fill="#181c24" r="24" stroke="#c3c0ff" stroke-width="2"></circle>
+<circle class="animate-ping" cx="190" cy="40" opacity="0.4" r="28" stroke="#4f46e5" stroke-width="1" style="transform-origin: 190px 40px; animation-duration: 3s;"></circle>
+<text fill="#dfe2ee" font-family="JetBrains Mono" font-size="10" font-weight="bold" text-anchor="middle" x="190" y="37">NODE 01</text>
+<text fill="#adc6ff" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="190" y="49">LEADER</text>
+</g>
+<!-- Node 2: Follower A -->
+<g>
+<circle cx="90" cy="120" fill="#181c24" r="20" stroke="#464555" stroke-width="1.5"></circle>
+<text fill="#dfe2ee" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="90" y="118">NODE 02</text>
+<text fill="#918fa1" font-family="JetBrains Mono" font-size="7" text-anchor="middle" x="90" y="129">ACK 14:02</text>
+</g>
+<!-- Node 3: Follower B -->
+<g>
+<circle cx="190" cy="120" fill="#181c24" r="20" stroke="#10b981" stroke-width="1.5"></circle>
+<text fill="#dfe2ee" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="190" y="118">NODE 03</text>
+<text fill="#10b981" font-family="JetBrains Mono" font-size="7" text-anchor="middle" x="190" y="129">SYNCED</text>
+</g>
+<!-- Node 4: Follower C -->
+<g>
+<circle cx="290" cy="120" fill="#181c24" r="20" stroke="#464555" stroke-width="1.5"></circle>
+<text fill="#dfe2ee" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="290" y="118">NODE 04</text>
+<text fill="#918fa1" font-family="JetBrains Mono" font-size="7" text-anchor="middle" x="290" y="129">ACK 14:02</text>
+</g>
+<!-- Partition Split Line Indicator -->
+<g opacity="0.8">
+<line stroke="#ffb4ab" stroke-dasharray="4 4" stroke-width="1.5" x1="315" x2="315" y1="20" y2="140"></line>
+<text fill="#ffb4ab" font-family="JetBrains Mono" font-size="8" x="325" y="32">PARTITION</text>
+</g>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Heartbeat interval: 150ms</span>
+<span>Majority Threshold: 3/5 Votes</span>
+</div>
+</div>
+<!-- Protobuf Live RPC Code Display -->
+<div class="hidden md:flex md:col-span-5 flex-col bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-xl font-code-inline text-code-inline shadow-md">
+<div class="flex items-center justify-between pb-1 mb-2 bg-surface-container-high/40 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary">raft_rpc.proto</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">v3.21</span>
+</div>
+<pre class="text-on-surface-variant text-[11px] leading-[17px] font-label-md overflow-hidden"><span class="text-secondary">message</span> <span class="text-primary font-semibold">RequestVoteArgs</span> {
+  <span class="text-tertiary">int64</span> term         = <span class="text-primary">1</span>;
+  <span class="text-tertiary">int64</span> candidate_id = <span class="text-primary">2</span>;
+  <span class="text-tertiary">int64</span> last_log_idx = <span class="text-primary">3</span>;
+  <span class="text-tertiary">int64</span> last_log_trm = <span class="text-primary">4</span>;
+}
+
+<span class="text-secondary">message</span> <span class="text-primary font-semibold">RequestVoteReply</span> {
+  <span class="text-tertiary">int64</span> term         = <span class="text-primary">1</span>;
+  <span class="text-tertiary">bool</span>  vote_granted = <span class="text-primary">2</span>;
+}</pre>
+</div>
+</div>
+<!-- Ambient Video Footer Badge -->
+<div class="flex items-center justify-between z-10">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant font-label-sm text-label-sm">
+                  FRAME #26,160 • H.265 / AV1 HW-ACCEL
+                </span>
+<span class="px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">
+                  LIVE RAFT SIMULATOR
+                </span>
+</div>
+</div>
+</div>
+<!-- Top-Right AI Quick Sparkle Action -->
+<div class="absolute top-4 right-4 z-20 transition-opacity duration-300 opacity-90 group-hover:opacity-100">
+<button class="flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-tertiary-container/80 backdrop-blur-xl text-on-tertiary-container hover:bg-tertiary-container transition-all shadow-lg hover:scale-105">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm font-semibold">Clip with AI Notes</span>
+</button>
+</div>
+<!-- Glassmorphic Custom Player Control Overlay Bar -->
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/90 to-transparent pt-10 pb-3 px-space-md flex flex-col gap-2 z-30 transition-all duration-200">
+<!-- Timeline Scrubbing Bar with Chapter Markers & Hover Tooltip -->
+<div class="relative w-full h-2 group/scrub flex items-center cursor-pointer">
+<!-- Buffer Track -->
+<div class="absolute inset-x-0 h-1.5 bg-surface-container-highest/60 rounded-full overflow-hidden">
+<div class="h-full bg-surface-variant/70 w-[68%] rounded-full"></div>
+</div>
+<!-- Active Played Track -->
+<div class="absolute left-0 top-0.5 h-1.5 bg-primary-container rounded-full w-[37.6%]"></div>
+<!-- Chapter Break Notches -->
+<div class="absolute inset-0 flex justify-between pointer-events-none px-1">
+<span class="w-0.5 h-2 bg-surface-container-lowest"></span>
+<span class="w-0.5 h-2 bg-surface-container-lowest left-[11%] absolute"></span>
+<span class="w-0.5 h-2 bg-surface-container-lowest left-[32.6%] absolute"></span>
+<span class="w-0.5 h-2 bg-surface-container-lowest left-[62.4%] absolute"></span>
+<span class="w-0.5 h-2 bg-surface-container-lowest left-[87.3%] absolute"></span>
+</div>
+<!-- Interactive Scrubber Pin -->
+<div class="absolute left-[37.6%] -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-primary shadow-md scale-0 group-hover/scrub:scale-100 transition-transform"></div>
+<!-- Hover Tooltip Demo Marker -->
+<div class="absolute left-[37.6%] -top-8 -translate-x-1/2 hidden group-hover/scrub:flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm shadow-xl">
+                14:32 • Quorum Majority Rule
+              </div>
+</div>
+<!-- Controls Row: Play, Volumes, Timers, Speeds, Settings -->
+<div class="flex items-center justify-between pt-1">
+<!-- Left Controls -->
+<div class="flex items-center gap-space-sm text-on-surface">
+<!-- Play / Pause -->
+<button class="p-1.5 rounded-lg hover:bg-surface-container transition-colors text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">pause</span>
+</button>
+<!-- Skip Backward 10s -->
+<button class="p-1.5 rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant hover:text-on-surface flex items-center justify-center" title="Rewind 10s">
+<span class="material-symbols-outlined text-[20px]">replay_10</span>
+</button>
+<!-- Skip Forward 10s -->
+<button class="p-1.5 rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant hover:text-on-surface flex items-center justify-center" title="Forward 10s">
+<span class="material-symbols-outlined text-[20px]">forward_10</span>
+</button>
+<!-- Audio Volume with Hover Expand -->
+<div class="flex items-center gap-2 group/volume pl-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+<div class="w-16 h-1 bg-surface-container-highest rounded-full overflow-hidden hidden sm:block">
+<div class="w-4/5 h-full bg-on-surface rounded-full"></div>
+</div>
+</div>
+<!-- Timestamp Indicator -->
+<div class="font-label-md text-label-md text-on-surface-variant pl-2 flex items-center gap-1">
+<span class="text-on-surface font-semibold">14:32</span>
+<span>/</span>
+<span>38:45</span>
+</div>
+</div>
+<!-- Right Controls: Speed, Resolution, Subtitles, Screen -->
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<!-- Subtitles / CC Toggle Active -->
+<button class="px-2 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm font-bold" title="Subtitles ON">
+                  CC
+                </button>
+<!-- Playback Speed Pill -->
+<div class="relative">
+<button class="px-2 py-1 rounded hover:bg-surface-container hover:text-on-surface transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span>1.0x</span>
+<span class="material-symbols-outlined text-[14px]">expand_less</span>
+</button>
+</div>
+<!-- Stream Quality Dropdown Pill -->
+<button class="px-2 py-1 rounded hover:bg-surface-container hover:text-on-surface transition-colors font-label-sm text-label-sm flex items-center gap-1 bg-surface-container-low">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>1080p60</span>
+</button>
+<!-- Theater Mode Toggle -->
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Theater Mode">
+<span class="material-symbols-outlined text-[20px]">crop_landscape</span>
+</button>
+<!-- Fullscreen Toggle -->
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Fullscreen">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Video Title, Category & Metrics Interaction Bar -->
+<div class="flex flex-col gap-space-md">
+<!-- Category & Track Navigation Breadcrumb -->
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-DEFAULT bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+                System Design Track
+              </span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+                Chapter 3 of 8: Consensus &amp; Replication
+              </span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Verified Certificate Curriculum</span>
+</div>
+</div>
+<!-- Video Heading -->
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Distributed Systems at Scale: Kafka, gRPC &amp; Consensus Algorithms — Lesson 8: Raft Leader Election &amp; Log Replication
+          </h1>
+<!-- Metrics & Interactive Action Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-sm">
+<!-- Metadata Stream Counts -->
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span class="text-on-surface font-semibold">142,850 views</span>
+<span>•</span>
+<span>Streamed 3 days ago</span>
+<span>•</span>
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">code</span>
+                Go v1.22
+              </span>
+</div>
+<!-- Action Pill Buttons Row -->
+<div class="flex items-center flex-wrap gap-2">
+<!-- Like / Dislike Split Button -->
+<div class="flex items-center rounded-lg bg-surface-container-low overflow-hidden">
+<button class="flex items-center gap-1.5 px-3 py-2 text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[18px] text-primary">thumb_up</span>
+<span>12.4K</span>
+</button>
+<div class="w-px h-5 bg-outline-variant/30"></div>
+<button class="px-2.5 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">thumb_down</span>
+</button>
+</div>
+<!-- Share Trigger -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="hidden md:inline">Share</span>
+</button>
+<!-- Download / Sync Offline -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors font-body-sm text-body-sm font-medium" title="Sync Docker &amp; Source CLI">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span class="hidden md:inline">CLI Sync</span>
+</button>
+<!-- Bookmark Playlist -->
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" title="Bookmark to Watchlist">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<!-- Ask AI Frame Action -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-tertiary-container/30 hover:bg-tertiary-container/50 text-tertiary transition-all font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">psychology_alt</span>
+<span>Ask AI About Frame</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3. Creator Channel Info & Course Subscription Anchor -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-13 h-13 rounded-full object-cover shadow-md" data-alt="High resolution studio portrait of senior male software architect Alex Chen wearing glasses against a dark cyberpunk backdrop with purple neon edge lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiPWQeLDOJnRhWnhruhRIjcuRLFvSzaJJx14hLZp9H7hSFNqd6k8M-P86KcnODwL28kd7kcgrv2Kb3Kqt1mDDuDSIpRFqjsWR-DrZPpLiy38qN6Jyx82xvDYYF5MIMHPPwk4Mfe6HUVv17bLAFay7gaMo55dENToAFvr6TjN53eqJzNGzjT4SGsvDH148jYe7MIgfF6UMfdYbxwpMhA8J3e3zumL1KUtWCQEb1obk"/>
+<div class="absolute -bottom-1 -right-1 bg-surface-container-lowest p-0.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Alex Chen</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Staff Eng @ Uber</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">ByteCraft Academy</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>285K engineers subscribed</span>
+<span>•</span>
+<span class="text-tertiary">Stanford / Linux Foundation Aligned</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-medium transition-colors">
+              Subscribed
+            </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all font-body-sm text-body-sm font-semibold shadow-lg">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Join Course Pro ($19.99)</span>
+</button>
+</div>
+</div>
+<!-- 4. Rich Expandable Description & Resources Section -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-lg shadow-sm">
+<!-- Summary Header -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Lesson Breakdown &amp; Objectives</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              In this intensive session, we deconstruct the mechanics of <span class="text-on-surface font-semibold">Raft Consensus Algorithm</span>. We walk through randomized election timers, handling network partitions without causing split-brain states, and state machine log replication across geographically separated nodes. We finalize with live Go code benchmarks testing node failover times.
+            </p>
+</div>
+<!-- Interactive Clickable Timestamps -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-md rounded-xl">
+<div class="flex items-center justify-between pb-space-xs mb-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                Key Segment Timestamps
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Click to scrub</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 font-label-md text-label-md">
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-high transition-colors group" href="#">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-semibold font-label-sm text-label-sm group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">00:00</span>
+<span class="text-on-surface truncate">Introduction to Consensus &amp; The Split-Brain Problem</span>
+</a>
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-high transition-colors group" href="#">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-semibold font-label-sm text-label-sm group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">04:15</span>
+<span class="text-on-surface truncate">Term Numbers and Heartbeat Mechanisms</span>
+</a>
+<a class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-high transition-colors group" href="#">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-semibold font-label-sm text-label-sm">12:40</span>
+<span class="text-on-surface font-semibold truncate">Leader Election Protocol &amp; Majority Quorum</span>
+</a>
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-high transition-colors group" href="#">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-semibold font-label-sm text-label-sm group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">24:10</span>
+<span class="text-on-surface truncate">Log Replication &amp; Commit Indices</span>
+</a>
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-high transition-colors group" href="#">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-semibold font-label-sm text-label-sm group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">33:50</span>
+<span class="text-on-surface truncate">Live Hands-On: Go Implementation &amp; Testing Failover</span>
+</a>
+</div>
+</div>
+<!-- Resource Attachments Bento Grid -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Attached Engineering Assets</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- GitHub Card -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-start justify-between">
+<div class="p-2 rounded-lg bg-surface-container-lowest text-primary">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span>
+<span>4.8k</span>
+</div>
+</div>
+<div class="mt-3">
+<h4 class="font-label-md text-label-md text-on-surface font-bold group-hover:text-primary transition-colors">raft-go-consensus</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Production-grade Raft implementation in pure Go.</p>
+</div>
+<div class="mt-4 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-mono">git clone ...</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Cheat Sheet Card -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-start justify-between">
+<div class="p-2 rounded-lg bg-surface-container-lowest text-tertiary">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">PDF • 2.4 MB</span>
+</div>
+<div class="mt-3">
+<h4 class="font-label-md text-label-md text-on-surface font-bold group-hover:text-tertiary transition-colors">Raft State Machine Map</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Comprehensive transition flowchart &amp; safety invariant rules.</p>
+</div>
+<div class="mt-4 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Direct Download</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-y-0.5 transition-transform">download</span>
+</div>
+</div>
+<!-- Interactive Web Terminal / Docker Card -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-start justify-between">
+<div class="p-2 rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[22px]">developer_board</span>
+</div>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Ready
+                  </span>
+</div>
+<div class="mt-3">
+<h4 class="font-label-md text-label-md text-on-surface font-bold group-hover:text-primary transition-colors">Docker Playground</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">5-Node Raft cluster in-browser sandbox container.</p>
+</div>
+<div class="mt-4 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Launch Sandbox</span>
+<span class="material-symbols-outlined text-[16px] text-primary group-hover:translate-x-1 transition-transform">launch</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT STICKY SIDEBAR: Syllabus, AI Study Buddy & Q&A Tabs (approx. 32% on XL) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md xl:sticky xl:top-20">
+<!-- Multi-Tab Controller Container -->
+<div class="rounded-xl bg-surface-container-low shadow-xl overflow-hidden flex flex-col">
+<!-- Tab Navigation Bar -->
+<div class="grid grid-cols-3 bg-surface-container-lowest p-1.5 gap-1">
+<button class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold transition-all">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="truncate">Syllabus</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-tertiary hover:bg-surface-container transition-all font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span class="truncate">AI Buddy</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span class="truncate">Q&amp;A (184)</span>
+</button>
+</div>
+<!-- TAB CONTENT 1: Interactive Curriculum Tree & Progress Tracker -->
+<div class="p-space-md flex flex-col gap-space-md max-h-[460px] overflow-y-auto">
+<!-- Overall Progress Widget -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Track Progress</span>
+<span class="text-primary font-bold">65% (8/24 Lessons)</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container via-primary to-secondary rounded-full w-[65%]"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>Estimated remaining: 4h 12m</span>
+<span class="text-secondary font-semibold">Exam Eligible</span>
+</div>
+</div>
+<!-- Chapters Accordion List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Accordion Chapter 1 (Completed) -->
+<div class="p-space-sm rounded-lg bg-surface-container/60 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">1. Distributed Foundations &amp; RPCs</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4/4 done</span>
+</div>
+</div>
+<!-- Accordion Chapter 2 (Completed) -->
+<div class="p-space-sm rounded-lg bg-surface-container/60 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">2. High-Throughput Kafka Design</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3/3 done</span>
+</div>
+</div>
+<!-- Accordion Chapter 3 (Active Expanded) -->
+<div class="rounded-xl bg-surface-container overflow-hidden">
+<div class="p-space-sm bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">3. Consensus &amp; Raft Protocol</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-medium">Chapter Active</span>
+</div>
+<!-- Lessons Inside Chapter 3 -->
+<div class="p-2 flex flex-col gap-1">
+<!-- Lesson 7 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Lesson 7: Paxos vs Raft Tradeoffs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18:20</span>
+</div>
+</div>
+</div>
+<!-- Lesson 8: ACTIVE PLAYING -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-primary-container/20 shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<!-- Soundwave Animation Visualizer -->
+<div class="flex items-end gap-0.5 h-4 w-4 shrink-0">
+<span class="w-1 bg-primary h-full animate-bounce"></span>
+<span class="w-1 bg-primary h-2/3 animate-bounce" style="animation-delay: 150ms;"></span>
+<span class="w-1 bg-primary h-4/5 animate-bounce" style="animation-delay: 300ms;"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Lesson 8: Raft Leader Election</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Playing • 38:45</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shrink-0">NOW</span>
+</div>
+<!-- Lesson 9 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-high transition-colors opacity-75">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">play_circle</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Lesson 9: Network Partitions &amp; Healing</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24:10</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Up Next</span>
+</div>
+<!-- Lesson 10 (Interactive Lab) -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-high transition-colors opacity-75">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">code_blocks</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Lesson 10: State Machine Safety Lab</span>
+<span class="font-label-sm text-label-sm text-tertiary">Coding Challenge • 45m</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Chapter 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container/60 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">lock</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">4. Multi-Datacenter Hardening</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 lessons</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT 2: Embedded AI Study Tutor Companion (Live Sync) -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-col gap-space-md">
+<!-- Tutor Header & Sync Status -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<div class="p-1.5 rounded-lg bg-tertiary-container/30 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Gemini Study Companion</span>
+<span class="font-label-sm text-label-sm text-tertiary">Synced at 14:32 (Transcript Anchor)</span>
+</div>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+</div>
+<!-- Conversation History Preview -->
+<div class="flex flex-col gap-space-sm">
+<!-- User Message -->
+<div class="self-end max-w-[88%] p- space-sm px-3 py-2 rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm">
+              Why does Raft require a majority quorum of (N/2)+1 servers to elect a leader?
+            </div>
+<!-- AI Response Message -->
+<div class="self-start max-w-[95%] p-space-sm rounded-xl bg-surface-container text-on-surface flex flex-col gap-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                In Raft, requiring <code class="font-code-inline text-code-inline text-secondary bg-surface-container-lowest px-1 py-0.5 rounded">majority = (N/2)+1</code> guarantees the <strong>Pigeonhole Principle</strong>: any two majorities must overlap by at least one server. That overlapping server cannot vote twice in the same term, preventing dual leaders (split-brain).
+              </p>
+<!-- Code Snippet -->
+<div class="p-2 rounded bg-surface-container-lowest font-code-inline text-code-inline text-on-surface">
+<div class="flex items-center justify-between text-[10px] text-on-surface-variant pb-1 font-label-sm">
+<span>quorum.go</span>
+<span class="text-secondary cursor-pointer hover:underline">Copy</span>
+</div>
+<pre class="text-[11px] leading-[15px]"><span class="text-secondary">func</span> <span class="text-primary">hasQuorum</span>(votes, totalNodes <span class="text-tertiary">int</span>) <span class="text-tertiary">bool</span> {
+    <span class="text-secondary">return</span> votes &gt; (totalNodes / <span class="text-primary">2</span>)
+}</pre>
+</div>
+</div>
+</div>
+<!-- Suggested Prompt Chips -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-[11px] font-label-md transition-colors">
+              ⚡ Summarize current frame
+            </button>
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-[11px] font-label-md transition-colors">
+              📝 Flashcard quiz
+            </button>
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-[11px] font-label-md transition-colors">
+              🔍 Explain Term vs Index
+            </button>
+</div>
+<!-- Prompt Input Box -->
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm px-3 py-2.5 pr-10 rounded-lg focus:outline-none focus:bg-surface-container" placeholder="Ask AI anything about this lesson..." type="text"/>
+<button class="absolute right-2 p-1 text-primary hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+<!-- TAB CONTENT 3 PREVIEW: Pinned Instructor Tip & Community Q&A -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Pinned Instructor Discussion</span>
+<span class="font-label-sm text-label-sm text-primary font-medium hover:underline cursor-pointer">View all 184</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small thumbnail avatar of instructor Alex Chen in engineering conference setting with dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT6HQZRsUMybHlS04Pe7vQSSk6uBKhbCrk8BcZ6GM9E0CAy8t1QI_-ZExkIwSayhR7AKXbStufhYdlxurmE137UhY_jbySNN1PYuNOAw55TkDAjWF8dFtr9sldl6d6jxKWguJWdBBXoMkM32xbZi8oVj0FRZbPVhEItttrz3HADub6aMfezze9rKZ-pY2UdhBpoAdbfWJPxNT0Lw3XCB0uM_8mOWsGHUGBkMRZ7EU"/>
+<span class="font-label-md text-label-md text-on-surface font-bold">Alex Chen</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm">INSTRUCTOR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tip: Run <code class="font-code-inline text-code-inline text-secondary bg-surface-container-lowest px-1 py-0.5 rounded">docker-compose up</code> before scrubbing to timestamp <strong>24:10</strong> to inspect simulated partitioned node logs in real-time.
+            </p>
+<div class="flex items-center justify-between pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">thumb_up</span> 34 upvotes</span>
+<span>12 replies</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
